@@ -136,27 +136,29 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    # background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
-    xpos gui.name_xpos
-    xanchor gui.name_xalign
+    xalign  gui.name_xalign
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    # background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
-    properties gui.text_properties("name", accent=True)
+    properties gui.text_properties("name")
+    outlines [(absolute(4), "#000", absolute(0), absolute(0))]
+    
     xalign gui.name_xalign
     yalign 0.5
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
+    outlines [(absolute(4), "#000", absolute(0), absolute(0))]
 
-    xpos gui.dialogue_xpos
+    xalign gui.name_xalign
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
