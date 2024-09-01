@@ -31,6 +31,7 @@ style button:
 style button_text is gui_text:
     properties gui.text_properties("button")
     yalign 0.5
+    outlines [(absolute(1), "#000", absolute(0), absolute(0))]
 
 
 style label_text is gui_text:
@@ -150,7 +151,7 @@ style namebox:
 style say_label:
     properties gui.text_properties("name")
     outlines [(absolute(4), "#000", absolute(0), absolute(0))]
-    
+
     xalign gui.name_xalign
     yalign 0.5
 
