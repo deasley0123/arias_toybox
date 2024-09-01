@@ -58,9 +58,11 @@ define gui.interface_text_color = '#ffffff'
 
 ## The font used for in-game text.
 define gui.text_font = "DejaVuSans.ttf"
+# define gui.text_font = "gui/SuperLarky-nALLR.ttf"
 
 ## The font used for character names.
 define gui.name_text_font = "DejaVuSans.ttf"
+# define gui.name_text_font = "gui/SuperLarky-nALLR.ttf"
 
 ## The font used for out-of-game text.
 define gui.interface_text_font = "DejaVuSans.ttf"
@@ -139,7 +141,7 @@ define gui.dialogue_width = 1116
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.dialogue_text_xalign = 0.0
+define gui.dialogue_text_xalign = 0.5
 
 define gui.dialogue_text_color = "#FFFFFF"
 

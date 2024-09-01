@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define a = Character("Aria", who_font="gui/SuperLarky-nALLR.ttf", who_size=31, what_font="gui/SuperLarky-nALLR.ttf", what_size=28, color= "#FFFFFF", outlnes=[(absolute(2), "#000", absolute(0), absolute(0))])
 
 
 # The game starts here.
@@ -19,14 +19,17 @@ label start:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-
-    show eileen happy
+    # image aria wave = im.Scale('aria wave.png', 1080/2, 1920/2)
+    show aria wave:
+        zoom 0.5
+        xalign 0.5
+        yalign 1.0
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    a "You've created a new Ren'Py game."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    a "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
 
