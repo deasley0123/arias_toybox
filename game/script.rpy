@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define a = Character("Aria", who_font="gui/SuperLarky-nALLR.ttf", who_size=31, what_font="gui/SuperLarky-nALLR.ttf", what_size=28, color= "#FFFFFF", outlnes=[(absolute(2), "#000", absolute(0), absolute(0))])
+define a = Character("Aria", who_style="aria_say_label", what_style="aria_say_dialogue")
 
 
 # The game starts here.
@@ -27,9 +27,10 @@ label start:
 
     # These display lines of dialogue.
 
-    a "You've created a new Ren'Py game."
+    a "Hi there!!! My name is Aria!"
 
-    a "Once you add a story, pictures, and music, you can release it to the world!"
+    a "We dont have a script yet..." 
+    a "-so I hope you'll stay with me while you wait!"
 
     # This ends the game.
 

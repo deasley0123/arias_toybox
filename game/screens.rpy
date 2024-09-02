@@ -165,6 +165,18 @@ style say_dialogue:
 
     adjust_spacing False
 
+style aria_say_label is say_label:
+    font "gui/SuperLarky-nALLR.ttf"
+    color "#FFF5"
+    outlines [(absolute(2), "#0004", absolute(0), absolute(0))]
+    size 38
+
+style aria_say_dialogue is say_dialogue:
+    font "gui/SuperLarky-nALLR.ttf"
+    size 28
+    color "#FFF"
+    outlines [(absolute(2), "#000", absolute(0), absolute(0))]
+
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to
