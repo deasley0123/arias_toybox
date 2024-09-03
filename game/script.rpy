@@ -8,27 +8,85 @@ define q = Character("???")
 define n = Character("")
 define s = Character("Serena")
 define j = Character("Jo")
+define narrator = nvl_narrator
+define centered_narrator = Character("", nvl=True, ypos=0.5)
+transform text_effect:
+    ypos 0.5
+    block:
+        linear 0.1 xoffset -2 yoffset 2
+        linear 0.1 xoffset 3 yoffset -3
+        linear 0.1 xoffset 2 yoffset -2
+        linear 0.1 xoffset -3 yoffset 3
+        linear 0.1 xoffset 0 yoffset 0
+        repeat
 
 # The game starts here.
 
 label start:
 
-    scene bg attic day
+    # scene bg attic day
 
+    # show aria smile wave:
+    #     zoom 0.5
+    #     xalign 0.5
+    #     yalign 1.0
+
+    # # These display lines of dialogue.
+
+    # a "Hi there!!! My name is Aria!"
+
+    # a "We dont have a script yet...{p}-so I hope you'll stay with me while you wait!" 
+
+    jump scene0
+
+label scene0:
+    narrator "It was a rainy Tuesday night."
+    narrator """
+    You came home from work to your small studio apartment, changed into sweatpants, 
+    grabbed a drink from the fridge and sat on the floor in front of your TV because
+    it was more comfortable than your shitty IKEA couch.
+    """
+    narrator """
+    You flipped through channels and eventually settled on a network game show you remembered 
+    watching with your grandmother when you were little.
+    """
+
+    narrator "It's more commercials than content now, and you quickly got bored and started scrolling on your phone."
+
+    nvl clear
+
+    narrator "A friend of yours from high school posted some engagement photos. Another made a pregnancy announcement."
+
+    narrator """
+    You thought about congratulating them, but you haven't spoken to either of them in years.
+    Best case scenario, they would invite you to some celebratory event you couldn't afford to attend. 
+    """
+
+    narrator """
+    Besides, you've already called in enough days at work that requesting any more would probably get you fired.
+    So instead you drank and kept scrolling, eyes half glazed over. 
+    """
+
+    narrator """
+    Eventually you can't keep your eyes open at all anymore. You lean your head back against your shitty
+    IKEA couch and fall asleep, wishing you could be anyone and anywhere else.
+    """
+    
+    nvl clear
+
+    # n "{shader=jitter}When you open your eyes again, you are no longer in your apartment.{/shader}"
+    show text "When you open your eyes again, you are no longer in your apartment." at text_effect
+    n "{w}"
+
+    jump scene1
+
+
+label scene1:
+    scene bg attic day
     show aria smile wave:
         zoom 0.5
         xalign 0.5
         yalign 1.0
-
-    # These display lines of dialogue.
-
-    a "Hi there!!! My name is Aria!"
-
-    a "We dont have a script yet...{p}-so I hope you'll stay with me while you wait!" 
-
-    jump scene1
-
-label scene1:
     q "Hello? Helloooo? Is anyone in there?"
     q "Blink twice if you can hear me! They're not blinking. THEY'RE NOT BLINKI-{p}Wait, you don't have eyelids."
     q "Uhhh... How about nodding? Maybe with a little help..."
