@@ -14,6 +14,8 @@ init python:
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
 
+define config.default_textshader = "typewriter"
+
 
 ################################################################################
 ## GUI Configuration Variables
@@ -68,7 +70,7 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 33
+define gui.text_size = 35
 
 ## The size of character names.
 define gui.name_text_size = 45
@@ -134,7 +136,7 @@ define gui.namebox_tile = False
 ## center.
 define gui.dialogue_xalign = 0.5
 define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+define gui.dialogue_ypos = 0.3
 
 ## The maximum width of dialogue text, in pixels.
 define gui.dialogue_width = 1116

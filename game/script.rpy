@@ -4,14 +4,28 @@
 # name of the character.
 
 define a = Character("Aria", who_style="aria_say_label", what_style="aria_say_dialogue")
-define q = Character("???")
+define a_excite = Character(
+    "Aria", 
+    who_style="aria_say_label",
+    what_style="aria_say_dialogue", 
+    what_textshader="jitter:3.0, 3.0"
+)
+define q = Character("???", who_style="aria_say_label", what_style="aria_say_dialogue")
 define n = Character("")
 define s = Character("Serena")
 define j = Character("Jo")
 define narrator = nvl_narrator
 define centered_narrator = Character("", nvl=True, ypos=0.5)
-transform text_effect:
+transform shaking_center:
     ypos 0.5
+    block:
+        linear 0.1 xoffset -2 yoffset 2
+        linear 0.1 xoffset 3 yoffset -3
+        linear 0.1 xoffset 2 yoffset -2
+        linear 0.1 xoffset -3 yoffset 3
+        linear 0.1 xoffset 0 yoffset 0
+        repeat
+transform shaking:
     block:
         linear 0.1 xoffset -2 yoffset 2
         linear 0.1 xoffset 3 yoffset -3
@@ -23,6 +37,8 @@ transform text_effect:
 # The game starts here.
 
 label start:
+    camera:
+        perspective True
 
     # scene bg attic day
 
@@ -68,73 +84,79 @@ label scene0:
     """
 
     narrator """
-    Eventually you can't keep your eyes open at all anymore. You lean your head back against your shitty
-    IKEA couch and fall asleep, wishing you could be anyone and anywhere else.
+    Eventually you can't keep your eyes open at all anymore. You lean your head back against your couch
+    and fall asleep, wishing you could be anyone and anywhere else.
     """
     
     nvl clear
 
-    # n "{shader=jitter}When you open your eyes again, you are no longer in your apartment.{/shader}"
-    show text "When you open your eyes again, you are no longer in your apartment." at text_effect
-    n "{w}"
+    show text "When you open your eyes again, you are no longer in your apartment." at shaking_center
+    n "{alpha=0.0}When you open your eyes again, you are no longer in your apartment" # This exists to set the autoplay speed right
 
     jump scene1
 
 
 label scene1:
     scene bg attic day
-    show aria smile wave:
-        zoom 0.5
-        xalign 0.5
-        yalign 1.0
-    q "Hello? Helloooo? Is anyone in there?"
+    # show aria smile wave:
+    #     zoom 0.5
+    #     xalign 0.5
+    #     yalign 1.0
+
+    q "Hello? Helloooo? Is anyone in there?" with vpunch
     q "Blink twice if you can hear me! They're not blinking. THEY'RE NOT BLINKI-{p}Wait, you don't have eyelids."
     q "Uhhh... How about nodding? Maybe with a little help..."
     n "A small hand reaches out to touch your head. It's warm."
     q "Oh! You're moving. That's a great sign!"
     n "Above you is an unfamiliar ceiling. Pitched wooden beams over a small attic."
-    n "Morning light streams golden through the window. The morning birdsong is foreign but beautiful."
+    n "Early light streams golden through the window. The morning birdsong is foreign but beautiful."
     n "The walls are strewn with drawings, the uneven floor littered with books and candles."
     n "There is a small, unmade bed in the corner, a disheveled arrangement of sheets and leather tomes."
     n "The owner of which (you assume) peers over her hat at you, uncomfortably close now."
     n "You shift away, and she skitters back."
     q "Hey! You moved! That's great!! It worked!! I'm AMAZING!!!"
     s "Where am I? Who are you? What's going on? Why-"
-    n "You are becoming aware of your body in spurts. Currently seated, your hands support you.{p}The ground feels tacky to touch, prompting you to really see it... and your hands."
+    n "You are becoming aware of your body in spurts. Currently seated, your hands support you."
+    n "The ground feels tacky to touch, prompting you to really see it... and your hands."
     s "Why is the ground covered in blood? WHY ARE MY HANDS PAWS?!?"
-    a "I'm Aria! You're my favorite doll: Jophiel the Duskborn, catfolk master thief, right hand of the Weald Queen! Unmatched in the fields of battle AND wits-"
+    a "I'm Aria! You're my favorite doll!"
+    a "{i}\"Jophiel the Duskborn, catfolk master thief\"{p}\"Right hand of the Weald Queen! Unmatched in the fields of battle AND wits-{/i}\""
     s "My name is Serena.{p}I'm an Uber driver from Cleveland."
     s "What on Earth are you talking about?"
     a "Ah! That's just the thing! You're not on Earth anymore at all!"
-    a "I've summoned you here, Jophiel, to help me perform a mighty deed.{p}We're going on A QUEST!"
-    a "AREN'T YOU EXCITED?!"
+    a "I've summoned you here, {i}Jophiel{/i}, to help me perform a mighty deed.{p}We're going on A {b}{i}QUEST!{/i}{/b}"
+    a_excite "AREN'T YOU EXCITED?!" with vpunch
     n "The young girl beams at you. The blood-drawn ritual circle under you is starting to dry on the raw wood planks."
     n "You make one last futile attempt at normalcy."
-    s "Is this... is this some kind of TikTok trend? Is someone filming me right now? It isn't funny."
-    a "What's a TikTok? Like a clock?? I don't have a clock, silly!"
+    s "Is this... is this some kind of TikTok trend? Is someone filming me right now?"
+    a "What's a TikTok?{p}Is it like a clock?? I don't have a clock, silly!"
     a "I'm not allowed around time anymore."
     s "..."
     a "..."
     s "..."
     n "You change the subject."
     s "That hat... are you some kind of witch? Assuming any of this is real at all and it's not just a really weird dream."
-    n "You had a slice of mushroom and black olive pizza last night, but they were just button mushrooms... right?"
-    a "Ahem. I am a Sorceress, not a Witch! The hat is for style."
+    n "You had a slice of mushroom and black olive pizza last night, but they were just {i}button mushrooms{/i}, right? Not the other kind...?"
+    a "Ahem. I am a SORCERESS, not a witch!\nThe hat is for style."
     n "She poses, obviously trying to appear cool.{p}You brush some dust off your knee and stand."
     n "You're a little taller than you were before, probably. There isn't anything familiar to measure against in here."
     s "Great, so you're a sorceress, and I'm a... toy? A five-foot talking cat?"
     n "You feel the pointed ears in your hair and the weight of a long, thin tail stretching out behind you."
     a "Well, Jophiel-"
     s "It's Serena."
-    a "Hmmmm... That doesn't sound like much of a quest name. Serenas don't really go to do great deeds."
-    n "You almost interject about the accomplishments of the famous people on Earth who share your name, but it's not like you've ever really done anything, personally, so you bite your tongue."
+    a "Hmmmm... That doesn't sound like much of a {i}quest{/i} name. \'Serenas\" don't really go to do great deeds."
+    n "You almost interject about the accomplishments of the famous people on Earth who share your name."
+    n "But it's not like you've ever really done anything, personally, so you bite your tongue."
     a "Besides! Didn't you want to be someone else?"
     n "Her question is genuine in a way children's questions often are, but your pulse quickens all the same."
-    s "What do you mean? ...How did you know that?"
-    a "Oh. Well, it's a condition for my spell. I can only summon willing souls. It only works if you don't want to be who or where you are."
+    s "What do you mean?"
+    s "...How did you know that?"
+    a "Oh." 
+    a "Well, it's a condition for my spell. I can only summon willing souls. It only works if you don't want to be who or where you are."
     a "I wouldn't want to pull you here if you were happier where you were."
     a "Soul magic like that makes me feel icky."
-    n "This line of conversation is making you think about yourself more critically than is comfortable.{p}You change the subject again."
+    n "This line of conversation is making you think about yourself more critically than is comfortable."
+    n "You change the subject again."
     s "What about my body here, then? Shouldn't I be soft, small, and full of cotton stuffing or something?"
     a "Nope! I tried this spell before with lower quality stuff, but... it didn't work out."
     a "I HAD a rocking horse."
@@ -154,7 +176,7 @@ label scene1:
     s "Well, maybe-"
     a "Within this forest lies a creature foul and perverse.{p}To battle it is to court danger.{p}To challenge it is foolhardiness personified."        
     a "BUT IT MUST BE DONE! THE BOG BEAST MUST BE CAPTURED!"
-    a "AND IF IT IS NOT BY OUR HAND, THEN BY WHOSE!?"
+    a_excite "AND IF IT IS NOT BY OUR HAND, THEN BY WHOSE!?"
     s "Anyone's! Yours! But not mine! I don't even have hands!?"
     a "But I'm not allowed in the forest without supervision.{p}And Mom is never around to supervise me."
     a "But you're an adult. You could supervise me..."

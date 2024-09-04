@@ -150,14 +150,14 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name")
-    outlines [(absolute(4), "#000", absolute(0), absolute(0))]
+    outlines [(absolute(2), "#000", absolute(0), absolute(0))]
 
     xalign gui.name_xalign
     yalign 0.5
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
-    outlines [(absolute(4), "#000", absolute(0), absolute(0))]
+    outlines [(absolute(2), "#000", absolute(0), absolute(0))]
 
     xalign gui.name_xalign
     xsize gui.dialogue_width
@@ -169,11 +169,12 @@ style aria_say_label is say_label:
     font "gui/SuperLarky-nALLR.ttf"
     color "#FFF5"
     outlines [(absolute(2), "#0004", absolute(0), absolute(0))]
+    ypos 0.4
     size 38
 
 style aria_say_dialogue is say_dialogue:
     font "gui/SuperLarky-nALLR.ttf"
-    size 28
+    size 26
     color "#FFF"
     outlines [(absolute(2), "#000", absolute(0), absolute(0))]
 
@@ -261,8 +262,8 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
-            yalign 1.0
+            xalign 0.0
+            yalign 0.0
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
