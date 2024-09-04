@@ -158,25 +158,13 @@ style say_label:
 style say_dialogue:
     properties gui.text_properties("dialogue")
     outlines [(absolute(2), "#000", absolute(0), absolute(0))]
+    line_spacing -5
 
     xalign gui.name_xalign
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
     adjust_spacing False
-
-style aria_say_label is say_label:
-    font "gui/SuperLarky-nALLR.ttf"
-    color "#FFF5"
-    outlines [(absolute(2), "#0004", absolute(0), absolute(0))]
-    ypos 0.4
-    size 38
-
-style aria_say_dialogue is say_dialogue:
-    font "gui/SuperLarky-nALLR.ttf"
-    size 26
-    color "#FFF"
-    outlines [(absolute(2), "#000", absolute(0), absolute(0))]
 
 ## Input screen ################################################################
 ##

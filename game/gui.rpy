@@ -59,15 +59,13 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
-# define gui.text_font = "gui/SuperLarky-nALLR.ttf"
+define gui.text_font = "gui/RobotoSlab-VariableFont_wght.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
-# define gui.name_text_font = "gui/SuperLarky-nALLR.ttf"
+define gui.name_text_font = "gui/RobotoSlab-VariableFont_wght.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "gui/RobotoSlab-VariableFont_wght.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 35
@@ -136,7 +134,7 @@ define gui.namebox_tile = False
 ## center.
 define gui.dialogue_xalign = 0.5
 define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 0.3
+define gui.dialogue_ypos = 0.26
 
 ## The maximum width of dialogue text, in pixels.
 define gui.dialogue_width = 1116
