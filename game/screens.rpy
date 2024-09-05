@@ -159,6 +159,7 @@ style say_dialogue:
     properties gui.text_properties("dialogue")
     outlines [(absolute(2), "#000", absolute(0), absolute(0))]
     line_spacing -5
+    kerning 1
 
     xalign gui.name_xalign
     xsize gui.dialogue_width
