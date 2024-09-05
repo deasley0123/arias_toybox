@@ -130,3 +130,5 @@ label scene1:
     n "You sigh once more as you toss your own leg over and look down. The house is only one floor, plus this attic, so it isn't far to go."
     n "Aria waits impatiently on the ground below."
     a "What are you waiting for? Our quest awaits!"
+    # TODO: Do some kind of end of scene visual padding before moving to next one
+    jump scene2

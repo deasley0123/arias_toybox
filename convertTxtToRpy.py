@@ -12,9 +12,12 @@ def read_file_line_by_line(file_path):
             name = unknownName
             card = ""
             isFirstLine = True
+            options = 0
+            choiceNum = 0
+            endJump = ""
 
             for line in file:
-                curLine = line
+                curLine = line.strip()
                 # IF the current line is a dialogue tag Name, then...
                 if curLine[0] == '#':
                     # Print out current RenPy line
@@ -33,6 +36,25 @@ def read_file_line_by_line(file_path):
                         name = (curLine[0].lower(), curLine)
                     # print(name)
                     card = ""
+                elif curLine[0] == '%':
+                    printRenPyLine(name, card)
+                    card = ""
+                    splitTag = curLine.lstrip('%').strip().split("_")
+                    if splitTag[0] == "options":
+                        choiceNum = splitTag[1]
+                        print("menu:")
+                        options = options +1
+                        endJump = "jump resume_"+splitTag[1]
+                    else:
+                        if splitTag[0] == "resume" or not splitTag[2] == 1:
+                            print(endJump)
+                        print("label "+curLine.lstrip('%')+":")
+                elif options > 0:
+                    print("    \""+curLine+"\":\n        jump choice_"+choiceNum+"_"+str(options))
+                    options = options +1
+                    if options > 2:
+                        options = 0
+                        choiceNum = 0
                 # IF the current line is a part of the dialogue, then...
                 else:
                     if card == "":
