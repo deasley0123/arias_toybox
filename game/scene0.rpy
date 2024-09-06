@@ -35,5 +35,5 @@ label scene0:
 
     show text "When you open your eyes again, you are no longer in your apartment." at shaking_center
     n "{alpha=0.0}When you open your eyes again, you are no longer in your apartment" # This exists to set the autoplay speed right
-
+    hide text
     jump scene1

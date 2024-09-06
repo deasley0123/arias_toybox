@@ -1,21 +1,29 @@
 label scene1:
-    hide text
-    # show aria smile wave:
-    #     zoom 0.5
-    #     xalign 0.5
-    #     yalign 1.0
 
-    # TODO: Add first CG, a low angle shot of the summon circle, aria's feet, and the room (all under a darkened filter at first)
-    "" with vpunch
+    # window auto hide
+    show cg summoning:
+        subpixel True 
+        blur 20.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.14)*SaturationMatrix(1.0)*BrightnessMatrix(-1.0)*HueMatrix(0.0) 
+        linear 1.00 blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.14)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+    with Pause(1.10)
+    show cg summoning:
+        blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.14)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+    # window auto show
+
+
+    n "" with vpunch
     q "Hello? Helloooo? Is anyone in there?"
     q "Blink twice if you can hear me!"
     q "They're not blinking." 
     q "{shader=jitter:3.0, 3.0}THEY'RE NOT BLINKI-{/shader}{p}Wait, you don't have eyelids."
     q "Uhhh... How about nodding? Maybe with a little help..."
-    n "A small hand reaches out to touch your head. It's warm."
-    scene bg attic day
+    scene cg summoning hand:
+        matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.14)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+    with dissolve
+    n "A small hand reaches out to touch your head."
+    n "It's warm."
+    scene bg attic day with Fade(0.5, 0.5, 0.5)
     n "You sit up and look about the room."
-    q "Oh! You're moving. That's a great sign!"
     n "Above you is an unfamiliar ceiling. Pitched wooden beams over a small attic."
     n "Early light streams golden through the window. The morning birdsong is foreign but beautiful."
     n "The walls are strewn with drawings, the uneven floor littered with books and candles."
