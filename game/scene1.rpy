@@ -1,6 +1,6 @@
 label scene1:
 
-    # window auto hide
+    # Bring in summoning CG, animate from dark and blurry to clear.
     show cg summoning:
         subpixel True 
         blur 20.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.14)*SaturationMatrix(1.0)*BrightnessMatrix(-1.0)*HueMatrix(0.0) 
@@ -8,28 +8,35 @@ label scene1:
     with Pause(1.10)
     show cg summoning:
         blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.14)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
-    # window auto show
-
-
     n "" with vpunch
+    
     q "Hello? Helloooo? Is anyone in there?"
     q "Blink twice if you can hear me!"
     q "They're not blinking." 
-    q "{shader=jitter:3.0, 3.0}THEY'RE NOT BLINKI-{/shader}{p}Wait, you don't have eyelids."
-    q "Uhhh... How about nodding? Maybe with a little help..."
+    q "{shader=jitter:3.0, 3.0}THEY'RE NOT BLINKIN-{/shader}\nWait, you don't have eyelids."
+    q "Uhhh... How about nodding?"
+    q "Maybe with a little help..."
     scene cg summoning hand:
         matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.14)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
     with dissolve
     n "A small hand reaches out to touch your head."
     n "It's warm."
+
+
     scene bg attic day with Fade(0.5, 0.5, 0.5)
-    n "You sit up and look about the room."
+    n "You sit up."
     n "Above you is an unfamiliar ceiling. Pitched wooden beams over a small attic."
+    # TODO: SFX - Birdsong
     n "Early light streams golden through the window. The morning birdsong is foreign but beautiful."
     n "The walls are strewn with drawings, the uneven floor littered with books and candles."
     n "There is a small, unmade bed in the corner, a disheveled arrangement of sheets and leather tomes."
+    # TODO: Sprite - Aria, peer over hat pose, interested/nervous expression
+    # TODO: Sprite - Aria wave pose, cheerful expression mouth open and closed
+    # TODO: Animate - Sprite of Aria comes up from bottom of the screen to stare at you, clicking through fades out
+    #  and then pops up on screen in waving posi
     n "The owner of which (you assume) peers over her hat at you, uncomfortably close now."
     n "You shift away, and she skitters back."
+    # TODO: Sprite - Aria eager pose, star eyes expression
     q "Hey! You moved! That's great!! It worked!! I'm AMAZING!!!"
     s "Where am I? Who are you? What's going on? Why-"
     n "You are becoming aware of your body in spurts. Currently seated, your hands support you."
@@ -39,10 +46,10 @@ label scene1:
     a "{i}\"Jophiel the Duskborn, catfolk master thief\"{p}\"Right hand of the Weald Queen! Unmatched in the fields of battle AND wits-{/i}\""
     s "My name is Serena.{p}I'm an Uber driver from Cleveland."
     s "What on Earth are you talking about?"
-    a "Ah! That's just the thing! You're not on Earth anymore at all!"
+    a "Ah! That's just the thing! You're not on {i}Earth{/i} anymore at all!"
     a "I've summoned you here, {i}Jophiel{/i}, to help me perform a mighty deed.{p}We're going on A {b}{i}QUEST!{/i}{/b}"
     a_excite "AREN'T YOU EXCITED?!" with vpunch
-    n "The young girl beams at you. The blood-drawn ritual circle under you is starting to dry on the raw wood planks."
+    n "The young girl beams. The blood-drawn ritual circle under you is starting to dry on the raw wood planks."
     n "You make one last futile attempt at normalcy."
     s "Is this... is this some kind of TikTok trend? Is someone filming me right now?"
     a "What's a TikTok?"
@@ -56,7 +63,7 @@ label scene1:
     n "You had a slice of mushroom and black olive pizza last night, but they were just {i}button mushrooms{/i}, right? Not the other kind...?"
     a "Ahem. I am a SORCERESS, not a witch!\nThe hat is for style."
     n "She poses, obviously trying to appear cool.{p}You brush some dust off your knee and stand."
-    n "You're a little taller than you were before, probably. There isn't anything familiar to measure against in here."
+    n "You're a little taller than you were before, probably, although there isn't anything familiar to measure against in here."
     s "Great, so you're a sorceress, and I'm a... toy? A five-foot talking cat?"
     n "You feel the pointed ears in your hair and the weight of a long, thin tail stretching out behind you."
     a "Well, Jophiel-"
@@ -70,7 +77,7 @@ label scene1:
     s "...How did you know that?"
     a "Oh." 
     a "Well, it's a condition for my spell. I can only summon willing souls. It only works if you don't want to be who or where you are."
-    a "I wouldn't want to pull you here if you were happier where you were."
+    a "I wouldn't want to pull you here if you were happy back home."
     a "Soul magic like that makes me feel icky."
     n "This line of conversation is making you think about yourself more critically than is comfortable."
     n "You change the subject again."
