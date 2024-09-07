@@ -1,4 +1,3 @@
-# bad scene, go die
 label scene0:
     narrator "It was a rainy Tuesday night."
     narrator """
