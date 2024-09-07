@@ -11,7 +11,7 @@ label scene0:
     watching with your grandmother when you were little.
     """
 
-    narrator "It's more commercials than content now, and you quickly got bored and started scrolling on your phone."
+    narrator "It's more commercials than content now, so you quickly got bored and started scrolling on your phone."
 
     nvl clear
 
