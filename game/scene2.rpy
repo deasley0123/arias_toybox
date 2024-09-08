@@ -46,6 +46,7 @@ label scene2:
         "Play along.":
             jump choice_1_2
     jump resume_1
+
 label choice_1_1:
     j "Uh... no."
     j "Cars aren't beasts, they're not alive.{p}They're just machines."
@@ -58,6 +59,7 @@ label choice_1_1:
     a "...Does it stink in their mouth?"
     j "They're still not alive.{p}...but yes."
     jump resume_1
+
 label choice_1_2:
     j "Not every car-mancer does, but I'd like to think me and my car have a special bond, yeah."
     a "Really? What's their name?"
@@ -78,6 +80,7 @@ label choice_1_2:
     a "She always says it's too dangerous for me to go out on my own."
     a "So, I'm really glad you're here with me now!{p}It's nice to have someone to talk to."
     jump resume_1
+
 label resume_1:
     n "Your chat is cut short by crunching brush. Your ears swivel automatically to the sound."
     n "You hear two sets of feet approaching, one larger, one small."
