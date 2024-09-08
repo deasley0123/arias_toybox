@@ -30,11 +30,21 @@ label scene1:
     n "Early light streams golden through the window. The morning birdsong is foreign but beautiful."
     n "The walls are strewn with drawings, the uneven floor littered with books and candles."
     n "There is a small, unmade bed in the corner, a disheveled arrangement of sheets and leather tomes."
+    # window auto hide
+    # show move_up_from_bottom_right
+    show aria_up_from_bottom_right
+    #     subpixel True xoffset 387.0 zoom 2.14 
+    #     yoffset 3204.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    #     linear 0.45 yoffset 2466.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    # with Pause(0.8)
+    # show aria excite hiding:
+    #     offset (387.0, 2466.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    # window auto show
     # TODO: Sprite - Aria, peer over hat pose, interested/nervous expression
     # TODO: Sprite - Aria wave pose, cheerful expression mouth open and closed
     # TODO: Animate - Sprite of Aria comes up from bottom of the screen to stare at you, clicking through fades out
     #  and then pops up on screen in waving posi
-    n "The owner of which (you assume) peers over her hat at you, uncomfortably close now."
+    n "The owner of which peers over her hat at you, uncomfortably close now."
     n "You shift away, and she skitters back."
     # TODO: Sprite - Aria eager pose, star eyes expression
     q "Hey! You moved! That's great!! It worked!! I'm AMAZING!!!"
@@ -136,6 +146,8 @@ label scene1:
     a "The bog beast slumbers in the murk at the heart of this very forest."
     j "So...{p}Maybe 20 minutes?"
     a "More like an hour. I've got little legs."
+    n "You consider the young girl in front of you. Her smile reaches her ears."
+    n "Even if you had a choice in any of this, you'd have a tough time saying no to those bright green eyes."
     j "Better get moving then."
     n "With glee, she rushes to the window, throws it open, and lets down her sheets. You realize now that they've already been tied nicely for such a purpose."
     a "Down we go!"
