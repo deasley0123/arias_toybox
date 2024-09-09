@@ -30,29 +30,49 @@ label scene1:
     n "Early light streams golden through the window. The morning birdsong is foreign but beautiful."
     n "The walls are strewn with drawings, the uneven floor littered with books and candles."
     n "There is a small, unmade bed in the corner, a disheveled arrangement of sheets and leather tomes."
-    # window auto hide
-    # show move_up_from_bottom_right
-    show aria_up_from_bottom_right
-    #     subpixel True xoffset 387.0 zoom 2.14 
-    #     yoffset 3204.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-    #     linear 0.45 yoffset 2466.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-    # with Pause(0.8)
-    # show aria excite hiding:
-    #     offset (387.0, 2466.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-    # window auto show
+
+    show aria_up_from_bottom_right at shaking
     # TODO: Sprite - Aria, peer over hat pose, interested/nervous expression
     # TODO: Sprite - Aria wave pose, cheerful expression mouth open and closed
     # TODO: Animate - Sprite of Aria comes up from bottom of the screen to stare at you, clicking through fades out
     #  and then pops up on screen in waving posi
     n "The owner of which peers over her hat at you, uncomfortably close now."
+
+    hide aria_up_from_bottom_right with dissolve
+    show aria excite hiding:
+        subpixel True matrixanchor (0.5, 0.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(1044.0, 117.0, -1881.0)*OffsetMatrix(0.0, 0.0, 288.0) 
+    with dissolve
     n "You shift away, and she skitters back."
-    # TODO: Sprite - Aria eager pose, star eyes expression
+    
+    show aria exhult jumping
+    with dissolve
+    show aria exhult jumping:
+        subpixel True matrixanchor (0.5, 0.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(1044.0, 117.0, -1881.0)*OffsetMatrix(0.0, 0.0, 288.0) 
+        linear 0.4 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(828.0, 162.0, -522.0)*OffsetMatrix(0.0, 0.0, 288.0) 
+    with Pause(1.0)
+    show aria exhult jumping:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(828.0, 162.0, -522.0)*OffsetMatrix(0.0, 0.0, 288.0) 
     q "Hey! You moved! That's great!! It worked!! I'm AMAZING!!!"
+    show aria at grey_out
     s "Where am I? Who are you? What's going on? Why-"
+    # TODO: Either a cut-in focusing on the blood circle, or a just a pan down and to the left
     n "You are becoming aware of your body in spurts. Currently seated, your hands support you."
     n "The ground feels tacky to touch, prompting you to really see it... and your hands."
     s "Why is the ground covered in blood? WHY ARE MY HANDS PAWS?!?"
+
+    show aria at restore_color
+    show aria smile wave mopen:
+        xalign -0.3
     a "I'm Aria! You're my favorite doll!"
+    hide aria
+    show aria stars intent painterly:
+        xalign 0.7
+        yalign 0.0
+        # subpixel True matrixanchor (0.5, 0.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)
+        # xalign 0.0
+        # xpos 0.5
+        # ypos 0.5
+        # matrixtransform ContrastMatrix(1.2P)*SaturationMatrix(1.17)
     a "{i}\"Jophiel the Duskborn, catfolk master thief\"{p}\"Right hand of the Weald Queen! Unmatched in the fields of battle AND wits-{/i}\""
     s "My name is Serena.{p}I'm an Uber driver from Cleveland."
     s "What on Earth are you talking about?"

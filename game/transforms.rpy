@@ -30,3 +30,10 @@ image aria_up_from_bottom_right:
     linear 0.75 yoffset -36.0 
     pause 0.85
     offset (-315.0, -36.0) 
+
+transform grey_out:
+    subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(0.8)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
+
+transform restore_color:
+        subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
+
