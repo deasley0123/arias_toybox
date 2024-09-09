@@ -129,8 +129,10 @@ Jo.
 ...
 So, where is this bog beast anyhow?
 The bog beast slumbers in the murk at the heart of this very forest.
-So...Maybe 20 minutes?
+So... Maybe 20 minutes?
 More like an hour. I've got little legs.
+Narration: You consider the young girl in front of you. She beams at you. 
+Narration: Even if you had any choice in this, you'd have a tough time saying no to those big bright green eyes. 
 Better get moving then.
 With glee, she rushes to the window, throws it open, and lets down her sheets. You realize now that they've already been tied nicely for such a purpose.
 Down we go!
@@ -199,7 +201,7 @@ Are... are you talking about cars?
 >>>>>>>>>>>>>>> Are you a beast-master? Do you and these 'cars' share a special bond?
 
 >>>>>> Uh... no.
-Cars aren't beasts, they're not alive.They're just machines.
+Cars aren't beasts, they're not alive. They're just machines.
 What's a 'machine'?
 It's a tool. A big, complicated tool.
 I do drive one for work, but I kind of hate it.
@@ -211,22 +213,33 @@ They're still not alive....but yes.
 
 >>>>>> Not every car-mancer does, but I'd like to think me and my car have a special bond, yeah.
 Really? What's their name?
-So, the breed is what's known locally as a 'Prius', which is kind of a thoroughbred for my job.
-So, I named him Seabiscuit after this famous racehorse.
-Which is funny because he is not fast.But he is efficient! Which counts for something.
+Well, the breed is what's known locally as a 'Prius', which is kind of a thoroughbred for my job.
+So, I named him Seabiscuit, after this famous racehorse.
+Which is funny because he is not fast. But he is efficient! Which counts for something.
 Wow. I've never met a horse, but I asked Mom for a tuna one time.
-I dug a pit back behind the house and filled it with water.
+Serena: A tuna? Like... the fish? 
+Yep! I dug a pit back behind the house and filled it with water.
 I thought she'd bring it home alive, but it was already dead. She didn't see much of a difference either way.
 I really wanted to see it swim around in the pool I dug, though, so I re-animated it!
 I got up early every day to re-apply the spell, but Mom only let me keep it until it started to stink.
-I'd love to have my own familiar someday.
+Serena: Sounds like one heck of a birthday present.
+Aria: Birthday?
+Narration: At first, you think that you misunderstood her story. But, from her expression, it seems that she is confused by the word.
+Serena: Oh. Maybe they don't have those here. In my world, every year, your friends and family celebrate the day you were born.
+Serena: They give you gifts, you might eat a special meal together, that kind of thing. It's also a traditiion to eat cake.
+Aria: Ooooh. I think I saw something like that through my mirror. There were fun colors, and these cool floating orbs! 
+Serena: Balloons, yeah. They're also a tradition.
+Aria: Wow! Birthdays sound amazing! I want to do that! 
+I'd love to have my own familiar someday too.
 A living one, I mean. I'd feed it and take it for walks. Like the tuna!
-If it was pretty small, I could probably even keep it in my room with me. Then we could play all day!
+If it was pretty small, it could even live in my room with me. 
 Does it get pretty lonely with your mom being gone like she is?
 Yeah sometimes she's gone for a really long time.
 I used to get pretty bored and hungry, but then I learned how to create food with magic, and eventually Mom gave me my mirror to see the world.
 She always says it's too dangerous for me to go out on my own.
-So, I'm really glad you're here with me now!It's nice to have someone to talk to.
+So, I'm really glad you're here with me now! It's nice to have someone to talk to.
+Narration: She's putting on a brave face, but you can sense the deep loneliness it's covering.
+Narration: After all, you've often felt it yourself. When was the last time you spoke to someone, really? 
 
 
 >>Resume>>> Your chat is cut short by crunching brush. Your ears swivel automatically to the sound.
@@ -239,15 +252,18 @@ They'd take whole chunks out of him sometimes, but, like, he never gave his safe
 ...was that a pun, Toorg? You know how I feel about puns.
 Aw, come on Gerald, I know you've got a sense of humor in there somewhere.
 No room. Too much anger, too little body.
-The two emerge from the brush, an imposing tree-man and a gnomish sort. Their conversation trails off as they meet your gaze.
+A gnomish sort of person pushes past a tree. You search for the source of the other voice. 
+Narration: Then the tree moves a branch like an arm, and you realize he isn't so much a tree as a tree-being. A tree-person. 
+Their conversation trails off as they meet your gaze.
 Oh!! Greetings fellow travelers! 'Tis fate that must have brought us together.
 I am Aria of the Weald Queen's court! And this is Jophiel the Duskborn, catfolk master thi-
-It's just Jo. I'm chaperoning this precocious child.
+It's just Jo. I'm chaperoning.
 We are bound by venerable purpose.We have set upon a MIGHTY QUEST!
 Yeah, so-
-WE SEEK TO CAPTURE THE TERRIBLE BOG BEAST! FATED COMPATRIOTS, WILL YOU JOIN US IN THIS QUEST, OR ARE YOU COWARDS?!
+WE SEEK TO CAPTURE THE TERRIBLE BOG BEAST! FATED COMPATRIOTS, WILL YOU JOIN US IN THIS QUEST, OR ARE YE COWARDS?!
+Narration: You smack your hand against your forehead. You want to laugh and cringe all at once. 
 Hey, whoa, chill kid. We've got some purpose of our own.
-I'd even say it's at least a little venerable too.
+I'd even say it's at least a little venerable.
 Yeah, Toorg and I, we're mercen- Adventurers passing through the Kaistr Weald. We slept at the Beard & Brew in town last night.
 Barkeep there said this neck of the woods is pretty dangerous. Some kind of "green-eyed demon" been spotted, folks disappeared.
 The town is offering a bounty for the creature, so we're hunting it.
@@ -255,10 +271,15 @@ A green-eyed demon?
 Wait...I have green eyes!
 I'm fearsome!
 You must be looking for me!Beware! I will not go quietly.
-Aria, have you been disappearing people from the woods?
-No...
+Narration: You glance down at the girl, then at the adventurers. 
+Narrration: The gnome grins and winks at you. The tree-person brushes his bark-covered leg with a few of his leaves.  
+Aria, didn't you say this is your first time out here?
+Well, yeah...
 She says it sadly, like you've knocked the wind from her sails.
-While your partner there looks like they're packing some potent scratchers, I don't think you're capable of that kind of damage.
+Jo: That would make it pretty difficult to make anyone disappear, don't you think?  
+Your partner's got a point, kid. A few of them, actually. 
+Narration: He nods toward your paws. You hadn't realized it, but your claws had extended as they approached. 
+Gerald: And while they're packing some potent scratchers, I don't think you're capable of that kind of damage.
 The tree-man gestures to a thick trunk nearby. It's bark has been raked through, leaving deep gouges in the hard wood underneath.
 (pouting) I could do it with magic.
 It would take you most of a day with an axe to start to do that kind of damage to a tree of that size.
