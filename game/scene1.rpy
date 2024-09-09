@@ -32,10 +32,6 @@ label scene1:
     n "There is a small, unmade bed in the corner, a disheveled arrangement of sheets and leather tomes."
 
     show aria_up_from_bottom_right at shaking
-    # TODO: Sprite - Aria, peer over hat pose, interested/nervous expression
-    # TODO: Sprite - Aria wave pose, cheerful expression mouth open and closed
-    # TODO: Animate - Sprite of Aria comes up from bottom of the screen to stare at you, clicking through fades out
-    #  and then pops up on screen in waving posi
     n "The owner of which peers over her hat at you, uncomfortably close now."
 
     hide aria_up_from_bottom_right with dissolve
@@ -65,14 +61,9 @@ label scene1:
         xalign -0.3
     a "I'm Aria! You're my favorite doll!"
     hide aria
-    show aria stars intent painterly:
-        xalign 0.7
-        yalign 0.0
-        # subpixel True matrixanchor (0.5, 0.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)
-        # xalign 0.0
-        # xpos 0.5
-        # ypos 0.5
-        # matrixtransform ContrastMatrix(1.2P)*SaturationMatrix(1.17)
+    show aria stars intent painterly high rest:
+        xpos 0.0
+        ypos 0.0
     a "{i}\"Jophiel the Duskborn, catfolk master thief\"{p}\"Right hand of the Weald Queen! Unmatched in the fields of battle AND wits-{/i}\""
     s "My name is Serena.{p}I'm an Uber driver from Cleveland."
     s "What on Earth are you talking about?"
