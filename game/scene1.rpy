@@ -120,26 +120,40 @@ label scene1:
     n "You had a slice of mushroom and black olive pizza last night, but they were just {i}button mushrooms{/i}, right? Not the other kind...?"
     
     show aria at restore_color
-    show aria smile wave mopen # TODO: Swap for Aria as a teacher, pointing up, hand waggle, other hand at hip, looking up and away
+    show aria grin teach mopen eclose
     a "Ahem. I am a SORCERESS, not a witch!"
-    # TODO: Aria's eyes move back to camera
+
+    show aria grin teach mopen r_eclose lookat
     a "The hat is for style."
-    # TODO: aria chuni pose
+    show aria smirk chunibyo r_eclose
+    show aria at grey_out
     n "She poses, obviously trying to appear cool.{p}You brush some dust off your knee and stand."
     n "You're a little taller than you were before, probably, although there isn't anything familiar to measure against in here."
     s "Great, so you're a sorceress, and I'm a... toy? A five-foot talking cat?"
     n "You feel the pointed ears in your hair and the weight of a long, thin tail stretching out behind you."
+    show aria at restore_color
+    show aria smirk chunibyo r_squint
     a "Well, Jophiel-"
+    show aria at grey_out
+    show aria smirk chunibyo r_eclose
     s "It's Serena."
+    show aria at restore_color
+    show aria grin teach mopen r_eclose lookat
     a "Hmmmm... That doesn't sound like much of a {i}quest{/i} name. \'Serenas\" don't really go to do great deeds."
+    show aria at grey_out
     n "You almost interject about the accomplishments of the famous people on Earth who share your name."
     n "But it's not like you've ever really done anything, personally, so you bite your tongue."
+    show aria at restore_color
+    show aria confuse shrug mclose
     a "Besides! Didn't you want to be someone else?"
+    show aria at grey_out
     n "Her question is genuine in a way children's questions often are, but your pulse quickens all the same."
     s "What do you mean?"
     s "...How did you know that?"
-    a "Oh." 
-    a "Well, it's a condition for my spell. I can only summon willing souls. It only works if you don't want to be who or where you are."
+    show aria at restore_color
+    show aria smile wave mclose
+    a "Oh, it's a condition for my spell. I can only summon willing souls. It only works if you don't want to be who or where you are."
+    show aria confuse shrug mopen
     a "I wouldn't want to pull you here if you were happy back home."
     a "Soul magic like that makes me feel icky."
     n "This line of conversation is making you think about yourself more critically than is comfortable."
