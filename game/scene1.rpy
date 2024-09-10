@@ -206,43 +206,67 @@ label scene1:
     a "I understand."
     show aria at grey_out
     s "Okay, good-"
-    
+    show aria reluctant hold arm mopen lookdown at restore_color
     a "If that's what you really want, I will send you home."
+    show aria reluctant hold arm mopen lookat
     a "I promise."
+    show aria reluctant hold arm mclose lookdown
     a "..."
+    show aria reluctant hold arm mopen lookup
     a "But I can only open a gate between worlds when the borders are thinnest."
+    show aria at grey_out
     n "You feel a sinking weight in your stomach."
     s "When's that?"
+    show aria reluctant hold arm mopen lookat
     a "Dawn and Dusk."
+    show aria sad hold mopen eclose
     a "I can't send you home until tonight."
+    show aria at grey_out
     n "The weight in your stomach grows."
+    show aria reluctant hold arm mopen lookup at restore_color
     a "So, since I can't send you back yet anyways...{p}And I still need adult supervision..."
+    show aria excite hiding at grey_out
     n "You swallow hard and sigh. Her big eyes look up at you full of hope.{p}When was the last time you looked at anything like that?"
     s "Well, I've never been on any quests before. Certainly haven't encountered any bog beasts, so I don't know how much help I'll be."
     n "Even as you're speaking, you recognize that there isn't really a choice here."
     n "You can whine and drag your feet, but the little girl in front of you is powerful enough to summon you from another world, apparently."
     n "If she wants to go on a quest, you're going on a quest. You can't even get her to call you by your actual name."
     s "But first, before any questing, my name-"
+    show aria smile wave mopen at restore_color
     a "Jophiel."
+    show aria smile wave mclose at grey_out
     s "Serena."
+    show aria serious slightwave mopen at restore_color
     a "Jophiel."
+    show aria serious slightwave mclose at grey_out
     s "..."
     s "Jo."
+    show aria serious slightwave mclose at restore_color
     a "..."
+    show aria stars intent mcat at grey_out
     j "So, where is this bog beast anyhow?"
+    show aria smirk chunibyo r_eclose at restore_color
     a "The bog beast slumbers in the murk at the heart of this very forest."
+    show aria at grey_out
     j "So...{p}Maybe 20 minutes?"
+    show aria confuse shrug mopen at restore_color
     a "More like an hour. I've got little legs."
+    show aria at grey_out
     n "You consider the young girl in front of you. Her smile reaches her ears."
     n "Even if you had a choice in any of this, you'd have a tough time saying no to those bright green eyes."
+    show aria exhult jumping mopen
     j "Better get moving then."
     n "With glee, she rushes to the window, throws it open, and lets down her sheets. You realize now that they've already been tied nicely for such a purpose."
+    show aria at restore_color
     a "Down we go!"
+    show aria at grey_out
     j "We're not gonna use the door?"
+    show aria confuse shrug mclose at restore_color
     a "Mom will know if we go that way! Besides, going out the window is how you always start an adventure!"
+    hide aria with dissolve # TODO: Get a bit fancier with this move out
     n "She throws you one last smile before sliding over the sill and down out of sight."
     n "You sigh once more as you toss your own leg over and look down. The house is only one floor, plus this attic, so it isn't far to go."
-    n "Aria waits impatiently on the ground below."
-    a "What are you waiting for? Our quest awaits!"
+    n "Aria is near the forest edge a dozen meters away. She waves you on enthusiastically."
+    s "Just what have I gotten myself into?"
     # TODO: Do some kind of end of scene visual padding before moving to next one
     jump scene2
