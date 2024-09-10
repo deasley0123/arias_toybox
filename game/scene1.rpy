@@ -49,8 +49,10 @@ label scene1:
     show aria exhult jumping mopen:
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-126.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(828.0, 162.0, -522.0)*OffsetMatrix(0.0, 0.0, 288.0)
     q "Hey! You moved! That's great!! It worked!! I'm AMAZING!!!"
+
     show aria at grey_out
     s "Where am I? Who are you? What's going on? Why-"
+
     # TODO: Either a cut-in focusing on the blood circle, or a just a pan down and to the left
     n "You are becoming aware of your body in spurts. Currently seated, your hands support you."
     n "The ground feels tacky to touch, prompting you to really see it... and your hands."
@@ -60,45 +62,69 @@ label scene1:
     show aria smile wave mopen:
         xalign 0.3
     a "I'm Aria! You're my favorite doll!"
+
     hide aria
     show aria stars intent mopenwide:
         xpos 0.0
         ypos 0.0
     a "{i}\"Jophiel the Duskborn, catfolk master thief\"{p}\"Right hand of the Weald Queen! Unmatched in the fields of battle AND wits-{/i}\""
+    
     show aria at grey_out
     s "My name is Serena.{p}I'm an Uber driver from Cleveland."
     s "What on Earth are you talking about?"
+
     show aria at restore_color
     show aria smile wave msmall
     a "Ah! That's just the thing! You're not on {i}Earth{/i} anymore at all!"
+
     show aria smile wave mopen
     a "I've summoned you here, {i}Jophiel{/i}, to help me perform a mighty deed."
-    show aria serious halfwave mopen # TODO: aria serious halfwave mopen, aria serious halfwave mclosed, aria serious halfwave mslight
+
+    show aria serious slightwave mopen
     a "We're going on a {b}{i}Quest.{/i}{/b}"
+
     show aria stars intent intensifies
     a_excite "AREN'T YOU EXCITED?!" with vpunch
+
     show aria at grey_out
     n "The young girl beams. The blood-drawn ritual circle under you is starting to dry on the raw wood planks."
     n "You make one last futile attempt at normalcy."
-    show aria stars intent mcat
+
+    show aria stars intent mcat:
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, -500.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     s "Is this... is this some kind of TikTok trend? Is someone filming me right now?"
-    show aria shrug headtilt mslight # TODO: aria shrug headtilt mopen, aria shrug headtilt mslight
+
+    show aria at restore_color
+    show aria confuse shrug mclose
     a "What's a TikTok?"
-    show aria shrug headtilt mopen
+
+    show aria confuse shrug mopen
     a "Is it like a clock?? I don't have a clock, silly!"
-    show aria dead serious
+
+    show aria serious slightwave mopen
     a "I'm not allowed around time anymore."
+
     show aria at grey_out
     s "..."
+
     show aria at restore_color
-    # TODO: zoom aria slightly
+    show aria serious slightwave mclose
     a "..."
+
     show aria at grey_out
     s "..."
     n "You change the subject."
+    
+    show aria smile wave mclose
     s "That hat... are you some kind of witch? Assuming any of this is real at all and it's not just a really weird dream."
     n "You had a slice of mushroom and black olive pizza last night, but they were just {i}button mushrooms{/i}, right? Not the other kind...?"
-    a "Ahem. I am a SORCERESS, not a witch!\nThe hat is for style."
+    
+    show aria at restore_color
+    show aria smile wave mopen # TODO: Swap for Aria as a teacher, pointing up, hand waggle, other hand at hip, looking up and away
+    a "Ahem. I am a SORCERESS, not a witch!"
+    # TODO: Aria's eyes move back to camera
+    a "The hat is for style."
+    # TODO: aria chuni pose
     n "She poses, obviously trying to appear cool.{p}You brush some dust off your knee and stand."
     n "You're a little taller than you were before, probably, although there isn't anything familiar to measure against in here."
     s "Great, so you're a sorceress, and I'm a... toy? A five-foot talking cat?"
