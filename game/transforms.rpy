@@ -22,10 +22,8 @@ transform blur_box:
         blur 3
 
 image aria_up_from_bottom_right:
-    "aria excite hiding.png"    
-    xalign 0.0
-    yalign 0.0
-    subpixel True xoffset -315.0 zoom 2.2 
+    "aria excite hiding.png"   
+    subpixel True xoffset -315.0 zoom 1.6
     yoffset 837.0 
     linear 0.75 yoffset -36.0 
     pause 0.85

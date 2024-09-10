@@ -36,48 +36,64 @@ label scene1:
 
     hide aria_up_from_bottom_right with dissolve
     show aria excite hiding:
-        subpixel True matrixanchor (0.5, 0.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(1044.0, 117.0, -1881.0)*OffsetMatrix(0.0, 0.0, 288.0) 
+        subpixel True matrixanchor (0.5, 0.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(810, 117.0, -1881.0)*OffsetMatrix(0.0, 0.0, 288.0) 
     with dissolve
     n "You shift away, and she skitters back."
     
-    show aria exhult jumping
+    show aria exhult jumping mopen
     with dissolve
-    show aria exhult jumping:
-        subpixel True matrixanchor (0.5, 0.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(1044.0, 117.0, -1881.0)*OffsetMatrix(0.0, 0.0, 288.0) 
-        linear 0.4 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(828.0, 162.0, -522.0)*OffsetMatrix(0.0, 0.0, 288.0) 
+    show aria exhult jumping mopen:
+        subpixel True matrixanchor (0.5, 0.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(810, 117.0, -1881.0)*OffsetMatrix(0.0, 0.0, 288.0) 
+        linear 0.4 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-126.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(828.0, 162.0, -522.0)*OffsetMatrix(0.0, 0.0, 288.0)
     with Pause(1.0)
-    show aria exhult jumping:
-        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(162.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(828.0, 162.0, -522.0)*OffsetMatrix(0.0, 0.0, 288.0) 
+    show aria exhult jumping mopen:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-126.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(828.0, 162.0, -522.0)*OffsetMatrix(0.0, 0.0, 288.0)
     q "Hey! You moved! That's great!! It worked!! I'm AMAZING!!!"
     show aria at grey_out
     s "Where am I? Who are you? What's going on? Why-"
     # TODO: Either a cut-in focusing on the blood circle, or a just a pan down and to the left
     n "You are becoming aware of your body in spurts. Currently seated, your hands support you."
     n "The ground feels tacky to touch, prompting you to really see it... and your hands."
-    s "Why is the ground covered in blood? WHY ARE MY HANDS PAWS?!?"
+    s "Why is the ground covered in blood? {shader=jitter:2.0, 2.0}WHY ARE MY HANDS PAWS?!?{/shader}"
 
     show aria at restore_color
     show aria smile wave mopen:
-        xalign -0.3
+        xalign 0.3
     a "I'm Aria! You're my favorite doll!"
     hide aria
-    show aria stars intent painterly high rest:
+    show aria stars intent mopenwide:
         xpos 0.0
         ypos 0.0
     a "{i}\"Jophiel the Duskborn, catfolk master thief\"{p}\"Right hand of the Weald Queen! Unmatched in the fields of battle AND wits-{/i}\""
+    show aria at grey_out
     s "My name is Serena.{p}I'm an Uber driver from Cleveland."
     s "What on Earth are you talking about?"
+    show aria at restore_color
+    show aria smile wave msmall
     a "Ah! That's just the thing! You're not on {i}Earth{/i} anymore at all!"
-    a "I've summoned you here, {i}Jophiel{/i}, to help me perform a mighty deed.{p}We're going on A {b}{i}QUEST!{/i}{/b}"
+    show aria smile wave mopen
+    a "I've summoned you here, {i}Jophiel{/i}, to help me perform a mighty deed."
+    show aria serious halfwave mopen # TODO: aria serious halfwave mopen, aria serious halfwave mclosed, aria serious halfwave mslight
+    a "We're going on a {b}{i}Quest.{/i}{/b}"
+    show aria stars intent intensifies
     a_excite "AREN'T YOU EXCITED?!" with vpunch
+    show aria at grey_out
     n "The young girl beams. The blood-drawn ritual circle under you is starting to dry on the raw wood planks."
     n "You make one last futile attempt at normalcy."
+    show aria stars intent mcat
     s "Is this... is this some kind of TikTok trend? Is someone filming me right now?"
+    show aria shrug headtilt mslight # TODO: aria shrug headtilt mopen, aria shrug headtilt mslight
     a "What's a TikTok?"
+    show aria shrug headtilt mopen
     a "Is it like a clock?? I don't have a clock, silly!"
+    show aria dead serious
     a "I'm not allowed around time anymore."
+    show aria at grey_out
     s "..."
+    show aria at restore_color
+    # TODO: zoom aria slightly
     a "..."
+    show aria at grey_out
     s "..."
     n "You change the subject."
     s "That hat... are you some kind of witch? Assuming any of this is real at all and it's not just a really weird dream."
