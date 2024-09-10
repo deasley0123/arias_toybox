@@ -73,8 +73,7 @@ label scene1:
     s "My name is Serena.{p}I'm an Uber driver from Cleveland."
     s "What on Earth are you talking about?"
 
-    show aria at restore_color
-    show aria smile wave msmall
+    show aria smile wave msmall at restore_color
     a "Ah! That's just the thing! You're not on {i}Earth{/i} anymore at all!"
 
     show aria smile wave mopen
@@ -94,8 +93,7 @@ label scene1:
         subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, -500.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     s "Is this... is this some kind of TikTok trend? Is someone filming me right now?"
 
-    show aria at restore_color
-    show aria confuse shrug mclose
+    show aria confuse shrug mclose at restore_color
     a "What's a TikTok?"
 
     show aria confuse shrug mopen
@@ -107,8 +105,7 @@ label scene1:
     show aria at grey_out
     s "..."
 
-    show aria at restore_color
-    show aria serious slightwave mclose
+    show aria serious slightwave mclose at restore_color
     a "..."
 
     show aria at grey_out
@@ -119,8 +116,7 @@ label scene1:
     s "That hat... are you some kind of witch? Assuming any of this is real at all and it's not just a really weird dream."
     n "You had a slice of mushroom and black olive pizza last night, but they were just {i}button mushrooms{/i}, right? Not the other kind...?"
     
-    show aria at restore_color
-    show aria grin teach mopen eclose
+    show aria grin teach mopen eclose at restore_color
     a "Ahem. I am a SORCERESS, not a witch!"
 
     show aria grin teach mopen r_eclose lookat
@@ -131,62 +127,86 @@ label scene1:
     n "You're a little taller than you were before, probably, although there isn't anything familiar to measure against in here."
     s "Great, so you're a sorceress, and I'm a... toy? A five-foot talking cat?"
     n "You feel the pointed ears in your hair and the weight of a long, thin tail stretching out behind you."
-    show aria at restore_color
-    show aria smirk chunibyo r_squint
+    show aria smirk chunibyo r_squint at restore_color
     a "Well, Jophiel-"
     show aria at grey_out
     show aria smirk chunibyo r_eclose
     s "It's Serena."
-    show aria at restore_color
-    show aria grin teach mopen r_eclose lookat
+    show aria grin teach mopen r_eclose lookat at restore_color
     a "Hmmmm... That doesn't sound like much of a {i}quest{/i} name. \'Serenas\" don't really go to do great deeds."
     show aria at grey_out
     n "You almost interject about the accomplishments of the famous people on Earth who share your name."
     n "But it's not like you've ever really done anything, personally, so you bite your tongue."
-    show aria at restore_color
-    show aria confuse shrug mclose
+    show aria confuse shrug mclose at restore_color
     a "Besides! Didn't you want to be someone else?"
     show aria at grey_out
     n "Her question is genuine in a way children's questions often are, but your pulse quickens all the same."
     s "What do you mean?"
     s "...How did you know that?"
-    show aria at restore_color
-    show aria smile wave mclose
+    show aria smile wave mclose at restore_color
     a "Oh, it's a condition for my spell. I can only summon willing souls. It only works if you don't want to be who or where you are."
     show aria confuse shrug mopen
     a "I wouldn't want to pull you here if you were happy back home."
+    show aria reluctant hold arm mclose lookdown
     a "Soul magic like that makes me feel icky."
+    show aria at grey_out
     n "This line of conversation is making you think about yourself more critically than is comfortable."
     n "You change the subject again."
     s "What about my body here, then? Shouldn't I be soft, small, and full of cotton stuffing or something?"
+    show aria smile shrug mclose at restore_color
     a "Nope! I tried this spell before with lower quality stuff, but... it didn't work out."
+    show aria disappointed hold arm mopen lookup
     a "I HAD a rocking horse."
+    # TODO: aria wistful hand chest mtight
     a "Maple Stirrup, you will be remembered."
+    show aria smile shrug mclose
     a "I didn't really expect it to work with YOU either, but it's probably because Mom made Jophiel for me."
+    show aria smile shrug mopen
     a "She's a much more powerful Sorceress than me, so you must be made of quality stuff!"
+    show exhult jumping mopen
     a "As soon as your soul took root, you became big like that!"
+    show aria at grey_out
     s "Wow. Okay. So many questions about that. A lot to unpack there."
     n "You sense an opportunity. If her mother is a powerful sorceress as well, maybe she could fix whatever is going on here and send you home?"       
     s "So, uh, your mom is around then? I think we might be in need of some parental supervision."
+    show aria disappointed hold arm mslight lookdown at restore_color
     a "No, Mom is away conducting her research. She's been away for a while. It's just me here while she's gone."
+    show aria at grey_out
     n "Aria's smile falls away for the first time since you woke. Her clear discomfort around this question gives you pause, but you push ahead regardless."
     s "Oh, well, if she's been away for a while then that must be our quest? Let's go and find your mom!"
+    show aria serious slightwave mclose at restore_color
     a "No, I'm forbidden from interfering with Mom's work."
+    show aria at grey_out
     s "Oh. Then-"
+    show aria grin teach mopen eclose at restore_color
     a "Our quest is something of far greater, far NOBLER importance!"
+    show aria at grey_out
     s "Well, maybe-"
+    show aria stars intent mopenwide at restore_color
     a "Within this forest lies a creature foul and perverse.{p}To battle it is to court danger.{p}To challenge it is foolhardiness personified."        
+    show aria star intent mcat
     a "BUT IT MUST BE DONE! THE BOG BEAST MUST BE CAPTURED!"
+    show aria stars intent intensifies
     a_excite "AND IF IT IS NOT BY OUR HAND, THEN BY WHOSE!?"
+    show aria at grey_out
     s "Anyone's! Yours! But not mine! I don't even have hands!?"
-    a "But I'm not allowed in the forest without supervision.{p}And Mom is never around to supervise me."
+    show aria confuse shrug mopen at restore_color
+    a "But I'm not allowed in the forest without supervision."
+    show aria reluctant hold arm mclose lookdown
+    a "And Mom is never around to supervise me."
+    show aria reluctant hold arm mopen lookat
     a "But you're an adult. You could supervise me..."
+    show aria at grey_out
     n "This conversation is going nowhere. Or, at least, nowhere you want to go."
     s "Aria, please. I understand you're bored, and maybe a little lonely, but I can't stay here, okay?"
     s "I need to go home."
+    show aria disappointed hold arm mclose lookdown at restore_color
     a "..."
+    show aria disappointed hold arm mopen lookat
     a "I understand."
+    show aria at grey_out
     s "Okay, good-"
+    
     a "If that's what you really want, I will send you home."
     a "I promise."
     a "..."
