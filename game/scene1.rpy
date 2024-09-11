@@ -157,13 +157,13 @@ label scene1:
     a "Nope! I tried this spell before with lower quality stuff, but... it didn't work out."
     show aria disappointed hold arm mopen lookup
     a "I HAD a rocking horse."
-    # TODO: aria wistful hand chest mtight
+    show aria salute mopen
     a "Maple Stirrup, you will be remembered."
     show aria smile shrug mclose
     a "I didn't really expect it to work with YOU either, but it's probably because Mom made Jophiel for me."
     show aria smile shrug mopen
     a "She's a much more powerful Sorceress than me, so you must be made of quality stuff!"
-    show exhult jumping mopen
+    show aria exhult jumping mopen
     a "As soon as your soul took root, you became big like that!"
     show aria at grey_out
     s "Wow. Okay. So many questions about that. A lot to unpack there."
@@ -184,7 +184,7 @@ label scene1:
     s "Well, maybe-"
     show aria stars intent mopenwide at restore_color
     a "Within this forest lies a creature foul and perverse.{p}To battle it is to court danger.{p}To challenge it is foolhardiness personified."        
-    show aria star intent mcat
+    show aria stars intent mcat
     a "BUT IT MUST BE DONE! THE BOG BEAST MUST BE CAPTURED!"
     show aria stars intent intensifies
     a_excite "AND IF IT IS NOT BY OUR HAND, THEN BY WHOSE!?"
@@ -200,7 +200,7 @@ label scene1:
     n "This conversation is going nowhere. Or, at least, nowhere you want to go."
     s "Aria, please. I understand you're bored, and maybe a little lonely, but I can't stay here, okay?"
     s "I need to go home."
-    show aria disappointed hold arm mclose lookdown at restore_color
+    show aria disappointed hold arm mslight lookdown at restore_color
     a "..."
     show aria disappointed hold arm mopen lookat
     a "I understand."
@@ -217,7 +217,7 @@ label scene1:
     show aria at grey_out
     n "You feel a sinking weight in your stomach."
     s "When's that?"
-    show aria reluctant hold arm mopen lookat
+    show aria reluctant hold arm mopen lookat at restore_color
     a "Dawn and Dusk."
     show aria sad hold mopen eclose
     a "I can't send you home until tonight."
@@ -227,6 +227,7 @@ label scene1:
     a "So, since I can't send you back yet anyways...{p}And I still need adult supervision..."
     show aria excite hiding at grey_out
     n "You swallow hard and sigh. Her big eyes look up at you full of hope.{p}When was the last time you looked at anything like that?"
+    # TODO: Add aria stars excite hiding
     s "Well, I've never been on any quests before. Certainly haven't encountered any bog beasts, so I don't know how much help I'll be."
     n "Even as you're speaking, you recognize that there isn't really a choice here."
     n "You can whine and drag your feet, but the little girl in front of you is powerful enough to summon you from another world, apparently."
@@ -241,17 +242,17 @@ label scene1:
     show aria serious slightwave mclose at grey_out
     s "..."
     s "Jo."
-    show aria serious slightwave mclose at restore_color
+    show aria serious slightwave mclose at restore_color # TODO: Evaluate timing, add waits for autoplay
     a "..."
     show aria stars intent mcat at grey_out
     j "So, where is this bog beast anyhow?"
-    show aria smirk chunibyo r_eclose at restore_color
+    show aria smirk chunibyo r_eclose at restore_color # TODO: Update chuni pose to use sideways vulcan over closed eye, revisit eye slight open
     a "The bog beast slumbers in the murk at the heart of this very forest."
     show aria at grey_out
     j "So...{p}Maybe 20 minutes?"
     show aria confuse shrug mopen at restore_color
     a "More like an hour. I've got little legs."
-    show aria at grey_out
+    show aria at grey_out # TODO: Add much wider smile
     n "You consider the young girl in front of you. Her smile reaches her ears."
     n "Even if you had a choice in any of this, you'd have a tough time saying no to those bright green eyes."
     show aria exhult jumping mopen
