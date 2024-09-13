@@ -29,9 +29,18 @@ image aria_up_from_bottom_right:
     pause 0.85
     offset (-315.0, -36.0) 
 
+image aria_jump_up_from_middle:
+    "aria exhult jumping mopen.png"   
+    subpixel True zoom .5
+    yoffset 1500.0 
+    linear 0.1 yoffset 200.0 
+    pause 0.2
+    offset (0.0, 200.0)
+
 transform grey_out:
     subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(0.8)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
 
 transform restore_color:
         subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
 
+define fadehold = Fade(0.6, 0.75, 0.6)

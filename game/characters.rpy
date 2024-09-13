@@ -11,7 +11,7 @@ define a_excite = Character(
 )
 style aria_say_label is say_label:
     font "gui/SuperLarky-nALLR.ttf"
-    color "#FFFC"
+    color "#C8A2C8CC"
     outlines [(absolute(3), "#000C", absolute(0), absolute(0))]
     ypos 0.4
     size 38
@@ -25,20 +25,24 @@ style aria_say_dialogue is say_dialogue:
 
 
 define s = Character("Serena", who_style="serena_say_label", what_style="serena_say_dialogue")
-define j = Character("Jo", who_style="aria_say_label", what_style="serena_say_dialogue")
+define j = Character("Jo", who_style="jo_say_label", what_style="serena_say_dialogue")
+style jo_say_label is aria_say_label:
+    color "#FF964CCC"
 style serena_say_label is say_label:
     font "gui/LibreFranklin-VariableFont_wght.ttf"
-    color "#FFFC"
+    bold True
+    color "#FF964CCC"
     outlines [(absolute(3), "#000C", absolute(0), absolute(0))]
     ypos 0.5
     size 44
-    kerning 1
+    kerning 2
 style serena_say_dialogue is say_dialogue:
     font "gui/LibreFranklin-VariableFont_wght.ttf"
     size 33
+    bold True
     color "#FFF"
     outlines [(absolute(3), "#000", absolute(0), absolute(0))]
-    kerning 1
+    kerning 2
     ypos 0.28
     line_spacing 2
 

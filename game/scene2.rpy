@@ -1,9 +1,9 @@
 label scene2:
     # TODO: Add scene transition "The Weald part I"
-    scene bg aria cottage day
+    scene bg aria cottage day with fadehold
     n "The house you were summoned into is a small cottage in a clearing, surrounded on all sides by forest."
     n "You leave it behind, still and silent, after watching Aria magic the bundled sheets back up through her window."
-    scene bg forest morning with dissolve
+    scene bg forest morning with fade
     n "You walk through the brush at first but quickly hit a narrow path."
     n "Aria runs ahead and back, to and fro, eyeing every tree, bush, and rock with profound interest."
     n "Your mind wanders."
@@ -14,16 +14,41 @@ label scene2:
     nvl clear
     narrator "Especially as you notice, these trees... they don't look like any trees you've ever seen. You're not a nature buff or anything, you doubt you could tell an oak from an aspen, but you've never seen leaves shaped like these, or bark that forms in quite this way. The forest is still a palette of greens and browns, sunlight filtering through the canopy and rippling across the forest floor, but even then... Is the sunlight a little more orange than you remember?"
     narrator "It's the moss on a stone you pass that finally does it. The moss is light purple, studded with tiny blooms of the deepest blue you've ever seen in a plant. It's the sort of thing you'd expect to see at the bottom of the ocean, or maybe on an alien planet in a video game, but not here. You reach out to touch it, and it feels just like moss. You scratch some of it off the stone with your dexterous new claws. It falls to the ground in a small clump."
-    narrator "You didn't realize it until now, but some part of you was treating all of this as an extremely vivid dream. Even as you settled into this new body. Even as a child explained the rules of soul-summoning. Even as you watched that same child do actual magic in front of you, effortlessly levitating those sheets."
     nvl clear
-    j "Holy shit. This is real. This is actually happening."
+    narrator "\n\n\n\n\nYou didn't realize it until now, but some part of you was treating all of this as an extremely vivid dream.\n\nEven as you settled into this new body.\n\nEven as a child explained the rules of soul-summoning.\n\nEven as you watched that same child do actual magic in front of you, effortlessly levitating those sheets."
+    nvl clear
+    j "Holy shit."
+    j "This is real. This is actually happening."
+
+    show aria_jump_up_from_middle
+    with vpunch
     a "Yeah! Isn't it great?"
+
+    hide aria_jump_up_from_middle
+    show aria exhult jumping mopen:
+        zoom 0.5
+        offset (420, 200.0)
+    show aria at grey_out
     n "You'd whispered it to yourself, unaware that Aria had ambled her way back to you."
     n "At her voice, you jump slightly. Your tail puffs out as every hair stands on end."
-    a "This is the Great Weald where the Queen oversees her realm. Its beauty only tarnished by the darkness that lurks in its deepest depths."
+
+    show aria smile wave mopen at restore_color
+    a "This is the Great Weald where the Queen oversees her realm."
+    show aria serious slightwave mopen
+    a "Its beauty only tarnished by the darkness that lurks in its deepest depths."
+    show aria at grey_out
     j "... The Bog Beast?"
+    show aria stars intent intensifies at restore_color
     a "THE BOG BEAST!"
-    n "Aria sprints forward again, holding her hat to her head. She stumbles slightly over a root but recovers quickly, readjusting the bag slung over her shoulder."
+    show aria smirk chunibyo r_eclose
+    
+    show aria smirk chunibyo r_eclose:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, -270.0, -2052.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    with dissolve
+    hide aria with Dissolve(1.0)
+    n "Aria sprints forward again, disappearing from view."
     n "You glance around again. The trees rustle with another breeze. Slowly, your tail smooths out again."
     j "Do you actually know where we're going?"
     a "Yep!"
