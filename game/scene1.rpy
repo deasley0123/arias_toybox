@@ -266,7 +266,7 @@ label scene1:
     hide aria with dissolve # TODO: Get a bit fancier with this move out
     n "She throws you one last smile before sliding over the sill and down out of sight."
     n "You sigh once more as you toss your own leg over and look down. The house is only one floor, plus this attic, so it isn't far to go."
-    show ci aria forest edge at reset
+    show ci aria forest edge with dissolve
     n "Aria is near the forest edge a dozen meters away. She waves you on enthusiastically."
     s "Just what have I gotten myself into?"
     jump scene2

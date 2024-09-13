@@ -51,6 +51,7 @@ label scene2:
     hide aria with Dissolve(1.0)
     n "Aria sprints forward again, disappearing from view."
     n "You glance around again. The trees rustle with another breeze. Slowly, your tail smooths out again."
+    n "Hardly expecting a response, you cup your paws together around your mouth and call out."
     j "Do you actually know where we're going?"
     show aria grin teach mopen r_eclose lookat at reset
     show aria:
@@ -61,7 +62,8 @@ label scene2:
         linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "Yep!"
     show aria at grey_out
-    j "Do you walk out here with your mom sometimes?"
+    j "Shi- uh, geez! Hi, Aria."
+    j "How do you know the way? Do you walk out here with your mom sometimes?"
     show aria reluctant hold arm mopen lookup at restore_color
     a "No, this is my first time."
     show aria at grey_out
@@ -81,15 +83,24 @@ label scene2:
     show aria at grey_out
     n "She holds up something flat, smooth and slightly teardrop-shaped. As she turns it, it catches a beam of sunlight."
     j "A mirror?"
-    show aria smile proud mopen
+    show aria smile proud mopen at restore_color
     a "A {i}magic{/i} mirror. It shows anything I ask it to. That's how I've kept track of the bog beast, deep in his murky lair."
+    show aria confuse shrug mclose
     a "That's how I know about your world too. Your people have strange magic."
+    show aria confuse shrug mopen
     a "I like watching the big colorful monsters chase each other around. Why do you let them eat you?"
+    show aria confuse shrug mclose at grey_out
     j "I don't... what? What monsters?"
+    show aria stars intent mopenwide at restore_color
     a "You know, the big shiny ones! They have black feet that roll, and sometimes they beep like weird birds!"
+    show aria smile proud mwideopen
     a "And people jump right into their mouths, but I've seen the monsters spit them out too. They're all over the place there."
+    show aria smile proud mclose
+    # TODO: show aria secret talk off to side
     a "They even sleep outside your houses at night. Are they your pets?"
+    show aria at grey_out
     j "Are... are you talking about cars?"
+    show aria stars intent intensifies at restore_color
     a "Are you a beast-master? Do you and these 'cars' share a special bond?"
     menu:
         "Cars are just machines.":
@@ -99,60 +110,106 @@ label scene2:
     jump resume_1
 
 label choice_1_1:
+    show aria at grey_out
     j "Uh... no."
     j "Cars aren't beasts, they're not alive.\nThey're just machines."
+    show aria confuse shrug mopen at restore_color
     a "What's a \'machine\'?"
+    show aria confuse shrug mclose at grey_out
     j "It's a tool. A big, complicated tool."
     j "I do drive one for work, but I kind of hate it."
+    show aria reluctant hold arm mopen lookdown at restore_color
     a "Oh. They seem neat, but maybe that's just through the mirror."
+    show aria reluctant hold arm mclose lookup at grey_out
     j "I mean, there are some nice cars. I originally started my job to save for a good one."
     j "But now I think I'd be happiest to never get in a car again."
+    show aria reluctant hold arm mopen lookat at restore_color
     a "...Does it stink in their mouth?"
+    show aria at grey_out
     j "They're still not alive.{p}...but yes."
     jump resume_1
 
 label choice_1_2:
+    show aria at grey_out
     j "Not every car-mancer does, but I'd like to think me and my car have a special bond, yeah."
+    show aria at restore_color
+    show aria:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(638.0, 0.0, -801.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.20 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "Really? What's their name?"
+    show aria at grey_out
     j "Well, the breed is what's known locally as a \'Prius\', which is kind of a thoroughbred for my job."
     j "So, I named him Seabiscuit after this famous racehorse."
     j "Which is funny because he is {i}not{/i} fast." 
     j "But he is efficient! Which counts for something."
+    show aria smile shrug mopen at restore_color
     a "Wow. I've never met a horse, but I asked Mom for a tuna one time."
+    show aria at grey_out
     j "A tuna? Like, the fish?"
+    show aria exhult jumping mopen at restore_color
     a "Yep! I dug a pit back behind the house and filled it with water."
+    show aria reluctant hold arm mopen lookdown
     a "I thought she'd bring it home alive, but it was already dead. She didn't see much of a difference either way."
+    show aria grin teach mopen eclose
     a "I really wanted to see it swim around in the pool I dug, though, so I re-animated it!"
+    show aria confuse shrug mopen
     a "I got up early every day to re-apply the spell, but Mom only let me keep it until it started to stink."
+    show aria confuse shrug mclose at grey_out
     j "Sounds like one heck of a birthday present."
+    show aria confuse shrug mopen at restore_color
     a "Birthday?"
+    show aria confuse shrug mclose at grey_out
     s "Oh. Maybe they don't have those here."
     s "In my world, every year, your friends and family celebrate the day you were born."
     s "They give you gifts, you might eat a cake together, that kind of thing."
+    show aria reluctant hold arm mclose lookdown at restore_color
     a "Gifts, huh?"
-    a "Hmml... I'd love to have my own familiar someday."
+    show aria reluctant hold arm mopen lookup
+    a "Hmm... I'd love to have my own familiar someday."
+    show aria reluctant hold arm mopen lookat
     a "A living one, I mean. I'd feed it and take it for walks."
+    show aria salute mopen
     a "Like the tuna!"
+    show aria excite hiding:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1.0, 945.0, 300.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.8 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1.0, 243.0, 300.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "If it was pretty small, it could even live in my room with me."
+    show aria at grey_out
     j "Does it get pretty lonely with your mom being gone like she is?"
+    show aria at restore_color
+    show aria disappointed hold arm mslight lookdown:
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
     a "Yeah sometimes she's gone for a really long time."
-    a "I used to get pretty bored and hungry, but then I learned how to create food with magic, and eventually Mom gave me my mirror to see the world."
-    a "She always says it's too dangerous for me to go out on my own."
+    show aria disappointed hold arm mopen lookup
+    a "I'd get pretty bored and hungry, but eventually I discovered how to create food with magic, and Mom gave me my mirror to see the world."
+    show aria disappointed hold arm mslight lookat
+    a "But she always says it's too dangerous for me to go out on my own."
+    show aria smile wave msmall
     a "So, I'm really glad you're here with me now!"
+    show aria smile wave mopen
     a "It's nice to have someone to talk to."
+    # TODO: show aria neutral slightwave mclose
+    show aria smile wave mclose at grey_out
     n "She's putting on a brave face, but you can connect with the deep loneliness it's covering."
     n "You've often felt it yourself. When was the last time you spoke to someone, really?"
     jump resume_1
 
 label resume_1:
+    # TODO: hide mirror cut-in
+    hide aria with dissolve
+    # TODO: chrunching brush SFX
     n "Your chat is cut short by crunching brush. Your ears swivel automatically to the sound."
     n "You hear two sets of feet approaching, one larger, one small."
     n "You have only a moment to stop and marvel at just how much your new ears can tell you before you get their voices too."
+    # TODO: Pick font and color for Toorg and Gerald
     qg "No, I'm telling you it's not possible! The gouges are too deep for a bear!"
     qt "And I'm saying you don't even hang out with bears! I've met some pretty big bears."
     qt "I had a nursery mate, a fir, who was the local rub tree for some real grizzly types."
     qt "They'd take whole chunks out of him sometimes, but, like, he never gave his safe word or anything, so I think it was all above board."
-    qg "...was that a pun, Toorg? You know how I feel about puns."
+    qg "Above {i}board{/i}? ...Was that a pun, Toorg? You know how I feel about puns."
     t "Aw, come on Gerald, I know you've got a sense of humor in there somewhere."
     g "No room. Too much anger, too little body."
     n "A gnomish sort pushes past a tree and into view."
