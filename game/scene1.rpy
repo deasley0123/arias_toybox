@@ -1,5 +1,4 @@
 label scene1:
-
     # Bring in summoning CG, animate from dark and blurry to clear.
     show cg summoning:
         subpixel True 

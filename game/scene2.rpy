@@ -1,7 +1,9 @@
 label scene2:
+    # TODO: Add scene transition "The Weald part I"
+    scene bg aria cottage day
     n "The house you were summoned into is a small cottage in a clearing, surrounded on all sides by forest."
     n "You leave it behind, still and silent, after watching Aria magic the bundled sheets back up through her window."
-    scene bg forest morning
+    scene bg forest morning with dissolve
     n "You walk through the brush at first but quickly hit a narrow path."
     n "Aria runs ahead and back, to and fro, eyeing every tree, bush, and rock with profound interest."
     n "Your mind wanders."
