@@ -5,6 +5,7 @@ label scene2:
     n "You leave it behind, still and silent, after watching Aria magic the bundled sheets back up through her window."
     scene bg forest morning with fade
     n "You walk through the brush at first but quickly hit a narrow path."
+    # TODO: Stetch Goal - Add a transform that throws up three different close renders of Aria with great interest at different angles across the screen
     n "Aria runs ahead and back, to and fro, eyeing every tree, bush, and rock with profound interest."
     n "Your mind wanders."
     nvl clear
@@ -51,13 +52,36 @@ label scene2:
     n "Aria sprints forward again, disappearing from view."
     n "You glance around again. The trees rustle with another breeze. Slowly, your tail smooths out again."
     j "Do you actually know where we're going?"
+    show aria grin teach mopen r_eclose lookat at reset
+    show aria:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-2007.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.50 matrixtransform ScaleMatrix(1.1, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(0.95, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "Yep!"
+    show aria at grey_out
     j "Do you walk out here with your mom sometimes?"
+    show aria reluctant hold arm mopen lookup at restore_color
     a "No, this is my first time."
+    show aria at grey_out
     j "Okay. So, then... are you {i}sure{/i} you know where we're going? This is, um... the Great Weald, after all. Seems pretty big. Easy to get lost."
-    a "It's gigantic! But don't worry, Jophiel. I have this!"
-    n "She holds up something flat, smooth and slightly teardrop-shaped. As she turns it, it catches a beam of sunlight for a brief moment and reflects it into your eyes."
+    show aria smile shrug mopen at restore_color
+    show aria:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-100.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)
+
+    a "It's gigantic!" 
+    show aria smile proud mclose: # TODO: Aria Vana White, showcasing to her side the mirror cut in
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-100.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.50 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(638.0, 0.0, -801.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    with dissolve
+    a "But don't worry, Jophiel. I have this!"
+    # TODO: Mirror cut-in
+    show aria at grey_out
+    n "She holds up something flat, smooth and slightly teardrop-shaped. As she turns it, it catches a beam of sunlight."
     j "A mirror?"
+    show aria smile proud mopen
     a "A {i}magic{/i} mirror. It shows anything I ask it to. That's how I've kept track of the bog beast, deep in his murky lair."
     a "That's how I know about your world too. Your people have strange magic."
     a "I like watching the big colorful monsters chase each other around. Why do you let them eat you?"
