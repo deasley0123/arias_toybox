@@ -57,7 +57,7 @@ label scene2:
     show aria:
         subpixel True 
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-2007.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-        linear 0.50 matrixtransform ScaleMatrix(1.1, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.15 matrixtransform ScaleMatrix(1.1, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         linear 0.10 matrixtransform ScaleMatrix(0.95, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "Yep!"
@@ -209,7 +209,7 @@ label resume_1:
     qt "And I'm saying you don't even hang out with bears! I've met some pretty big bears."
     qt "I had a nursery mate, a fir, who was the local rub tree for some real grizzly types."
     qt "They'd take whole chunks out of him sometimes, but, like, he never gave his safe word or anything, so I think it was all above board."
-    qg "Above {i}board{/i}? ...Was that a pun, Toorg? You know how I feel about puns."
+    qg "Above {i}BOARD{/i}? ...Was that a pun, Toorg? You know how I feel about puns."
     t "Aw, come on Gerald, I know you've got a sense of humor in there somewhere."
     g "No room. Too much anger, too little body."
     n "A gnomish sort pushes past a tree and into view."
