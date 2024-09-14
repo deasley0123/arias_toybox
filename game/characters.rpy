@@ -86,6 +86,6 @@ style gerald_say_dialogue is say_dialogue:
     ypos 0.27
     line_spacing 0
 
-    
+# Mother style could be AmaticSC-Bold or AmaticSD-Regular
 
 define narrator = nvl_narrator

@@ -45,11 +45,10 @@ label scene2:
     
     show aria smirk chunibyo r_eclose:
         subpixel True 
-        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-        linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, -270.0, -2052.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-    with dissolve
-    hide aria with Dissolve(1.0)
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 1.0
+        linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, -270.0, -2052.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 0.0
     n "Aria sprints forward again, disappearing from view."
+    hide aria with dissolve
     n "You glance around again. The trees rustle with another breeze. Slowly, your tail smooths out again."
     n "Hardly expecting a response, you cup your paws together around your mouth and call out."
     j "Do you actually know where we're going?"
@@ -61,6 +60,8 @@ label scene2:
         linear 0.10 matrixtransform ScaleMatrix(0.95, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "Yep!"
+    show aria:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1017.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 36.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     show aria at grey_out
     j "Shi- uh, geez! Hi, Aria."
     j "How do you know the way? Do you walk out here with your mom sometimes?"
@@ -176,6 +177,8 @@ label choice_1_2:
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1.0, 945.0, 300.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         linear 0.8 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1.0, 243.0, 300.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "If it was pretty small, it could even live in my room with me."
+    show aria:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1.0, 243.0, 300.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     show aria at grey_out
     j "Does it get pretty lonely with your mom being gone like she is?"
     show aria at restore_color
@@ -212,50 +215,146 @@ label resume_1:
     qg "Above {i}BOARD{/i}? ...Was that a pun, Toorg? You know how I feel about puns."
     t "Aw, come on Gerald, I know you've got a sense of humor in there somewhere."
     g "No room. Too much anger, too little body."
+    show gerald:
+        subpixel True 
+        xpos 0.2
+        ypos 0.25
+        zoom .7
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1007.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.4 matrixtransform ScaleMatrix(1.1, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(0.95, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     n "A gnomish sort pushes past a tree and into view."
+    show gerald:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    show toorg cheeky lookat at reset
+    show toorg behind gerald
+    show toorg:
+        zoom 0.4
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-600.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.4 matrixtransform ScaleMatrix(1.1, 1.0, 1.0)*OffsetMatrix(90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(0.95, 1.0, 1.0)*OffsetMatrix(90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     n "...then the tree pushes past the gnome. The tree-person??"
+    show toorg:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    show toorg at grey_out
+    show gerald at grey_out
     n "Their conversation trails off as they meet your gaze."
-    n "The two emerge from the brush, an imposing tree-man and a gnomish sort. Their conversation trails off as they meet your gaze."
+    show aria excite hiding:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(300.0, 945.0, 300.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.8 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(300.0, 243.0, 300.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    with dissolve
     a "Oh!! Greetings fellow travelers! 'Tis fate that must have brought us together."
-    a "I am Aria of the Weald Queen's court! And this is {i}Jophiel the Duskborn, catfolk master thi-{/i}"
+    show aria smile wave mopen:
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1398.0, 54.0, -1800.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    with dissolve
+    a "I am Aria of the Weald Queen's court!"
+    show aria grin teach mopen r_eclose # TODO: Aria Vana White
+    a "And this is {i}Jophiel the Duskborn, catfolk master thi-{/i}"
+    show aria at grey_out
     j "It's just Jo. I'm chaperoning."
+    show aria smile proud mopen at restore_color
     a "We are bound by venerable purpose."
+    show aria stars intent mopenwide
     a "We have set upon a {shader=jitter:3.0,3.0}MIGHTY QUEST!{/shader}"
+    show aria stars intent mcat at grey_out
     j "Yeah, so-"
+    show aria at restore_color
+    show aria stars intent intensifies:
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(867.0, 54.0, -630.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "{shader=jitter:3.0,3.0}WE SEEK TO CAPTURE THE TERRIBLE BOG BEAST! FATED COMPATRIOTS, WILL YOU JOIN US IN THIS QUEST, OR ARE YE COWARDS?!{/shader}"
+    show aria at grey_out
+    show gerald at restore_color
     g "Hey, whoa, chill kid. We've got some purpose of our own."
+    show gerald at grey_out
+    show toorg cheeky armup lookup at restore_color
     t "I'd even say it's at least a little venerable, too."
+    # TODO: Add a rim to Toorg to make him stand out a little
+    show toorg cheeky armup lookat at grey_out
+    show gerald at restore_color
     g "Yeah, Toorg and I, we're mercen- {i}Adventurers{/i} passing through the Kaistr Weald. We slept at the Beard & Brew in town last night."
-    g "Barkeep there said this neck of the woods is pretty dangerous. Some kind of \"green-eyed demon\" been spotted, folks disappeared."
+    g "Barkeep there said this neck of the woods is pretty dangerous."
+    g "Some kind of \"green-eyed demon\" been spotted, folks disappeared."
+    show gerald at grey_out
+    show toorg cheeky lookat at restore_color
     t "The town is offering a bounty for the creature, so we're hunting it."
+    show toorg at grey_out
+    show aria confuse shrug mclose at restore_color
     a "A green-eyed demon?"
+    # TODO: show aria point self confuse / excite based on the above, or maybe an arm down version
+    # TODO: aria suprise / shock mopen
     a "Wait...{p}I have green eyes!"
+    # TODO: aria rawr grin / fearsome
     a "I'm fearsome!"
-    a "You must be looking for me!{p}Beware! I will not go quietly."
+    show aria smile proud mwideopen # TODO: aria smile proud eclose mwideopen
+    a "You must be looking for me!"
+    show aria grin teach mopen r_eclose lookat
+    a "Beware! I will not go quietly."
+    show aria at grey_out
     n "You glance down at the girl, then at the adventurers."
     j "Aria, didn't you say this is your first time out here?"
+    show aria confuse shrug mopen at restore_color
     a "Well, yeah."
+    show aria at grey_out
     j "That would make it pretty difficult to make anyone disappear from the woods, don't you think?"
+    show aria disappointed hold arm mopen lookdown at restore_color
     a "Yeah..."
+    show aria disappointed hold arm mslight lookdown at grey_out
     n "She says it sadly, like you've knocked the wind from her sails."
+    show toorg cheeky armup lookat at restore_color
     t "Your partner's got a point. A few of them, actually."
+    show toorg at grey_out
     n "He nods toward your paws. You hadn't realized it, but your claws had extended as they approached."
+    show gerald at restore_color
     g "And while they might be packing some potent scratchers, I don't think you're capable of that kind of damage, kiddo."
+    show gerald at grey_out
     n "The gnome gestures to a thick trunk nearby. It's bark has been raked through, leaving deep gouges in the hard wood underneath."
+    show gerald at grey_out
+    show aria at restore_color # TODO: aria pout, have her look opposite way
     a "(pouting) I could do it with magic."
+    show aria at grey_out
     n "It would take you most of a day with an axe to {i}start{/i} to do that kind of damage to a tree of that size."
     n "You weren't sure how much to believe about the young girl's childish tale,"
     n "but you're starting to worry this Bog Beast business may be more than you bargained for."
     j "Hey, maybe your Bog Beast and this Green-Eyed Demon are the same?"
     j "We could use some more hands against such a dangerous foe."
+    show aria at restore_color # TODO: various aria thinking poses
     a "Hmm... more company on our Quest would be grand, but I can't hold my fellow adventurers back from their own."
-    a "The Bog Beast doesn't have green eyes, and it has no teeth or claws among its horrors that could do this."
+    show aria confuse shrug mopen
+    a "The Bog Beast doesn't have green eyes, though, and it has no teeth or claws among its horrors that could do this."
+    show aria confuse shrug mclose at grey_out
     j "Ah. Great. Of course it doesn't."
+    show gerald at restore_color
     g "Well, the Barkeep didn't mention a bounty for a Bog Beast, anywho."
-    t "Best of luck on your Quest, child! We must branch out from here on our own."
+    show gerald at grey_out
+    show toorg cheeky armup lookat at restore_color
+    t "Best of luck on your Quest, child! We must BRANCH out from here on our own."
+    show toorg cheeky lookat at grey_out
+    show gerald at restore_color
     g "Alright, if you've got time to pun you've got time to march."
     g "Let's widen our search for more signs of this demon."
+    show toorg at restore_color
+    show toorg cheeky lookat:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 1.0
+        linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-730.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 0.0
+    show gerald:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 1.0
+        linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-930.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 0.0
     n "The two of them crunch off through the brush, deeper into the woods."
+    hide toorg
+    hide gerald
+    show aria exhult jumping mopen at restore_color
     a "That was a fun break! But I hope you're ready, Jo!"
+    show aria stars intent mcat
     a "Soon we shall greet our {shader=jitter:3.0,3.0}destined foe!{/shader}"
+    show aria smirk chunibyo r_eclose:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(867.00, 54.0, -630.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 1.0
+        linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, -270.0, -2052.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 0.0
+    pause(1.0)
+    hide aria
     n "You swallow hard and step nervously after her."
