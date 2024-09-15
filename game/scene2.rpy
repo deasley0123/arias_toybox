@@ -207,7 +207,6 @@ label resume_1:
     n "Your chat is cut short by crunching brush. Your ears swivel automatically to the sound."
     n "You hear two sets of feet approaching, one larger, one small."
     n "You have only a moment to stop and marvel at just how much your new ears can tell you before you get their voices too."
-    # TODO: Pick font and color for Toorg and Gerald
     qg "No, I'm telling you it's not possible! The gouges are too deep for a bear!"
     qt "And I'm saying you don't even hang out with bears! I've met some pretty big bears."
     qt "I had a nursery mate, a fir, who was the local rub tree for some real grizzly types."

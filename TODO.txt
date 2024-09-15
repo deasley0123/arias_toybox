@@ -1,0 +1,17 @@
+TODO: 
+# TODO: Aria Vana White, showcasing to her side the mirror cut in
+# TODO: Mirror cut-in
+# TODO: show aria secret talk off to side
+# TODO: show aria neutral slightwave mclose
+# TODO: Add a rim to Toorg to make him stand out a little
+
+    a "A green-eyed demon?"
+    # TODO: show aria point self confuse / excite based on the above, or maybe an arm down version
+    # TODO: aria suprise / shock mopen
+    a "Wait...{p}I have green eyes!"
+    # TODO: aria rawr grin / fearsome
+    a "I'm fearsome!"
+
+# TODO: aria smile proud eclose mwideopen
+# TODO: aria pout, have her look opposite way
+# TODO: various aria thinking poses
