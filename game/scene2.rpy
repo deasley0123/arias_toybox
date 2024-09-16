@@ -69,19 +69,19 @@ label scene2:
     a "No, this is my first time."
     show aria at grey_out
     j "Okay. So, then... are you {i}sure{/i} you know where we're going? This is, um... the Great Weald, after all. Seems pretty big. Easy to get lost."
+    
     show aria smile shrug mopen at restore_color
     show aria:
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-100.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)
-
     a "It's gigantic!" 
-    show aria smile proud mclose: # TODO: Aria Vana White, showcasing to her side the mirror cut in
+    show aria smile showcase mopen:
         subpixel True 
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-100.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         linear 0.50 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(638.0, 0.0, -801.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     with dissolve
     a "But don't worry, Jophiel. I have this!"
     # TODO: Mirror cut-in
-    show aria at grey_out
+    show aria smile showcase mclose at grey_out
     n "She holds up something flat, smooth and slightly teardrop-shaped. As she turns it, it catches a beam of sunlight."
     j "A mirror?"
     show aria smile proud mopen at restore_color
@@ -96,10 +96,9 @@ label scene2:
     a "You know, the big shiny ones! They have black feet that roll, and sometimes they beep like weird birds!"
     show aria smile proud mwideopen
     a "And people jump right into their mouths, but I've seen the monsters spit them out too. They're all over the place there."
-    show aria smile proud mclose
-    # TODO: show aria secret talk off to side
+    show aria tell secret mopen
     a "They even sleep outside your houses at night. Are they your pets?"
-    show aria at grey_out
+    show aria tell secret mclose at grey_out
     j "Are... are you talking about cars?"
     show aria stars intent intensifies at restore_color
     a "Are you a beast-master? Do you and these 'cars' share a special bond?"
@@ -195,7 +194,7 @@ label choice_1_2:
     show aria smile wave mopen
     a "It's nice to have someone to talk to."
     # TODO: show aria neutral slightwave mclose
-    show aria smile wave mclose at grey_out
+    show aria neutral slightwave mclose at grey_out
     n "She's putting on a brave face, but you can connect with the deep loneliness it's covering."
     n "You've often felt it yourself. When was the last time you spoke to someone, really?"
     jump resume_1
@@ -250,7 +249,7 @@ label resume_1:
         subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1398.0, 54.0, -1800.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     with dissolve
     a "I am Aria of the Weald Queen's court!"
-    show aria grin teach mopen r_eclose # TODO: Aria Vana White
+    show aria smile showcase mopen # TODO: Stretch goal, add an eclose version of this
     a "And this is {i}Jophiel the Duskborn, catfolk master thi-{/i}"
     show aria at grey_out
     j "It's just Jo. I'm chaperoning."
@@ -279,17 +278,19 @@ label resume_1:
     show gerald at grey_out
     show toorg cheeky lookat at restore_color
     t "The town is offering a bounty for the creature, so we're hunting it."
+
     show toorg at grey_out
-    show aria confuse shrug mclose at restore_color
-    a "A green-eyed demon?"
-    # TODO: show aria point self confuse / excite based on the above, or maybe an arm down version
-    # TODO: aria suprise / shock mopen
-    a "Wait...{p}I have green eyes!"
-    # TODO: aria rawr grin / fearsome
+    show aria think mclose at restore_color
+    a "A green-eyed demon??"
+    show aria point self mopen
+    a "Heh, I have green eyes."
+    show aria think shock mopen
+    a "Wait... I HAVE GREEN EYES!"
+    show aria rawr mopen
     a "I'm fearsome!"
-    show aria smile proud mwideopen # TODO: aria smile proud eclose mwideopen
+    show aria smile proud eclose mwideopen
     a "You must be looking for me!"
-    show aria grin teach mopen r_eclose lookat
+    show aria rawr mcat
     a "Beware! I will not go quietly."
     show aria at grey_out
     n "You glance down at the girl, then at the adventurers."
@@ -311,15 +312,15 @@ label resume_1:
     show gerald at grey_out
     n "The gnome gestures to a thick trunk nearby. It's bark has been raked through, leaving deep gouges in the hard wood underneath."
     show gerald at grey_out
-    show aria at restore_color # TODO: aria pout, have her look opposite way
+    show aria pout mclose lookat at restore_color # TODO: aria pout, have her look opposite way
     a "(pouting) I could do it with magic."
-    show aria at grey_out
+    show aria pout mclose eclose at grey_out
     n "It would take you most of a day with an axe to {i}start{/i} to do that kind of damage to a tree of that size."
     n "You weren't sure how much to believe about the young girl's childish tale,"
     n "but you're starting to worry this Bog Beast business may be more than you bargained for."
     j "Hey, maybe your Bog Beast and this Green-Eyed Demon are the same?"
     j "We could use some more hands against such a dangerous foe."
-    show aria at restore_color # TODO: various aria thinking poses
+    show aria think mclose at restore_color
     a "Hmm... more company on our Quest would be grand, but I can't hold my fellow adventurers back from their own."
     show aria confuse shrug mopen
     a "The Bog Beast doesn't have green eyes, though, and it has no teeth or claws among its horrors that could do this."
