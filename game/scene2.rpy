@@ -80,11 +80,11 @@ label scene2:
         linear 0.50 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(638.0, 0.0, -801.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     with dissolve
     a "But don't worry, Jophiel. I have this!"
-    # TODO: Mirror cut-in
     show aria smile showcase mclose at grey_out
-    n "She holds up something flat, smooth and slightly teardrop-shaped. As she turns it, it catches a beam of sunlight."
+    show ci mirror at reset
+    n "She holds up something smooth, ornate, and reflective. As she turns it, it catches a beam of sunlight."
     j "A mirror?"
-    show aria smile proud mopen at restore_color
+    show aria grin teach mopen eclose at restore_color
     a "A {i}magic{/i} mirror. It shows anything I ask it to. That's how I've kept track of the bog beast, deep in his murky lair."
     show aria confuse shrug mclose
     a "That's how I know about your world too. Your people have strange magic."
@@ -133,6 +133,7 @@ label choice_1_2:
     show aria at grey_out
     j "Not every car-mancer does, but I'd like to think me and my car have a special bond, yeah."
     show aria at restore_color
+    hide ci mirror with dissolve
     show aria:
         subpixel True 
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(638.0, 0.0, -801.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
@@ -193,14 +194,14 @@ label choice_1_2:
     a "So, I'm really glad you're here with me now!"
     show aria smile wave mopen
     a "It's nice to have someone to talk to."
-    # TODO: show aria neutral slightwave mclose
+    # TODO: show aria slightsmile slightwave mclose
     show aria neutral slightwave mclose at grey_out
     n "She's putting on a brave face, but you can connect with the deep loneliness it's covering."
     n "You've often felt it yourself. When was the last time you spoke to someone, really?"
     jump resume_1
 
 label resume_1:
-    # TODO: hide mirror cut-in
+    hide ci mirror
     hide aria with dissolve
     # TODO: chrunching brush SFX
     n "Your chat is cut short by crunching brush. Your ears swivel automatically to the sound."
@@ -358,3 +359,5 @@ label resume_1:
     pause(1.0)
     hide aria
     n "You swallow hard and step nervously after her."
+
+    jump scene3
