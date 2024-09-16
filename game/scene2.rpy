@@ -81,6 +81,8 @@ label scene2:
     with dissolve
     a "But don't worry, Jophiel. I have this!"
     show aria smile showcase mclose at grey_out
+    show aria:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(638.0, 0.0, -801.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)
     show ci mirror at reset
     n "She holds up something smooth, ornate, and reflective. As she turns it, it catches a beam of sunlight."
     j "A mirror?"
@@ -140,6 +142,8 @@ label choice_1_2:
         linear 0.20 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "Really? What's their name?"
     show aria at grey_out
+    show aria:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     j "Well, the breed is what's known locally as a \'Prius\', which is kind of a thoroughbred for my job."
     j "So, I named him Seabiscuit after this famous racehorse."
     j "Which is funny because he is {i}not{/i} fast." 

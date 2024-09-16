@@ -44,3 +44,7 @@ transform restore_color:
         subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
 
 define fadehold = Fade(0.6, 0.75, 0.6)
+
+define spotlight_dissolve = ImageDissolve("spotlight_alpha.png", 1.0, 8 , reverse=False)
+
+ 
