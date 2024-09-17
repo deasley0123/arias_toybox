@@ -42,12 +42,12 @@ label scene3:
     n "Glimpses of half-submerged reeds morph into sharpened dorsal spines. Moss riddled logs conceal bristling fur, crouching beasts coiled to pounce."
     show spotlight:
         subpixel True alpha 0.65 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.3)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
-    show aria grin teach mopen r_eclose lookat:
+    show aria grimace cover nose:
         zoom 0.4
     show aria at center
     with dissolve
     a "{i}His stench is his first line of defense.{/i}"
-    show aria salute mopen
+    show aria play dead mopen eopen
     a "{i}The scent has felled many a party before they ever reached him.{/i}"
     show aria tell secret mopen
     a "{i}Stomaching that, his next danger is his thundering, guttural call.{/i}"
@@ -57,11 +57,11 @@ label scene3:
     a "{i}All of that is but harbinger of what he is capable of.{/i}"
     show aria excite hiding
     a "{i}His true talent lies in his camouflage. His bark-like skin is perfectly suited to ambush.{/i}"
-    show aria grin teach mopen r_eclose
+    show aria rawr mslight lookaway
     a "{i}He watches the world with patient, cunning eyes.{/i}"
-    show aria grin teach mopen r_eclose lookat
+    show aria rawr mslight lookat
     a "{i}No one who dares observe him lives to tell the tale.{/i}"
-    show aria stars intent intensifies
+    show aria stars intent intensifies # TODO: Make Aria move in closer at the end, maybe incrementally with the last few?
     a "{i}And yet, {shader=jitter:2.0,2.0}I see him now!{/shader}{/i}"
     hide aria
     hide spotlight

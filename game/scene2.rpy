@@ -315,6 +315,9 @@ label resume_1:
     show gerald at restore_color
     g "And while they might be packing some potent scratchers, I don't think you're capable of that kind of damage, kiddo."
     show gerald at grey_out
+    show ci tree gouged at center
+    show ci:
+        subpixel True zoom 0.57 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, -72.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     n "The gnome gestures to a thick trunk nearby. It's bark has been raked through, leaving deep gouges in the hard wood underneath."
     show gerald at grey_out
     show aria pout mclose lookat at restore_color # TODO: aria pout, have her look opposite way
@@ -332,6 +335,7 @@ label resume_1:
     show aria confuse shrug mclose at grey_out
     j "Ah. Great. Of course it doesn't."
     show gerald at restore_color
+    hide ci with dissolve
     g "Well, the Barkeep didn't mention a bounty for a Bog Beast, anywho."
     show gerald at grey_out
     show toorg cheeky armup lookat at restore_color
