@@ -66,10 +66,10 @@ label scene1:
     show aria stars intent mopenwide:
         xpos 0.0
         ypos 0.0
-    a "{i}\"Jophiel the Duskborn, catfolk master thief\"{p}\"Right hand of the Weald Queen! Unmatched in the fields of battle AND wits-{/i}\""
+    a "{i}\"Jophiel the Duskborn, catfolk master thief\nRight hand of the Weald Queen! Unmatched in the fields of battle AND wits-{/i}\""
     
     show aria at grey_out
-    s "My name is Serena.{p}I'm an Uber driver from Cleveland."
+    s "My name is Serena.\nI'm an Uber driver from Cleveland."
     s "What on Earth are you talking about?"
 
     show aria smile wave msmall at restore_color
@@ -122,7 +122,7 @@ label scene1:
     a "The hat is for style."
     show aria smirk chunibyo r_eclose
     show aria at grey_out
-    n "She poses, obviously trying to appear cool.{p}You brush some dust off your knee and stand."
+    n "She poses, obviously trying to appear cool.\nYou brush some dust off your knee and stand."
     n "You're a little taller than you were before, probably, although there isn't anything familiar to measure against in here."
     s "Great, so you're a sorceress, and I'm a... toy? A five-foot talking cat?"
     n "You feel the pointed ears in your hair and the weight of a long, thin tail stretching out behind you."
@@ -182,7 +182,7 @@ label scene1:
     show aria at grey_out
     s "Well, maybe-"
     show aria stars intent mopenwide at restore_color
-    a "Within this forest lies a creature foul and perverse.{p}To battle it is to court danger.{p}To challenge it is foolhardiness personified."        
+    a "Within this forest lies a creature foul and perverse.\nTo battle it is to court danger.\nTo challenge it is foolhardiness personified."        
     show aria stars intent mcat
     a "BUT IT MUST BE DONE! THE BOG BEAST MUST BE CAPTURED!"
     show aria stars intent intensifies
@@ -223,9 +223,9 @@ label scene1:
     show aria at grey_out
     n "The weight in your stomach grows."
     show aria reluctant hold arm mopen lookup at restore_color
-    a "So, since I can't send you back yet anyways...{p}And I still need adult supervision..."
+    a "So, since I can't send you back yet anyways...\nAnd I still need adult supervision..."
     show aria excite hiding at grey_out
-    n "You swallow hard and sigh. Her big eyes look up at you full of hope.{p}When was the last time you looked at anything like that?"
+    n "You swallow hard and sigh. Her big eyes look up at you full of hope.\nWhen was the last time you looked at anything like that?"
     # TODO: Add aria stars excite hiding
     s "Well, I've never been on any quests before. Certainly haven't encountered any bog beasts, so I don't know how much help I'll be."
     n "Even as you're speaking, you recognize that there isn't really a choice here."
@@ -248,7 +248,7 @@ label scene1:
     show aria smirk chunibyo r_eclose at restore_color # TODO: Update chuni pose to use sideways vulcan over closed eye, revisit eye slight open
     a "The bog beast slumbers in the murk at the heart of this very forest."
     show aria at grey_out
-    j "So...{p}Maybe 20 minutes?"
+    j "So... Maybe 20 minutes?"
     show aria confuse shrug mopen at restore_color
     a "More like an hour. I've got little legs."
     show aria at grey_out # TODO: Add much wider smile
