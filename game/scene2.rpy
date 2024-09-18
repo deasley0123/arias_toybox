@@ -218,18 +218,18 @@ label resume_1:
     qg "Above {i}BOARD{/i}? ...Was that a pun, Toorg? You know how I feel about puns."
     t "Aw, come on Gerald, I know you've got a sense of humor in there somewhere."
     g "No room. Too much anger, too little body."
-    show gerald:
+    show gerald mclosed hdown:
         subpixel True 
         xpos 0.2
-        ypos 0.25
-        zoom .7
-        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-1007.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-        linear 0.4 matrixtransform ScaleMatrix(1.1, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-        linear 0.10 matrixtransform ScaleMatrix(0.95, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-        linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        ypos 0.3
+        zoom .36
+        matrixtransform ScaleMatrix(-1.0, 1.0, 1.0)*OffsetMatrix(1007.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.4 matrixtransform ScaleMatrix(-1.1, 1.0, 1.0)*OffsetMatrix(450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(-0.95, 1.0, 1.0)*OffsetMatrix(450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(-1.0, 1.0, 1.0)*OffsetMatrix(450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     n "A gnomish sort pushes past a tree and into view."
     show gerald:
-        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        matrixtransform ScaleMatrix(-1.0, 1.0, 1.0)*OffsetMatrix( 450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     show toorg cheeky lookat at reset
     show toorg behind gerald
     show toorg:
@@ -269,18 +269,20 @@ label resume_1:
         subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(867.0, 54.0, -630.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "{shader=jitter:3.0,3.0}WE SEEK TO CAPTURE THE TERRIBLE BOG BEAST! FATED COMPATRIOTS, WILL YOU JOIN US IN THIS QUEST, OR ARE YE COWARDS?!{/shader}"
     show aria at grey_out
-    show gerald at restore_color
+    show gerald squint mopen hdown at restore_color
     g "Hey, whoa, chill kid. We've got some purpose of our own."
-    show gerald at grey_out
+    show gerald squint mclosed hdown at grey_out
     show toorg cheeky armup lookup at restore_color
     t "I'd even say it's at least a little venerable, too."
     # TODO: Add a rim to Toorg to make him stand out a little
     show toorg cheeky armup lookat at grey_out
-    show gerald at restore_color
+    show gerald mopen hdown at restore_color
     g "Yeah, Toorg and I, we're mercen- {i}Adventurers{/i} passing through the Kaistr Weald. We slept at the Beard & Brew in town last night."
+    show gerald mopen hpoint
     g "Barkeep there said this neck of the woods is pretty dangerous."
+    show gerald squint mopen hdown
     g "Some kind of \"green-eyed demon\" been spotted, folks disappeared."
-    show gerald at grey_out
+    show gerald mclosed hdown at grey_out
     show toorg cheeky lookat at restore_color
     t "The town is offering a bounty for the creature, so we're hunting it."
 
@@ -312,37 +314,39 @@ label resume_1:
     t "Your partner's got a point. A few of them, actually."
     show toorg at grey_out
     n "He nods toward your paws. You hadn't realized it, but your claws had extended as they approached."
-    show gerald at restore_color
+    show gerald mopen hpoint at restore_color
     g "And while they might be packing some potent scratchers, I don't think you're capable of that kind of damage, kiddo."
-    show gerald at grey_out
+    show gerald mclosed hpoint at grey_out
     show ci tree gouged at center
     show ci:
         subpixel True zoom 0.57 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, -72.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     n "The gnome gestures to a thick trunk nearby. It's bark has been raked through, leaving deep gouges in the hard wood underneath."
-    show gerald at grey_out
+    show gerald mclosed hpoint at grey_out
     show aria pout mclose lookat at restore_color # TODO: aria pout, have her look opposite way
     a "(pouting) I could do it with magic."
     show aria pout mclose eclose at grey_out
     n "It would take you most of a day with an axe to {i}start{/i} to do that kind of damage to a tree of that size."
     n "You weren't sure how much to believe about the young girl's childish tale,"
     n "but you're starting to worry this Bog Beast business may be more than you bargained for."
+    hide ci with dissolve
     j "Hey, maybe your Bog Beast and this Green-Eyed Demon are the same?"
     j "We could use some more hands against such a dangerous foe."
     show aria think mclose at restore_color
-    a "Hmm... more company on our Quest would be grand, but I can't hold my fellow adventurers back from their own."
+    a "Hmm... more company on our quest {i}WOULD{/i} be grand, but I can't hold my fellow adventurers back from their own."
     show aria confuse shrug mopen
-    a "The Bog Beast doesn't have green eyes, though, and it has no teeth or claws among its horrors that could do this."
+    a "The Bog Beast doesn't have green eyes, and it has no teeth or claws among its horrors that could do this."
     show aria confuse shrug mclose at grey_out
     j "Ah. Great. Of course it doesn't."
-    show gerald at restore_color
-    hide ci with dissolve
+    show gerald mopen hdown at restore_color
     g "Well, the Barkeep didn't mention a bounty for a Bog Beast, anywho."
-    show gerald at grey_out
+    show gerald mclosed hdown at grey_out
     show toorg cheeky armup lookat at restore_color
     t "Best of luck on your Quest, child! We must BRANCH out from here on our own."
     show toorg cheeky lookat at grey_out
-    show gerald at restore_color
+    show gerald squint mopen hdown at restore_color
     g "Alright, if you've got time to pun you've got time to march."
+    show gerald squint mopen hpoint:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-400.0, 0.0, 0.0)
     g "Let's widen our search for more signs of this demon."
     show toorg at restore_color
     show toorg cheeky lookat:
@@ -351,7 +355,7 @@ label resume_1:
         linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-730.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 0.0
     show gerald:
         subpixel True 
-        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 1.0
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-400.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 1.0
         linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-930.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 0.0
     n "The two of them crunch off through the brush, deeper into the woods."
     hide toorg
