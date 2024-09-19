@@ -110,10 +110,10 @@ label resume_2:
     # TODO: Fade to black like you're moving on, then don't
     n "You walk all of three minutes before stopping again."
     nvl clear
-    narrator "You notice it first, your whiskers twitching in the suddenly silent forest. You reach out to stop Aria, but she sees it now too."
+    narrator "You notice the stillness first, your whiskers twitching in the suddenly silent forest. You reach out to stop Aria, but she sees it now too."
     narrator "Like a gash ripped through skin, the trees and underbrush in front of you are slashed and torn apart. Tree trunks lay with clumps of dirt caught in their 
     newly unearthed roots, the leaves on the branches still green where they haven't been shaken off completely."
-    narrator "One of the upturned trees has claw marks like the ones Toorg and Gerald pointed out."
+    narrator "One of the upturned trees has claw marks like the ones Toorg and Gerald pointed out. Others are hardly recognizable as trees at all."
     nvl clear
     n "Aria's voice is even softer than it was by the pond."
     a "What do you think did that?"
