@@ -1,64 +1,205 @@
-#Narration
-Reeds, bullrush, sunlit murky pond. Lilly pads, crickets and frogsong. Canopy of trees closing over the ponds like a cathedral. Note: Been a lot of breeze, but the air is still now.. waiting
-#Narration
-Aria is clambering across the ground on all fours, her face obscured by cattails.
-#Narration
-She gestures for you to crouch down next to her. You step gingerly to keep your feet from sinking in the muck.
-#Narration
-She whispers in your general direction as she peers through the reeds, but she doesn't turn her face.
-#Aria
-We're upon him now.
-#Aria
-I can smell him on the wind.
-#Aria
-I can hear his slumbering breaths.
-#Narration
-She gasps, a small delicate thing.
-#Aria
-Be still, he hasn't noticed us yet.
-#Narration
-You peer over her shoulder, trying to see what she sees. You whisper back.
 #Jo
-What am I looking for?
+So, what are you going to name him?
 #Narration
-Your mind spins with images of prehistoric behemoths, of shambling masses of vine and thorn, of every cryptid ever caught on blurry film.
+You and Aria left the secluded pond, returning to something like a path through the forest. Or the weald, as the young girl calls it.
 #Narration
-Glimpses of half-submerged reeds morph into sharpened dorsal spines. Moss riddled logs conceal bristling fur, crouching beasts coiled to pounce.
-#Aria
-{i}His stench is his first line of defense.{/i}
-#Aria
-{i}The scent has felled many a party before they ever reached him.{/i}
-#Aria
-{i}Stomaching that, his next danger is his thundering, guttural call.{/i}
-#Aria
-{i}It echoes in your mind, driving you to {shader=jitter:1.0,1.0}madness.{/shader}{/i}
-#Aria
-{i}All of that is but harbinger of what he is capable of.{/i}
-#Aria
-{i}His true talent lies in his camouflage. His bark-like skin itself is perfectly suited to ambush.{/i}
-#Aria
-{i}He watches the world with patient, cunning eyes.{/i}
-#Aria
-{i}No one who dares observe him lives to tell the tale.{/i}
-#Aria
-{i}And yet, {shader=jitter:2.0,2.0}I see him now!{/shader}{/i}
+The sun is directly above you now, sending even brighter orange-tinted light through the trees.
 #Narration
-Your fur stands on end, and you feel a hiss building in the back of your throat.
+In the orange light, Aria holds up the "bog beast," examining him with a tilt of her head.
+#Aria
+Hmm... Well, a formidable warrior such as this one deserves an equally fearsome name. 
 #Narration
-Your eyes dilate to the extreme, taking in every swishing reed, every rocking lily pad.
+The large angry-looking toad croaks at her, but makes no attempt to so much as wriggle out of her grasp.
+#Aria
+I know!
+#Narration
+She stops walking, and spins around to you so suddenly that you nearly run into her. 
+#Aria
+Jophiel! Since you helped so much in our quest, you deserve the honor of naming our new companion! 
+#PROMPT
+Name the Bog Beast: _______
 #Jo
-Where is he? In the water? In the trees?
+How about _______?
 #Aria
-{i}He reclines, perched upon his verdant throne.{/i}
-#Aria
-{i}His mighty thighs and the crown of his brow are adorned with horns.{/i}
-#Aria
-{i}Every muscle ripples, tensed for war!{/i}
+I love it!
 #Narration
-A large toad on a lily pad catches a passing bug, tongue flashing briefly.
-#Narration
-Aria dives into the reeds.
+As if catching herself, Aria blinks, then clears her throat. She brings the toad close, looking him in the eye, snout to snout. 
 #Aria
-{shader=jitter:3.0,3.0}HE'S SEEN US! Now, Jophiel!!{/shader}
+Oh mighty Bog Beast, stalwart guardian of the Weald Queen's domain...
+#Aria
+Thy name is...
+#Aria
+{shader=jitter:3.0,3.0}_______!!!{/shader}
+#Bog_Beast
+*Ribbit*
+#Aria
+He loves it too! 
+#Aria
+Excellent choice, Jophiel.
 #Jo
-Now what!? All I see is some toad! (with vpunch)
+Happy to help.
+#Narration
+You resume walking together. Aria holds _______ in her hands for a while before the toad begins to struggle.
+#Aria
+What's wrong, _______? Do you need to use the little bog beast's room?
+#Narration
+She grips him a little tighter. The toad gives a slightly angrier croak.
+%choice_1_1
+#Narration
+You remember reading a book about parenting, back when you thought you might have kids one day.
+#Narration
+It said, {i}Children have to learn to be kind to others.{/i}
+%choice_1_2
+#Narration
+You remember her story about the tuna, the undead fish swimming around in a pit until it began to stink.
+#Narration
+{i}Mom didn't see much of a difference either way,{/i} Aria had said. 
+%resume_2
+#Jo
+Hey, if he wants you to let him go, you have to let him go. 
+#Aria
+B... But I don't want him to run away! 
+#Narration
+You nod seriously, and bite your lip to keep from smiling. You feel for this kid. It took you until your last breakup to finally learn this lesson yourself.
+#Narration
+You kneel down next to her so that you can look her face to face. You gently place your hands over hers. 
+#Jo
+You can't make anyone stay in your life unless they want to, Aria. 
+#Narration
+Just as gently, you guide her hands to the ground.
+#Jo
+If you give them the choice to stay, and they decide to leave, that's sad, but it's okay. It isn't your fault.
+#Narration
+You pause. The toad wriggles, but she isn't holding him so tightly that she'll hurt him.
+#Narration
+She seems to be considering your words. 
+#Jo
+Now if they want to leave, and you don't let them... well, you know how it feels when you're forced to do something you don't want to do, right?
+#Aria
+Yeah.
+#Narration
+She squeezes just a little tighter, for a moment. 
+#Narration
+Then she sets the toad on the ground.
+#Bog_Beast
+*Ribbit*
+#Narration
+The toad looks around himself, then hops into a nearby fern.
+#Narration
+Aria sighs, and sniffles.
+#Jo
+I bet he can still hear you. Do you want to tell him anything before he goes? 
+#Aria
+Bye, ________. I really wanted you to be my familiar.
+#Aria
+...
+#Aria
+But if you want to keep guarding your lair, I guess that's okay too. 
+#Jo
+He is the Weald Queen's stalwart guardian, after all.
+#Aria
+Yeah. He probably has lots of responsibilities.
+#Jo
+Definitely.
+#Narration
+All at once, the young girl hugs you. The surprise of it nearly knocks you over.
+%options_2
+Return her hug.
+Wait until she lets go.
+%choice_2_1
+#Narration
+You're soft at first, worried a stray claw might dig into her if you aren't careful.
+#Narration
+But, after a moment, you hold her as tightly as she holds you.
+#Narration
+She's so small.
+#Narration
+Her heart beats so fast. Her arms feel so fragile around your neck.
+#Narration
+Eventually she releases you, and you let her go.
+%choice_2_2
+#Narration
+The hug shouldn't surprise you so much. You're her favorite doll, after all. Who else would she go to for comfort?
+#Narration
+Even so, you can't bring yourself to hug her back.You just let her hold you until she's ready to let go.
+#Narration
+Gradually, she does.
+%resume_2
+#Jo
+You did good. That's a tough thing to do, but it's important.   
+#Narration
+She sniffles.
+#Aria
+I'm going to be alone again.
+#Jo
+Only for a little while. Just until your mom comes back. Right?
+#Narration
+She's quiet for a long time.
+#Narration
+She's quiet for long enough that you start to wonder if that was the wrong thing to say, somehow. 
+#Narration
+That's all this was, wasn't it?
+#Narration
+Keeping a bored, magical little girl entertained? Keeping her company while Mom is away?
+#Narration
+You didn't sign up for any of this. You only barely signed up to take her on this quest. And only because you had no other choice. 
+#Narration
+She brought you into this world, and she's your only way back. 
+#Narration
+You stand up, and dust a fallen leaf off your shoulder.
+#Jo
+Well... 
+#Jo
+You're not alone right now. I'm here with you. And it isn't sundown yet. 
+#Jo
+So, where to next?
+#Narration
+She watches you for a moment. Then she pulls her magic mirror out of her bag.  
+#Aria
+Our quest completed, we can now feast in the Halls of Gods and Kings! 
+#Narration
+She shows you, in a misty image in the mirror, a small tavern. 
+#Aria
+There's a town not too far from here.
+#Narration
+A man passes by in the mirror, carrying a large glass of amber liquid and a steaming plate of something like pot roast.
+#Narration
+Your stomach rumbles.
+#Jo
+Food is good. How far? Twenty minutes?
+#Aria
+Mmmm... 
+#Jo
+Right. Got it. Little legs. 
+#Aria
+This way!
+#Narration
+She rushes off. You follow. 
+#Narration
+You walk all of three minutes before stopping again.
+#Narration
+You notice it first, your whiskers twitching in the suddenly silent forest. You reach out to stop Aria, but she sees it now too.
+#Narration
+Like a gash ripped through skin, the trees and underbrush in front of you are slashed and torn apart. Tree trunks lay with clumps of dirt caught in their newly unearthed roots, the leaves on the branches still green where they haven't been shaken off completely.
+#Narration
+One of the upturned trees has claw marks like the ones Toorg and Gerald pointed out. 
+#Narration
+Aria's voice is even softer than it was by the pond.
+#Aria
+What do you think did that?
+#Jo
+No idea. Let's try not to find out.
+#Aria
+But-
+#Narration
+You put a hand to her back and turn her away from the arboreal massacre.
+#Jo
+One adventure per meal. Feast first, then we'll see about this. Only fair, right?
+#Aria
+Okay...
+#Narration
+She sighs, but her stomach rumbles pitifully.
+#Narration
+You glance back as you walk away. You hope you distracted her before she noticed the bag hanging in the branches of the clawed tree.
+#Narration
+The bag that you're certain Gerald was wearing earlier.

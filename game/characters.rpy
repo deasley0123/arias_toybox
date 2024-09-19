@@ -1,4 +1,5 @@
 # Declare characters used by the game.
+define narrator = nvl_narrator
 define q = Character("???", who_style="aria_say_label", what_style="aria_say_dialogue")
 define n = Character("")
 
@@ -51,7 +52,7 @@ define qt = Character("???",  who_style="toorg_say_label", what_style="toorg_say
 style toorg_say_label is say_label:
     font "gui/Kalam-Bold.ttf"
     bold True
-    color "#62ea7173"
+    color "#d3ea6273"
     outlines [(absolute(3), "#000C", absolute(0), absolute(0))]
     ypos 0.45
     size 44
@@ -86,6 +87,13 @@ style gerald_say_dialogue is say_dialogue:
     ypos 0.27
     line_spacing 0
 
-# Mother style could be AmaticSC-Bold or AmaticSD-Regular
+define b = Character("[bogbeastname]", who_style="bb_say_label", what_style="bb_say_dialogue")
+style bb_say_label is say_label:
+    color "#0bee44a2"
+    ypos 0.4
 
-define narrator = nvl_narrator
+style bb_say_dialogue is say_dialogue:
+    color "#FFF"
+    ypos 0.3
+
+# Mother style could be AmaticSC-Bold or AmaticSD-Regular

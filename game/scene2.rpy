@@ -112,6 +112,7 @@ label scene2:
     jump resume_1
 
 label choice_1_1:
+    $ bond1 = False
     show aria at grey_out
     j "Uh... no."
     j "Cars aren't beasts, they're not alive.\nThey're just machines."
@@ -132,6 +133,7 @@ label choice_1_1:
     jump resume_1
 
 label choice_1_2:
+    $ bond1 = True
     show aria at grey_out
     j "Not every car-mancer does, but I'd like to think me and my car have a special bond, yeah."
     show aria at restore_color
