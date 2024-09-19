@@ -129,7 +129,7 @@ label choice_1_1:
     show aria reluctant hold arm mopen lookat at restore_color
     a "...Does it stink in their mouth?"
     show aria at grey_out
-    j "They're still not alive.{p}...but yes."
+    j "They're still not alive.\n...but yes."
     jump resume_1
 
 label choice_1_2:

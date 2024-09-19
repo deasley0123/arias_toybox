@@ -156,6 +156,7 @@ style say_label:
     yalign 0.5
 
 style say_dialogue:
+    # textshader "typewriter|slowalpha:0.2"
     properties gui.text_properties("dialogue")
     outlines [(absolute(3), "#000", absolute(0), absolute(0))]
     line_spacing -5
