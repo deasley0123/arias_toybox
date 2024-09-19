@@ -233,14 +233,14 @@ label resume_1:
     show toorg cheeky lookat at reset
     show toorg behind gerald
     show toorg:
-        zoom 0.4
-        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-600.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-        linear 0.4 matrixtransform ScaleMatrix(1.1, 1.0, 1.0)*OffsetMatrix(90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-        linear 0.10 matrixtransform ScaleMatrix(0.95, 1.0, 1.0)*OffsetMatrix(90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-        linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        zoom 0.6
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-800.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.4 matrixtransform ScaleMatrix(1.1, 1.0, 1.0)*OffsetMatrix(-90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(0.95, 1.0, 1.0)*OffsetMatrix(-90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     n "...then the tree pushes past the gnome. The tree-person??"
     show toorg:
-        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-90.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     show toorg at grey_out
     show gerald at grey_out
     n "Their conversation trails off as they meet your gaze."
@@ -346,8 +346,11 @@ label resume_1:
     show gerald squint mopen hdown at restore_color
     g "Alright, if you've got time to pun you've got time to march."
     show gerald squint mopen hpoint:
-        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-400.0, 0.0, 0.0)
+        matrixtransform ScaleMatrix(-1.0, 1.0, 1.0)*OffsetMatrix(400.0, 0.0, 0.0)
+        linear 0.4 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-400.0, 0.0, 0.0)
     g "Let's widen our search for more signs of this demon."
+    show gerald squint mopen hpoint:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-400.0, 0.0, 0.0)
     show toorg at restore_color
     show toorg cheeky lookat:
         subpixel True 
