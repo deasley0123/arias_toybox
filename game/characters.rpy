@@ -101,7 +101,7 @@ define m = Character("Barkeep", who_style="minotaur_say_label", what_style="mino
 style minotaur_say_label is say_label: 
     font "gui/ShortStack-Regular.ttf"
     bold True
-    color "#4149a89d"
+    color "#5286e096"
     outlines [(absolute(3), "#000C", absolute(0), absolute(0))]
     ypos 0.5
     size 46

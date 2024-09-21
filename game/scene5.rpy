@@ -67,14 +67,15 @@ label scene5:
     a "Definitely! That was my first soup!"
     j "Really? Being a witch- uh, sorceress and all, I kind of expected you to have a big cauldron at home."
     j "Figured your mom was the soup type."
-    a "No. Mom used to bring me berries and mushrooms from the forest, but I'm \"old enough to make my own food\" now."
+    a "No. Mom used to bring me berries and mushrooms from the forest, but I'm {i}\"old enough to make my own food\"{/i} now."
     a "She says she doesn't have to eat food and I need to grow past this sooner or later, so I've never had a meal like this before."
     a "It was soooooo goood!!"
-    a "Tomorrow, we should come back!"
+    n "You don't know what to make of Aria's mother, given this world you find yourself in."
+    n "It'd be definite neglect to not provide a child with food where you're from, but this is a world where a little girl can conjure some from thin air."
+    n "Aria doesn't seem to have a great grasp of what's normal here, and neither do you, you're realizing."
+    a "Tomorrow, we should come back here!"
     a "Or, maybe, we forage and make some soup!"
     a "Find a cauldron of our own!"
-    n "You don't know what to make of Aria's mother, given this world you find yourself in."
-    n "It'd be definite neglect to not provide a child with food where you're from, but "
     j "Soup is actually one of the only things I know how to make."
     j "I'm no pro in the kitchen, but I took a food prep class in community college."
     j "We could try-"
@@ -98,10 +99,9 @@ label scene5:
             jump choice_3_1
         "You need to go.":
             jump choice_3_2
-    a ""
-    jump resume_3
-    label choice_3_1:
-    a ""
+
+label choice_3_1:
+    $ goHome = False
     n "What is your life back home, really?"
     n "You live on your own in the small flat your grandmother left you in her will."
     n "Your cheap car is paid off. Your job is just gig work. There's hardly anything in the fridge to spoil."
@@ -117,8 +117,9 @@ label scene5:
     j "Yeah, really."
     j "We should probably make our way back before dark, though."
     jump resume_3
-    label choice_3_2:
-    j ""
+
+label choice_3_2:
+    $ goHome = False
     n "You had expected this, to a degree. The thought had even crossed your mind about staying."
     n "But this world, this body, it is all so unfamiliar to you. It isn't home."
     n "While you may be in a bit of a rut back on Earth, visiting here and spending time with Aria has reminded you that truly anything is possible."
@@ -127,12 +128,12 @@ label scene5:
     n "Resolved, you see the longing in her eyes, and you know what you say next will break her heart a little."
     n "You also know that life comes with heartbreak as part of the package. You do your best to soften the blow."
     j "Aria, I've really enjoyed today. Together we subdued the mighty Bog Beast!"
-    j "I was in a rough spot when you pulled me here, but just like [bogbeast], I have a place I have to return to."
+    j "I was in a rough spot when you pulled me here, but just like [bogbeastname], I have a place I have to return to."
     j "Will you take me home?"
     a "Yeah. I can do that."
     jump resume_3
-    label resume_3_1:
-    a ""
+
+label resume_3:
     n "Before you can stand up to pay or leave, the buckle on Aria's hat begins to glow."
     a "Oh, oh, OH! Oh, no."
     a "Mom's home."
@@ -151,36 +152,37 @@ label scene5:
     m "That's the business the town is discussing in the square."
     m "Talk is, a posse of seasoned hunters and retired knights from the farmholds around here were going to head out before dark."
     m "I intend to close up here and go with them. If that girl and her mother are out there, they may know a thing or two... or be in danger themselves."
+    if goHome == True:
+        n "Your only ticket home is with Aria or her mom. Whatever the danger, you've got to make it back there tonight."
+    else:
+        n "Aria disappearing wasn't a wrinkle you expected when you said you'd stay."
+        n "But if Aria's mom is back and you're going to stick around..."
+        n "Well, it would be good to cover everything with her anyways."
+
     m "Sounds like you have an idea of where they're living. Care to join our posse tonight?"
     menu:
         "There is safety in numbers.":
             jump choice_4_1
+
         "You'd rather go alone.":
             jump choice_4_2
-    m ""
-    q "go_home==true"
-    n "Your only ticket home is with Aria or her mom. Whatever the danger, you've got to make it back there tonight."
-    q "go_home==false"
-    n "Aria disappearing wasn't a wrinkle you expected when you said you'd stay."
-    n "But if Aria's mom is back and you're going to stick around, it would be good to clear everything with her anyways."
-    jump resume_4
 
 label choice_4_1:
-    n ""
+    $ mob = True
     j "Yeah, I'd feel better with some company. And I think I could find my way back to her place."
     n "It's true. Perhaps because she summoned you here, you feel a gentle pull to the forest. Towards Aria."
     jump resume_4
-    label choice_4_2:
-    n ""
+
+label choice_4_2:
+    $ mob = False
     j "Sorry, I've had a long day and a lot to think about. I'll get there faster on my own."
     n "The Minotaur eyes you with concern but lets you leave without accosting you further."
     n "Perhaps because she summoned you here, you feel a gentle pull in your chest towards the forest. Towards Aria."
     jump resume_4
-    label resume_4:
-    n ""
-    n "You sigh, and bury your concern for Aria for now. She's a powerful sorceress, as is her mother."
-    n "Everything is fine, right?"
-    n "There is a void left by Aria's absence. When she's around, you're pulled along, break-neck by her current."
-    n "Her exuberant presence gone, everything slows, and the conversations of the day begin to swirl in your mind."
+
+label resume_4:
+    n "More than just the physical, there is an intangible void left by Aria's absence."
+    n "When she's around, you're pulled along break-neck by her current. Her adventure games, her strange logic."
+    n "She has more zest for life in her little finger than you've felt in years."
+    n "With her gone, everything slows, and the unanswered questions of the day resurface in your mind."
     n "Unease sets in as the sun drops lower on the horizon."
-    j "Once more, into the Weald."
