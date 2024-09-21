@@ -10,10 +10,12 @@ label start:
         perspective True
 
     # For Debugging
-    jump scene1
-    jump scene2
-    jump scene3
-    jump scene4
+    # jump scene1
+    # jump scene2
+    # jump scene3
+    # jump scene4
+    # jump scene5
+    # jump scene6
 
     # Real start
     jump scene0

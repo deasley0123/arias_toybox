@@ -1,205 +1,300 @@
+#Narration
+The Beard & Brew is mostly empty when you and Aria make your way inside.
+#Narration
+It sits on the forest-side edge of a small, but respectable village. Thatch, Wood, and plaster homes and businesses dot a mercantile square. Just beyond lies cleared land littered with ripe green and gold crops, swaying in the breeze.
+#Narration
+A simple, but wide and well-maintained dirt road snakes through the buildings. It comes from over distant hills and continues off into a different part of the forest. One you haven't spent the better part of your day traipsing through.
+#Narration
+You passed a broad sign calling the settlement Woldthwaite. It's a mouthful and you doubt you'll remember it.
 #Jo
-So, what are you going to name him?
+It's a nice day around supper time. I wonder why it is so empty in here...?
 #Narration
-You and Aria left the secluded pond, returning to something like a path through the forest. Or the weald, as the young girl calls it.
+You don't quite realize you've said your thought aloud until the bartender responds.
+#Tavernkeeper
+Oy, welcome back! 'Tis a beautiful day out!
+#Tavernkeeper
+Most of the folks in town are gathering in the square. Talkin' about what to do regardin' the business in the Weald.
+#Tavernkeeper
+And there's hardly a visitor passin' through this year, exceptin' yourself I suppose!
+#Tavernkeeper
+Truth be told, I didn't expect to see you back so soon, if at all, given the trouble lately.
 #Narration
-The sun is directly above you now, sending even brighter orange-tinted light through the trees.
-#Narration
-In the orange light, Aria holds up the "bog beast," examining him with a tilt of her head.
-#Aria
-Hmm... Well, a formidable warrior such as this one deserves an equally fearsome name. 
-#Narration
-The large angry-looking toad croaks at her, but makes no attempt to so much as wriggle out of her grasp.
-#Aria
-I know!
-#Narration
-She stops walking, and spins around to you so suddenly that you nearly run into her. 
-#Aria
-Jophiel! Since you helped so much in our quest, you deserve the honor of naming our new companion! 
-#PROMPT
-Name the Bog Beast: _______
+You peer down at Aria who is staring open-mouthed at the Minotaur behind bar and his sparkling shelves of bottles.
 #Jo
-How about _______?
+I thought you said you'd never been in town before, Aria?
 #Aria
-I love it!
-#Narration
-As if catching herself, Aria blinks, then clears her throat. She brings the toad close, looking him in the eye, snout to snout. 
+I haven't.
 #Aria
-Oh mighty Bog Beast, stalwart guardian of the Weald Queen's domain...
-#Aria
-Thy name is...
-#Aria
-{shader=jitter:3.0,3.0}_______!!!{/shader}
-#Bog_Beast
-*Ribbit*
-#Aria
-He loves it too! 
-#Aria
-Excellent choice, Jophiel.
+This is my first time this far from home since I moved here with mom.
 #Jo
-Happy to help.
+Uhh... sorry, mister. This is our first time in. It's a lovely place you have here, though.
+#Tavernkeeper
+Thank ye! And my gravest apologies, 'tis rare to see a cat-folk in these parts.
+#Tavernkeeper
+And you're the spittin' image of one who passed through less than a dozen moons ago.
+#Tavernkeeper
+The Marquis had hired them to map the Kaistr Weald. Something about a land survey and resource bookkeeping.
+#Tavernkeeper
+Not the domain of an old keg-head like me!
 #Narration
-You resume walking together. Aria holds _______ in her hands for a while before the toad begins to struggle.
+You don't quite know what to make of any of that, but before you can form a question Aria steps forward.
 #Aria
-What's wrong, _______? Do you need to use the little bog beast's room?
-#Narration
-She grips him a little tighter. The toad gives a slightly angrier croak.
-%choice_1_1
-#Narration
-You remember reading a book about parenting, back when you thought you might have kids one day.
-#Narration
-It said, {i}Children have to learn to be kind to others.{/i}
-%choice_1_2
-#Narration
-You remember her story about the tuna, the undead fish swimming around in a pit until it began to stink.
-#Narration
-{i}Mom didn't see much of a difference either way,{/i} Aria had said. 
-%resume_2
-#Jo
-Hey, if he wants you to let him go, you have to let him go. 
+Hail and well-met, oh tavern-keeper!
 #Aria
-B... But I don't want him to run away! 
-#Narration
-You nod seriously, and bite your lip to keep from smiling. You feel for this kid. It took you until your last breakup to finally learn this lesson yourself.
-#Narration
-You kneel down next to her so that you can look her face to face. You gently place your hands over hers. 
+I am Aria of the deep Weald, and this is {shader=jitter:3.0,3.0}{i}Jophiel, the Duskbo-{/i}{/shader}
 #Jo
-You can't make anyone stay in your life unless they want to, Aria. 
-#Narration
-Just as gently, you guide her hands to the ground.
+Hi, I'm Jo. This is Aria. We live off in the forest North of here. 
 #Jo
-If you give them the choice to stay, and they decide to leave, that's sad, but it's okay. It isn't your fault.
-#Narration
-You pause. The toad wriggles, but she isn't holding him so tightly that she'll hurt him.
-#Narration
-She seems to be considering your words. 
-#Jo
-Now if they want to leave, and you don't let them... well, you know how it feels when you're forced to do something you don't want to do, right?
+Just came into town for a drink and meal after a loooong day.
 #Aria
-Yeah.
-#Narration
-She squeezes just a little tighter, for a moment. 
-#Narration
-Then she sets the toad on the ground.
-#Bog_Beast
-*Ribbit*
-#Narration
-The toad looks around himself, then hops into a nearby fern.
-#Narration
-Aria sighs, and sniffles.
-#Jo
-I bet he can still hear you. Do you want to tell him anything before he goes? 
+Upon the conclusion of our {i}GRAND QUEST{/i}, our bellies did rumble and our throats did thirst.
 #Aria
-Bye, ________. I really wanted you to be my familiar.
+{shader=jitter:3.0,3.0}WE MUST CELEBRATE WITH A FEAST! AND TANKARDS OF YOUR FINEST MEAD!{/shader}
+#Jo
+Please ignore that. She's very excited and also very much shouldn't be given alcohol.
+#Jo
+We would love a plate or bowl of whatever you have hot, and a couple glasses of...
+#Aria
+Beer!
+#Jo
+...Milk?
+#Jo
+Not, uh, because I'm a cat. Er, cat-folk.
+#Jo
+I just saw some cows in those fields, and she's a growing girl.
+#Jo
+And I think she mostly just drinks water made from magic which can't be great for you.
+#Narration
+The Minotaur nods and gives you a wink with a wry chuckle.
+#Tavernkeeper
+Not a problem, I keep some in the storehouse out back. Give me just a moment.
+#Narration
+He disappears from view and your stomach grumbles.
+#Narration
+You pat your hip where normally your wallet would be.
+#Jo
+Uhh... Aria?
+#Jo
+Do you, perhaps, have any money?
+#Aria
+Fear not, Jophiel!
+#Aria
+I prepared for this.
+#Narration
+She pulls out a large lumpy black stone and sets it on the counter.
+#Narration
+Her eyes flash and the room briefly fills with light. You recoil, but when your eyes stop watering you see a beautiful gem sitting where the rock was.
+#Aria
+Ta-da! Transmutation!
+#Narration
+Your brain races to consider how this child could disrupt whole economies.
+#Jo
+Uhh, wow. That looks great, Aria, but it might be a bit much.
+#Aria
+Oh, Jophiel, this is merely their cut of the spoils for sponsoring our expedition!
+#Narration
+She pats her stomach.
+#Aria
+You don't think they deserve any less, do you?
+#Jo
+Ah, no. I suppose when you put it that way...
+#Narration
+A meal isn't exactly a sponsorship, and this hastily made gem isn't exactly a spoil of your quest, but you are too hungry to argue.
+#Narration
+The tavern's keeper returns with two mugs and fills a couple bowls with a heavenly smelling soup from a warm pot behind the counter.
+#Tavernkeeper
+Here you are, dig in!
+#Narration
+SOME TIME PASSES
+#Narration
+The soup was hearty and filling, and the milk was a bit lukewarm but satisfied a deep craving you were unsure you'd want to admit to.
+#Aria
+Wow, I'm stuffed.
+#Jo
+Yeah, that really hit the spot, huh? 
+#Aria
+Definitely! That was my first soup! 
+#Jo
+Really? Being a wit- er, sorceress and all, I kind of expected you to have a big cauldron at home.
+#Jo
+Figured your mom was the soup type.
+#Aria
+No. Mom used to bring me berries and mushrooms from the forest, but I'm /"old enough to make my own food/" now.
+#Aria
+She only really eats with magic, too, so I've never had a meal like this before.
+#Aria
+It was soooooo goood!!
+#Aria
+Tomorrow, we should come back!
+#Aria
+Or, maybe, we forage and make some soup!
+#Aria
+Find a /"cauldron/" of our own!
+#Jo
+Soup is actually one of the only things I know how to make.
+#Jo
+I'm no pro in the kitchen, but I took a food prep class in community college.
+#Jo
+We could try-
+#Narration
+You trail off, feeling like you're forgetting something as you notice the lengthening shadows cast by the window.
+#Narration
+The sun is still up, but dusk isn't long, now.
+#Narration
+In all the excitement of the day, you'd almost forgotten your deal. The time to go back home is almost here.
+#Jo
+We should try heading back to your house. It'll be dusk here in an hour or so.
+#Aria
+Oh.
+#Aria
+Right.
+#Aria
+I'm sorry, I forgot about our promise.
 #Aria
 ...
 #Aria
-But if you want to keep guarding your lair, I guess that's okay too. 
-#Jo
-He is the Weald Queen's stalwart guardian, after all.
+...
 #Aria
-Yeah. He probably has lots of responsibilities.
-#Jo
-Definitely.
+I guess I won't get to try your soup?
 #Narration
-All at once, the young girl hugs you. The surprise of it nearly knocks you over.
-%options_2
-Return her hug.
-Wait until she lets go.
-%choice_2_1
-#Narration
-You're soft at first, worried a stray claw might dig into her if you aren't careful.
-#Narration
-But, after a moment, you hold her as tightly as she holds you.
-#Narration
-She's so small.
-#Narration
-Her heart beats so fast. Her arms feel so fragile around your neck.
-#Narration
-Eventually she releases you, and you let her go.
-%choice_2_2
-#Narration
-The hug shouldn't surprise you so much. You're her favorite doll, after all. Who else would she go to for comfort?
-#Narration
-Even so, you can't bring yourself to hug her back.You just let her hold you until she's ready to let go.
-#Narration
-Gradually, she does.
-%resume_2
-#Jo
-You did good. That's a tough thing to do, but it's important.   
-#Narration
-She sniffles.
+She looks at you, and she hesitates.
 #Aria
-I'm going to be alone again.
-#Jo
-Only for a little while. Just until your mom comes back. Right?
-#Narration
-She's quiet for a long time.
-#Narration
-She's quiet for long enough that you start to wonder if that was the wrong thing to say, somehow. 
-#Narration
-That's all this was, wasn't it?
-#Narration
-Keeping a bored, magical little girl entertained? Keeping her company while Mom is away?
-#Narration
-You didn't sign up for any of this. You only barely signed up to take her on this quest. And only because you had no other choice. 
-#Narration
-She brought you into this world, and she's your only way back. 
-#Narration
-You stand up, and dust a fallen leaf off your shoulder.
-#Jo
-Well... 
-#Jo
-You're not alone right now. I'm here with you. And it isn't sundown yet. 
-#Jo
-So, where to next?
-#Narration
-She watches you for a moment. Then she pulls her magic mirror out of her bag.  
+Unless...
 #Aria
-Our quest completed, we can now feast in the Halls of Gods and Kings! 
-#Narration
-She shows you, in a misty image in the mirror, a small tavern. 
+Unless, maybe, you stayed?
 #Aria
-There's a town not too far from here.
+For just a few more days?
+#Aria
+I could send you home at any dawn or dusk, it doesn't have to be tonight.
+%options_3
+You could stay.
+You need to go.
+%choice_3_1
 #Narration
-A man passes by in the mirror, carrying a large glass of amber liquid and a steaming plate of something like pot roast.
+What is your life back home, really?
 #Narration
-Your stomach rumbles.
+You live on your own in the small flat your grandmother left you in her will.
+#Narration
+Your cheap car is paid off. Your job is just gig work. There's hardly anything in the fridge to spoil.
+#Narration
+You have nothing pressing, not even a house plant to water.
+#Narration
+Without realizing it, you'd already molded your life into a shape you could leave at any time.
+#Narration
+A break from your rut, maybe even a long one, could be for the best.
+#Narration
+Today hasn't been a relaxing one.
+#Narration
+You woke up in a strange place with a strange body and a strange child. Most of the day has been exhausting hiking through dense woods.
+#Narration
+But it all feels a little less strange now, and you feel... satisfied? Maybe happier, too, than you have in ages.
 #Jo
-Food is good. How far? Twenty minutes?
-#Aria
-Mmmm... 
+You know, I'm not sure I'm in such a rush anymore.
 #Jo
-Right. Got it. Little legs. 
+I could stay for a while.
 #Aria
-This way!
-#Narration
-She rushes off. You follow. 
-#Narration
-You walk all of three minutes before stopping again.
-#Narration
-You notice it first, your whiskers twitching in the suddenly silent forest. You reach out to stop Aria, but she sees it now too.
-#Narration
-Like a gash ripped through skin, the trees and underbrush in front of you are slashed and torn apart. Tree trunks lay with clumps of dirt caught in their newly unearthed roots, the leaves on the branches still green where they haven't been shaken off completely.
-#Narration
-One of the upturned trees has claw marks like the ones Toorg and Gerald pointed out. 
-#Narration
-Aria's voice is even softer than it was by the pond.
-#Aria
-What do you think did that?
+{shader=jitter:3.0,3.0}REALLY?!{/shader}
 #Jo
-No idea. Let's try not to find out.
-#Aria
-But-
-#Narration
-You put a hand to her back and turn her away from the arboreal massacre.
+Yeah, really.
 #Jo
-One adventure per meal. Feast first, then we'll see about this. Only fair, right?
+We should probably make our way back before dark, though.
+%choice_3_2
+#Narration
+You had expected this, to a degree. The thought had even crossed your mind about staying. 
+#Narration
+But this world, this body, it is all so unfamiliar to you. It isn't home.
+#Narration
+While you may be in a bit of a rut back on Earth, visiting here and spending time with Aria has reminded you that truly anything is possible.
+#Narration
+Running away here will not change your life for the better, you have to go back and make those changes for yourself.
+#Narration
+And maybe you'll fail again, or it won't work out like you hoped. But it will be your life to live, not one that anyone else would make for you.
+#Narration
+Resolved, you see the longing in her eyes, and you know what you say next will break her heart a little.
+#Narration
+You also know that life comes with heartbreak as part of the package. You do your best to soften the blow.
+#Jo
+Aria, I've really enjoyed today. Together we subdued the mighty Bog Beast!
+#Jo
+I was in a rough spot when you pulled me here, but just like [bogbeast], I have a place I have to return to.
+#Jo
+Will you take me home?
 #Aria
-Okay...
+Yeah. I can do that.
+%resume_3_1
 #Narration
-She sighs, but her stomach rumbles pitifully.
+Before you can stand up to pay or leave, the buckle on Aria's hat begins to glow.
+#Aria
+Oh, oh, OH! Oh, no.
+#Aria
+Mom's home.
 #Narration
-You glance back as you walk away. You hope you distracted her before she noticed the bag hanging in the branches of the clawed tree.
+The buckle glows brighter, and with a flash Aria is gone.
+#Jo
+Uh, Aria? {shader=jitter:3.0,3.0}Aria!{/shader}
+#Tavernkeeper
+What in the gods was that? Teleportation?
+#Jo
+Uhhh, I'm really not sure. Maybe?
+#Jo
+She is a sorceress. Said her mom was too. Mom lives out in the forest doing some kind of research in the area?
+#Tavernkeeper
+Out in the Weald? Didn't figure anyone lived out there. There's nothing but trees between here and Rimmond.
+#Tavernkeeper
+The woods have always been dangerous, but the last few years have been fraught with disappearances and strange sightings.
+#Jo
+Yeah, some Green-Eyed Demon, right?
+#Jo
+We met a short guy and a... tree-person? They mentioned something like that.
+#Tavernkeeper
+Aye. They sent me a message by bluebird earlier.
+#Tavernkeeper
+Said they had found a clear set of signs, a trail deeper into the Weald.
+#Tavernkeeper
+Never did hear more.
+#Tavernkeeper
+That's the business the town is discussing in the square.
+#Tavernkeeper
+Talk is, a posse of seasoned hunters and retired knights from the farmholds around here were going to head out before dark.
+#Tavernkeeper
+I intend to close up here and go with them. If that girl and her mother are out there, they may know a thing or two... or be in danger themselves.
+#Tavernkeeper
+Sounds like you have an idea of where they're living. Care to join our posse tonight?
+%options_4
+There is safety in numbers.
+You'd rather go alone.
+#If_Block
+go_home==true
 #Narration
-The bag that you're certain Gerald was wearing earlier.
+Your only ticket home is with Aria or her mom. Whatever the danger, you've got to make it back there tonight.
+#If_Block
+go_home==false
+#Narration
+Aria disappearing wasn't a wrinkle you expected when you said you'd stay.
+#Narration
+But if Aria's mom is back and you're going to stick around, it would be good to clear everything with her anyways.
+%choice_4_1
+#Jo
+Yeah, I'd feel better with some company. And I think I could find my way back to her place.
+#Narration
+It's true. Perhaps because she summoned you here, you feel a gentle pull to the forest. Towards Aria.
+%choice_4_2
+#Jo
+Sorry, I've had a long day and a lot to think about. I'll get there faster on my own.
+#Narration
+The Minotaur eyes you with concern but lets you leave without accosting you further.
+#Narration
+Perhaps because she summoned you here, you feel a gentle pull in your chest towards the forest. Towards Aria.
+%resume_4
+#Narration
+You sigh, and bury your concern for Aria for now. She's a powerful sorceress, as is her mother.
+#Narration
+Everything is fine, right?
+#Narration
+There is a void left by Aria's absence. When she's around, you're pulled along, break-neck by her current.
+#Narration
+Her exuberant presence gone, everything slows, and the conversations of the day begin to swirl in your mind.
+#Narration
+Unease sets in as the sun drops lower on the horizon.
+#Jo
+Once more, into the Weald.

@@ -96,4 +96,24 @@ style bb_say_dialogue is say_dialogue:
     color "#FFF"
     ypos 0.3
 
+# TODO: Pick a font for the minotaur barkeep
+define m = Character("Barkeep", who_style="minotaur_say_label", what_style="minotaur_say_dialogue")
+style minotaur_say_label is say_label: 
+    font "gui/ShortStack-Regular.ttf"
+    bold True
+    color "#4149a89d"
+    outlines [(absolute(3), "#000C", absolute(0), absolute(0))]
+    ypos 0.5
+    size 46
+    kerning 4
+style minotaur_say_dialogue is say_dialogue:
+    font "gui/ShortStack-Regular.ttf"
+    size 34
+    bold True
+    color "#FFF"
+    outlines [(absolute(3), "#000", absolute(0), absolute(0))]
+    kerning 1
+    ypos 0.28
+    line_spacing 1
+
 # Mother style could be AmaticSC-Bold or AmaticSD-Regular

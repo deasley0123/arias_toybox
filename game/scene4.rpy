@@ -125,3 +125,4 @@ label resume_2:
     n "She sighs, but her stomach rumbles pitifully."
     n "You glance back as you walk away. You hope you distracted her before she noticed the bag hanging in the branches of the clawed tree."
     n "The bag that you're certain Gerald was wearing earlier."
+    jump scene5
