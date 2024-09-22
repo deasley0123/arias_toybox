@@ -1,5 +1,5 @@
 label scene1:
-    # Bring in summoning CG, animate from dark and blurry to clear.
+    # TODO: Bring in summoning CG, animate from dark and blurry to clear.
     show cg summoning:
         subpixel True 
         blur 20.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.14)*SaturationMatrix(1.0)*BrightnessMatrix(-1.0)*HueMatrix(0.0) 
@@ -263,7 +263,7 @@ label scene1:
     j "We're not gonna use the door?"
     show aria confuse shrug mclose at restore_color
     a "Mom will know if we go that way! Besides, going out the window is how you always start an adventure!"
-    hide aria with dissolve # TODO: Get a bit fancier with this move out
+    hide aria with dissolve # TODO: Get a bit fancier with this move out, have her squash down then jump up and out
     n "She throws you one last smile before sliding over the sill and down out of sight."
     n "You sigh once more as you toss your own leg over and look down. The house is only one floor, plus this attic, so it isn't far to go."
     show ci aria forest edge with dissolve
