@@ -185,11 +185,11 @@ screen input(prompt):
 
         vbox:
             xanchor gui.dialogue_text_xalign
-            xpos gui.dialogue_xpos
+            xpos 960
             xsize gui.dialogue_width
-            ypos gui.dialogue_ypos
+            ypos 0.2
 
-            text prompt style "input_prompt"
+            text prompt style "say_dialogue"
             input id "input"
 
 style input_prompt is default
@@ -198,7 +198,7 @@ style input_prompt:
     xalign gui.dialogue_text_xalign
     properties gui.text_properties("input_prompt")
 
-style input:
+style input is say_dialogue:
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
 

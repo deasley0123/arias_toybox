@@ -1,33 +1,72 @@
 label scene4:
     # TODO: Add scene transition "The Weald part II"
-    scene bg aria cottage day with fadehold
+    scene bg forest afternoon with fadehold
+    # TODO: Bog beast cut-in front and center
     j "So, what are you going to name him?"
-    n "You and Aria left the secluded pond, returning to something like a path through the forest. Or the weald, as the young girl calls it."
-    n "The sun is directly above you now, sending even brighter orange-tinted light through the trees."
-    n "In the orange light, Aria holds up the \"Bog Beast,\" examining him with a tilt of her head."
+    n "You and Aria left the secluded bog, returning to something like a path through the forest. Or the weald, as the young girl calls it."
+    n "The sun is high above you now, sending bright yellow-orange tinted light down through the trees."
+    n "Aria holds up the \"Bog Beast,\" examining him with a tilt of her head."
+    show aria think mclose:
+        zoom 0.5
+    show aria:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(3000.0, 400, 0.0) 
+        linear 0.15 matrixtransform ScaleMatrix(1.1, 1.0, 1.0)*OffsetMatrix(1017.0, 400, 0.0)
+        linear 0.10 matrixtransform ScaleMatrix(0.95, 1.0, 1.0)*OffsetMatrix(1017.0, 400, 0.0)
+        linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1017.0, 400, 0.0)
     a "Hmm... Well, a formidable warrior such as this one deserves an equally fearsome name."
+    show aria:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1017.0, 400, 0.0)
+    show aria at grey_out
+    # TODO: toad croak
     n "The large angry-looking toad croaks at her, but makes no attempt to wriggle out of her grasp."
+    show aria think shock mopen at restore_color
     a "I know!"
-    n "She stops walking, and spins around to you so suddenly that you nearly run into her."
+    show aria think mischief mcat at grey_out
+    n "She stops walking, so suddenly that you nearly run into her."
+    show aria smile proud mwideopen at restore_color
+    show aria:
+        zoom 0.7
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(855.0, 336, 0.0) 
     a "Jophiel! Since you helped so much in our quest, you deserve the honor of naming our new companion!"
+    show aria smile proud mclose
     python:
         bogbeastname = renpy.input("Name the Bog Beast:", length=9)
         bogbeastname = bogbeastname.strip()
-
         if not bogbeastname:
             bogbeastname = "Bog Beast"
+    show aria at grey_out
     j "How about \"[bogbeastname]\"?"
+    show aria exhult jumping mopen at restore_color
     a "I love it!"
-    n "As if catching herself, Aria blinks, then clears her throat. She brings the toad close, looking him in the eye, snout to snout."
+    show aria at grey_out
+    n "She clears her throat, then brings the toad close, looking him in the eye, snout to snout."
+    show aria stars intent mopenwide at restore_color
     a "Oh mighty Bog Beast, stalwart guardian of the Weald Queen's domain..."
+    show aria stars intent mcat:
+        subpixel True zoom 0.85 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(657.0, 183, 0.0) 
     a "Thy name is..."
+    show aria stars intent intensifies:
+        subpixel True zoom 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(450.0, 12, 0.0) 
+    show aria at shaking
     a "{shader=jitter:3.0,3.0}[bogbeastname]!!!{/shader}"
+    show aria:
+        zoom 0.7
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(855.0, 336, 0.0) 
+    show aria at grey_out
     b "*Ribbit*"
+    show aria exhult jumping mopen at restore_color # TODO: Aria shaking then to the moon
+    show aria at shaking
     a "He loves it too!"
+    show aria tell secret mopen at restore_color
     a "Excellent choice, Jophiel."
+    show aria tell secret mclose at grey_out
     j "Happy to help."
+    show aria smile wave mclose # TODO: Add a new generic smiling Aria neutral pose, maybe arms behind leaning forward big smile
     n "You resume walking together. Aria holds [bogbeastname] in her hands for a while before the toad begins to struggle."
+    show aria neutral wave mopen at restore_color
     a "What's wrong, [bogbeastname]? Do you need to use the little bog beast's room?"
+    show aria neutral slightwave mclose at grey_out
     n "She grips him a little tighter. The toad produces a slightly angrier croak."
 
     if bond1 == False:
@@ -38,26 +77,41 @@ label scene4:
         n "\"{i}Mom didn't see much of a difference either way,\"{/i}\nAria had said."
 
     j "Hey, if he wants you to let him go, you have to let him go."
+    show aria unfortunate slightwave mopen at restore_color
     a "B... But I don't want him to run away!"
+    show aria unfortunate slightwave mclose at grey_out
     n "You nod seriously, and bite your lip to keep from smiling. You feel for this kid. It took you until your last breakup to finally learn this lesson yourself."
     n "You kneel down next to her so that you can look her face to face. You gently place your hands over hers."
+    show aria reluctant hold arm mclose lookup
     j "You can't make anyone stay in your life unless they want to, Aria."
     j "If you give them the choice to stay, and they decide to leave, that's sad, but it's okay. It isn't your fault."
+    # TODO: Shake the toad ci
     n "You pause. The toad wriggles, but she isn't holding him so tightly that she'll hurt him."
+    show aria reluctant hold arm mclose lookdown
     n "She seems to be considering your words."
     j "Now if they want to leave, and you don't let them... well, you know how it feels when you're forced to do something you don't want to do, right?"
+    show aria reluctant hold arm mopen lookup at restore_color
     a "Yeah..."
+    show aria reluctant hold arm mclose lookup at grey_out
     n "She squeezes just a little tighter, for a moment."
     n "Then she sets the toad on the ground."
     b "*Ribbit*"
     n "The toad looks around himself, then hops into a nearby fern."
+    show aria disappointed hold arm mslight lookdown
     n "Aria sighs, and sniffles."
+    show aria disappointed hold arm mslight lookup
     j "I bet he can still hear you. Do you want to tell him anything before he goes?"
+    show aria disappointed hold arm mopen lookup at restore_color
     a "Bye, [bogbeastname]. I really wanted you to be my familiar."
+    show aria disappointed hold arm mslight lookdown 
     a "..."
+    show aria reluctant hold arm mopen lookup
     a "But if you want to keep guarding your lair, I guess that's okay too."
+    show aria reluctant hold arm mclose lookat
     j "He is the Weald Queen's stalwart guardian, after all."
+    show aria reluctant hold arm mopen lookat
     a "Yeah. He probably has lots of responsibilities."
+    show aria reluctant hold arm mclose lookat at grey_out
     j "Definitely."
     n "All at once, the young girl hugs you. The surprise of it nearly knocks you over."
     menu:
