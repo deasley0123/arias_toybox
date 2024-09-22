@@ -3,8 +3,6 @@ default bond1 = False
 default bond2 = False
 default bond3 = False
 default goHome = True
-default mob = False
-default angryMob = False
 default bogbeastname = "Bog Beast"
 
 label start:

@@ -1,300 +1,219 @@
 #Narration
-The Beard & Brew is mostly empty when you and Aria make your way inside.
+The posse from the town is larger than you expected, but less professional than the barkeep made it sound.
 #Narration
-It sits on the forest-side edge of a small, but respectable village. Thatch, Wood, and plaster homes and businesses dot a mercantile square. Just beyond lies cleared land littered with ripe green and gold crops, swaying in the breeze.
+There are roughly two dozen able-bodied adults, mostly humans, which is somewhat surprising given Aria is the only human you'd interacted with today.
 #Narration
-A simple, but wide and well-maintained dirt road snakes through the buildings. It comes from over distant hills and continues off into a different part of the forest. One you haven't spent the better part of your day traipsing through.
+But there is only one spear and two real swords to go around, with a collection of sharp farm tools and heavy mallets otherwise.
 #Narration
-You passed a broad sign calling the settlement Woldthwaite. It's a mouthful and you doubt you'll remember it.
+Some also carry bows, but they look distinctly hand-made and somewhat crudely at that.
+#Narration
+This isn't a town of warriors. Apart from the barkeep, nobody else from the town even seems brave enough to talk to you, outsider and cat-person that you are.
+#Narration
+The barkeep does more than make up for what the posse lacks, though. Both in might for your expedition and in conversation. He makes idle chatter with you about the recent harvest (quite good) and the regional taxes (too high).
+#Narration
+When that topic is exhausted, he asks you about yourself, and your relationship to Aria. You lie hastily that you were hired to watch over her while her mom is away, although it was through an intermediary and you haven't actually met her mom, yet.
+#Narration
+To support your story, you describe what you can of your day. Adventuring in the woods, meeting Toorg and Gerald, catching a toad, and coming to town. You fill him in as well on the damage you saw in the woods, and Gerald's bag you saw there.
+#Narration
+He was quiet while you recounted your day, only nodding along and listening patiently to you prattle, but he speaks up now. He's abrupt with you for the first time today.
+#Barkeep
+Why didn't you mention that earlier, at my tavern?
 #Jo
-It's a nice day around supper time. I wonder why it is so empty in here...?
+Sorry, I guess I should have. I just didn't want to scare the kid.
 #Narration
-You don't quite realize you've said your thought aloud until the bartender responds.
-#Tavernkeeper
-Oy, welcome back! 'Tis a beautiful day out!
-#Tavernkeeper
-Most of the folks in town are gathering in the square. Talkin' about what to do regardin' the business in the Weald.
-#Tavernkeeper
-And there's hardly a visitor passin' through this year, exceptin' yourself I suppose!
-#Tavernkeeper
-Truth be told, I didn't expect to see you back so soon, if at all, given the trouble lately.
-#Narration
-You peer down at Aria who is staring open-mouthed at the Minotaur behind bar and his sparkling shelves of bottles.
+At the mention of Aria and the tavern, you remember the gem she made.
 #Jo
-I thought you said you'd never been in town before, Aria?
-#Aria
-I haven't.
-#Aria
-This is my first time this far from home since I moved here with mom.
+Oh, that's right! I also needed to give this to you. I forgot about it when she disappeared.
 #Jo
-Uhh... sorry, mister. This is our first time in. It's a lovely place you have here, though.
-#Tavernkeeper
-Thank ye! And my gravest apologies, 'tis rare to see a cat-folk in these parts.
-#Tavernkeeper
-And you're the spittin' image of one who passed through less than a dozen moons ago.
-#Tavernkeeper
-The Marquis had hired them to map the Kaistr Weald. Something about a land survey and resource bookkeeping.
-#Tavernkeeper
-Not the domain of an old keg-head like me!
+We didn't have any money to pay you for the meal and milk, so she made you this gem.
 #Narration
-You don't quite know what to make of any of that, but before you can form a question Aria steps forward.
-#Aria
-Hail and well-met, oh tavern-keeper!
-#Aria
-I am Aria of the deep Weald, and this is {shader=jitter:3.0,3.0}{i}Jophiel, the Duskbo-{/i}{/shader}
+He accepts it from you with a deeply troubled look.
 #Jo
-Hi, I'm Jo. This is Aria. We live off in the forest North of here. 
+Yeah, I'm not sure if that's enough or really counts as currency? I can ask her mom to reimburse you, maybe?
+#Barkeep
+This is... she made this? Out of what?
 #Jo
-Just came into town for a drink and meal after a loooong day.
-#Aria
-Upon the conclusion of our {i}GRAND QUEST{/i}, our bellies did rumble and our throats did thirst.
-#Aria
-{shader=jitter:3.0,3.0}WE MUST CELEBRATE WITH A FEAST! AND TANKARDS OF YOUR FINEST MEAD!{/shader}
+Uh, like a rock. A normal rock as far as I could tell.
+#Narration
+He scrutinizes you like he's sizing you up. Your honesty, your capabilities, your intentions.
 #Jo
-Please ignore that. She's very excited and also very much shouldn't be given alcohol.
-#Jo
-We would love a plate or bowl of whatever you have hot, and a couple glasses of...
-#Aria
-Beer!
-#Jo
-...Milk?
-#Jo
-Not, uh, because I'm a cat. Er, cat-folk.
-#Jo
-I just saw some cows in those fields, and she's a growing girl.
-#Jo
-And I think she mostly just drinks water made from magic which can't be great for you.
+I'm sorry I don't have better answers for you. I know basically nothing about magic.
+#Barkeep
+Well, I'm no mage myself, but I was a guard in the palace in Rimmond for many years before retiring here.
+#Barkeep
+No COURT mage could perform transmutation on this level so casually, never mind an apprentice of her age. That teleportation earlier too.
+#Barkeep
+This girl is... something else.
+#Barkeep
+I also kept something from you. There was more to the message I received from Gerald.
+#Barkeep
+He said the markings seemed strategic rather than instinctual. A warning for people, not beasts. There were faint traces of magic, too. 
+#Barkeep
+I've been retired to Woldthwaite damn near 10 years. No head, no tail, no hide nor hair of anyone living out here in the Weald like this.
 #Narration
-The Minotaur nods and gives you a wink with a wry chuckle.
-#Tavernkeeper
-Not a problem, I keep some in the storehouse out back. Give me just a moment.
+As he waits for your response, you realize this is where this conversation was always leading.
 #Narration
-He disappears from view and your stomach grumbles.
+Under the cover of polite concern, he had extracted exactly what he needed to determine you were not a threat, and that Aria and her mother might be.
+#Barkeep
+The child had green eyes, and I'd bet anything the mother does too.
 #Narration
-You pat your hip where normally your wallet would be.
-#Jo
-Uhh... Aria?
-#Jo
-Do you, perhaps, have any money?
-#Aria
-Fear not, Jophiel!
-#Aria
-I prepared for this.
+You start to immediately stammer out a defense for Aria but you stop yourself.
 #Narration
-She pulls out a large lumpy black stone and sets it on the counter.
+You can't outright deny she's powerful, and you haven't even seen her mom. They may be right to be suspicious.
 #Narration
-Her eyes flash and the room briefly fills with light. You recoil, but when your eyes stop watering you see a beautiful gem sitting where the rock was.
-#Aria
-Ta-da! Transmutation!
+But you note the way the others in the posse have been watching you and listening to this conversation unfold. You see how they grip their weapons.
 #Narration
-Your brain races to consider how this child could disrupt whole economies.
-#Jo
-Uhh, wow. That looks great, Aria, but it might be a bit much.
-#Aria
-Oh, Jophiel, this is merely their cut of the spoils for sponsoring our expedition!
+This posse is starting to feel more like a mob, and you're not sure which end of the pitchfork you'll end up on.
+%options_5
+Protect Aria.
+Lead them to her.
+%options_5_1
 #Narration
-She pats her stomach.
-#Aria
-You don't think they deserve any less, do you?
-#Jo
-Ah, no. I suppose when you put it that way...
+Aria may be deeply magical, but she's just a lonely child.
 #Narration
-A meal isn't exactly a sponsorship, and this hastily made gem isn't exactly a spoil of your quest, but you are too hungry to argue.
-#Narration
-The tavern's keeper returns with two mugs and fills a couple bowls with a heavenly smelling soup from a warm pot behind the counter.
-#Tavernkeeper
-Here you are, dig in!
-#Narration
-SOME TIME PASSES
-#Narration
-The soup was hearty and filling, and the milk was a bit lukewarm but satisfied a deep craving you were unsure you'd want to admit to.
-#Aria
-Wow, I'm stuffed.
-#Jo
-Yeah, that really hit the spot, huh? 
-#Aria
-Definitely! That was my first soup! 
-#Jo
-Really? Being a wit- er, sorceress and all, I kind of expected you to have a big cauldron at home.
-#Jo
-Figured your mom was the soup type.
-#Aria
-No. Mom used to bring me berries and mushrooms from the forest, but I'm /"old enough to make my own food/" now.
-#Aria
-She only really eats with magic, too, so I've never had a meal like this before.
-#Aria
-It was soooooo goood!!
-#Aria
-Tomorrow, we should come back!
-#Aria
-Or, maybe, we forage and make some soup!
-#Aria
-Find a /"cauldron/" of our own!
-#Jo
-Soup is actually one of the only things I know how to make.
-#Jo
-I'm no pro in the kitchen, but I took a food prep class in community college.
-#Jo
-We could try-
-#Narration
-You trail off, feeling like you're forgetting something as you notice the lengthening shadows cast by the window.
-#Narration
-The sun is still up, but dusk isn't long, now.
-#Narration
-In all the excitement of the day, you'd almost forgotten your deal. The time to go back home is almost here.
-#Jo
-We should try heading back to your house. It'll be dusk here in an hour or so.
-#Aria
-Oh.
-#Aria
-Right.
-#Aria
-I'm sorry, I forgot about our promise.
-#Aria
-...
-#Aria
-...
-#Aria
-I guess I won't get to try your soup?
-#Narration
-She looks at you, and she hesitates.
-#Aria
-Unless...
-#Aria
-Unless, maybe, you stayed?
-#Aria
-For just a few more days?
-#Aria
-I could send you home at any dawn or dusk, it doesn't have to be tonight.
-%options_3
-You could stay.
-You need to go.
-%choice_3_1
-#Narration
-What is your life back home, really?
-#Narration
-You live on your own in the small flat your grandmother left you in her will.
-#Narration
-Your cheap car is paid off. Your job is just gig work. There's hardly anything in the fridge to spoil.
-#Narration
-You have nothing pressing, not even a house plant to water.
-#Narration
-Without realizing it, you'd already molded your life into a shape you could leave at any time.
-#Narration
-A break from your rut, maybe even a long one, could be for the best.
-#Narration
-Today hasn't been a relaxing one.
-#Narration
-You woke up in a strange place with a strange body and a strange child. Most of the day has been exhausting hiking through dense woods.
-#Narration
-But it all feels a little less strange now, and you feel... satisfied? Maybe happier, too, than you have in ages.
-#Jo
-You know, I'm not sure I'm in such a rush anymore.
-#Jo
-I could stay for a while.
-#Aria
-{shader=jitter:3.0,3.0}REALLY?!{/shader}
-#Jo
-Yeah, really.
-#Jo
-We should probably make our way back before dark, though.
-%choice_3_2
-#Narration
-You had expected this, to a degree. The thought had even crossed your mind about staying. 
-#Narration
-But this world, this body, it is all so unfamiliar to you. It isn't home.
-#Narration
-While you may be in a bit of a rut back on Earth, visiting here and spending time with Aria has reminded you that truly anything is possible.
-#Narration
-Running away here will not change your life for the better, you have to go back and make those changes for yourself.
-#Narration
-And maybe you'll fail again, or it won't work out like you hoped. But it will be your life to live, not one that anyone else would make for you.
-#Narration
-Resolved, you see the longing in her eyes, and you know what you say next will break her heart a little.
-#Narration
-You also know that life comes with heartbreak as part of the package. You do your best to soften the blow.
-#Jo
-Aria, I've really enjoyed today. Together we subdued the mighty Bog Beast!
-#Jo
-I was in a rough spot when you pulled me here, but just like [bogbeast], I have a place I have to return to.
-#Jo
-Will you take me home?
-#Aria
-Yeah. I can do that.
-%resume_3_1
-#Narration
-Before you can stand up to pay or leave, the buckle on Aria's hat begins to glow.
-#Aria
-Oh, oh, OH! Oh, no.
-#Aria
-Mom's home.
-#Narration
-The buckle glows brighter, and with a flash Aria is gone.
-#Jo
-Uh, Aria? {shader=jitter:3.0,3.0}Aria!{/shader}
-#Tavernkeeper
-What in the gods was that? Teleportation?
-#Jo
-Uhhh, I'm really not sure. Maybe?
-#Jo
-She is a sorceress. Said her mom was too. Mom lives out in the forest doing some kind of research in the area?
-#Tavernkeeper
-Out in the Weald? Didn't figure anyone lived out there. There's nothing but trees between here and Rimmond.
-#Tavernkeeper
-The woods have always been dangerous, but the last few years have been fraught with disappearances and strange sightings.
-#Jo
-Yeah, some Green-Eyed Demon, right?
-#Jo
-We met a short guy and a... tree-person? They mentioned something like that.
-#Tavernkeeper
-Aye. They sent me a message by bluebird earlier.
-#Tavernkeeper
-Said they had found a clear set of signs, a trail deeper into the Weald.
-#Tavernkeeper
-Never did hear more.
-#Tavernkeeper
-That's the business the town is discussing in the square.
-#Tavernkeeper
-Talk is, a posse of seasoned hunters and retired knights from the farmholds around here were going to head out before dark.
-#Tavernkeeper
-I intend to close up here and go with them. If that girl and her mother are out there, they may know a thing or two... or be in danger themselves.
-#Tavernkeeper
-Sounds like you have an idea of where they're living. Care to join our posse tonight?
-%options_4
-There is safety in numbers.
-You'd rather go alone.
+She only brought you here because you didn't want to be yourself. She took your lesson to heart and let [bogbeastname] go.
 #If_Block
-go_home==true
+goHome == True
 #Narration
-Your only ticket home is with Aria or her mom. Whatever the danger, you've got to make it back there tonight.
+Even though it will mean her search for companionship continues, she's promised to honor your deal and send you home. 
 #If_Block
-go_home==false
+GoHome == False
 #Narration
-Aria disappearing wasn't a wrinkle you expected when you said you'd stay.
+Although it has only been a day, she's become dear to you. You decided to stay here to care for her and find purpose for yourself.
+#ResumeFromIf
+Resume
 #Narration
-But if Aria's mom is back and you're going to stick around, it would be good to clear everything with her anyways.
-%choice_4_1
+She doesn't deserve a mob at her door.
 #Jo
-Yeah, I'd feel better with some company. And I think I could find my way back to her place.
-#Narration
-It's true. Perhaps because she summoned you here, you feel a gentle pull to the forest. Towards Aria.
-%choice_4_2
+Hey. Aria is just an innocent little kid. I spent the whole day with her.
 #Jo
-Sorry, I've had a long day and a lot to think about. I'll get there faster on my own.
-#Narration
-The Minotaur eyes you with concern but lets you leave without accosting you further.
-#Narration
-Perhaps because she summoned you here, you feel a gentle pull in your chest towards the forest. Towards Aria.
-%resume_4
-#Narration
-You sigh, and bury your concern for Aria for now. She's a powerful sorceress, as is her mother.
-#Narration
-Everything is fine, right?
-#Narration
-There is a void left by Aria's absence. When she's around, you're pulled along, break-neck by her current.
-#Narration
-Her exuberant presence gone, everything slows, and the conversations of the day begin to swirl in your mind.
-#Narration
-Unease sets in as the sun drops lower on the horizon.
+Her magic may be the real deal, but she would never hurt anyone.
 #Jo
-Once more, into the Weald.
+I think her mom might be kind of shit at being a mom, but I'm not going to bring a bunch of armed and angry assholes to her door on a hunch!
+#Barkeep
+I'm sorry, Jophiel, but that {i}hunch{/i} is what we have, and we're going to pursue it to the end.
+#Narration
+The air is still as the minotaur and the rest of the mob all watch you. A few of the members at the back start to shuffle around. Soon you'll be surrounded.
+#Narration
+You don't give them the chance. You turn and run without another thought.
+#Narration
+Despite their numbers advantage, you quickly lose them. It's simple, really.
+#Narration
+Your eyes are made for the fading light. Your feet are lighter than theirs, and your footfalls are near silent even in all the brush.
+#Narration
+Their rough voices calling for you to stop and wait have long faded away behind you when the trees grow too dense to traverse.
+#Narration
+You stop, but the tugging in your chest still directs you forwards.
+#Narration
+You scratch your head. You may not know this whole forest, but you {i}really{/i} don't remember this tight copse of trees here, so close to Aria's house.
+#Narration
+You are searching for a way around when you hear a familiar croak.
+#BogBeast
+*ribbit*
+#Narration
+[bogbeastname] sits nonplussed at the base of one of the larger trees.
+#Narration
+You take a step towards him, and when you do he jumps up and {i}through{/i} the solid tree as if it isn't there.
+#Jo
+Uh... [bogbeastname]?
+#Narration
+You reach out to the tree, and at first touch it feels real enough, but as you press on it the sensation of the bark surface starts to give way.
+#Narration
+Hesitantly, you push your way through the tree, or the illusion of one. Your fur stands on end as you do, and you feel a strange pressure in your head.
+#Narration
+It's similar to the pressure you'd feel right before your ears popped on a plane, only it's all through your skull, deep behind your eyes. It builds and builds.
+#Narration
+Until it too pops, and you're on the other side. You see Aria's cottage, a thin trail of smoke rising from the chimney, the illusion warding you away now behind you.
+#Jo
+Well, that explains why nobody has found the place.
+#Jo
+I guess I'll go in through the door this time.
+%options_5_2
+#Narration
+Unbidden, the image of Aria holding the toad too tightly comes to your mind.
+#If_Block
+bond1 == True
+#Narration
+And you recall her story about reviving the dead tuna to play with.
+#Narration
+There is also, of course, the whole matter of kidnapping your soul and stuffing you in this body. 
+#Narration
+Aria has a great deal of power and very little in her life to make sure she uses it safely or responsibly.
+#Narration
+Her mother isn't even around most of the time, it seems, and what you've heard of her secondhand is not exactly comforting.
+#Narration
+There's all the neglect of her daughter, and Aria even said that her mom doesn't see a lot of difference between the living and the dead.
+#Narration
+There are a lot of red flags, and if she really is an incredible sorceress too... Well, the folks in town have a strong case to ask some more questions from the source.
+#Jo
+You're... you're right to be suspicious, I think.
+#Jo
+I have a lot of unanswered questions, too. I'll take us to her house.
+#Jo
+Hopefully we can get some answers.
+#Jo
+But I need you to promise me to do for them what you've done with me here. Ask questions first.
+#Barkeep
+Of course! This is a hunt for a demon, and we'll not take any hasty action until we know more.
+#If_Block
+goHome==False
+bond1==True
+bond2==True
+#Narration
+You choose to trust his words for now, but if anything starts going badly, you'll do everything you can to get Aria away to safety.
+#Narration
+You decided to stay here for her, and you won't allow her to be hurt, not while she's in your care.
+#If_Block
+goHome==False
+#Narration
+You choose to trust his words for now, but you start to wonder if your decision to say was such a good one after all.
+#If_Block
+goHome==True
+#Narration
+You choose to trust his words for now. Maybe while they're busy talking with mom, you could have Aria send you home?
+#Narration
+Following the tugging in your chest and your memories from the day, you lead the town towards the clearing where Aria's house is.
+#Narration
+But in your path stands a dense copse of unfamiliar trees. Too dense to really fit through, and stretching on for some distance to either side.
+#Jo
+Huh. That's weird. It should be right through here, but... I don't think these trees were here this morning.
+#Barkeep
+Could be druid-craft at work. I think we've brought along an axe or two.
+#Narration
+A few men step forward to take swings. When the first's axe connects with a tree, all of the trees shudder and burst into mist, popping almost like balloons.
+#Narration
+Beyond, you see the familiar clearing, smoke rising from the home's chimney.
+#Barkeep
+Strong warding. We'd best be careful as we continue on.
+#Narration
+You follow after, a strong sinking pit in your stomach.
+#Narration
+The air is oppressively still in this clearing. The dense forest around it blocks much of the day's fading light.
+#Narration
+What light there is may just as well be coming from the moon, out full and early in the dimming sky.
+#Narration
+Your eyes still catch nearly every detail. A fallen branch here, a rustling bush there.
+#Narration
+The eyes of those with you are not so adept. Even by the torchlight that some carry, the uneven ground here is a tripping hazard.
+#Narration
+As a result, you've pulled ahead of the group and nearly reached the house yourself when you notice it.
+#Narration
+The stumbling feet and occasional curses from the group behind you have vanished completely.
+#Narration
+Your ears swivel, and then your head, but it's too late.
+#Narration
+The ground, uneven yet stable behind you moments ago has fissured. Jagged and bottomless grooves have swallowed the posse.
+#Narration
+Some you see hanging on to crumbling ledges and roots. They look to be calling out to you, to each other for help, but no sound reaches your ears.
+#Narration
+With the barest shudder for such violence, their last remaining handholds and footholds crumble away, as does the ground beneath you.
+#Narration
+You freeze up as your body pitches downwards. You've dreamt of falling before, but your unconscious mind could not emulate the numb terror filling you now.
+#if_Block
+goHome == True
+#Narration
+The moon recedes before your grasping hand as you wordlessly realize you won't be making it home after all.
+#if_Block
+goHome == False
+#Narration
+The moon recedes before your grasping hand as you mutter out a silent apology to Aria. You won't be around to soothe her loneliness after all.

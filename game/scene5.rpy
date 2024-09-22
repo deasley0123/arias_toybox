@@ -161,27 +161,9 @@ label resume_3:
         n "Well, it would be good to cover everything with her anyways."
 
     m "Sounds like you have an idea of where they're living. Care to join our posse tonight?"
-    menu:
-        "There is safety in numbers.":
-            jump choice_4_1
-
-        "You'd rather go alone.":
-            jump choice_4_2
-
-label choice_4_1:
-    $ mob = True
+    n "In your mind's eye, you see the ruined bit of forest again. Gerald's bag hanging there."
     j "Yeah, I'd feel better with some company. And I think I could find my way back to her place."
     n "It's true. Perhaps because she summoned you here, you feel a gentle pull to the forest. Towards Aria."
-    jump resume_4
-
-label choice_4_2:
-    $ mob = False
-    j "Sorry, I've had a long day and a lot to think about. I'll get there faster on my own."
-    n "The Minotaur eyes you with concern but lets you leave without accosting you further."
-    n "Perhaps because she summoned you here, you feel a gentle pull in your chest towards the forest. Towards Aria."
-    jump resume_4
-
-label resume_4:
     n "More than just the physical, there is an intangible void left by Aria's absence."
     n "When she's around, you're pulled along break-neck by her current. Her adventure games, her strange logic."
     n "She has more zest for life in her little finger than you've felt in years."
