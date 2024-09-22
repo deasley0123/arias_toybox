@@ -9,7 +9,7 @@ label scene2:
     n "Aria runs ahead and back, to and fro, eyeing every tree, bush, and rock with profound interest."
     n "Your mind wanders."
     nvl clear
-    narrator "The more you walk, the more you're certain you don't {i}feel{/i} like a doll. Granted, you've never been a doll before, but you're pretty sure even the most carefully made dolls don't have vocal cords, or ears that twitch toward new sounds, or tails that swish to keep balance, or stomachs that flip every time the girl in the witch hat rounds a bend out of your sight."
+    narrator "The more you walk, the more you're certain you don't {i}feel{/i} like a doll. Granted, you've never been a doll before, but you're pretty sure even the most carefully made dolls don't have vocal cords, or ears that twitch toward new sounds, or tails that swish to keep balance, or stomachs that flip every time the girl in the witch hat rounds a bend out of your sight." with dissolve
     narrator "Even your paws... they {i}are{/i} paws, complete with retractable claws just like a cat would have. But your... fingers? They curl and flex with more dexterity than you'd expect. You have no problem picking up and holding a stick when you try."
     narrator "Your eyesight is better, too. You could never afford one of those 4K TVs, but you imagine they'd be like this. Colors seem brighter, details clearer. You can see and hear every leaf rustling in the breeze. It's a little overwhelming, actually."
     nvl clear

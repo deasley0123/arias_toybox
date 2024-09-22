@@ -2,9 +2,10 @@ label scene5:
     # TODO: Add scene transition "A Meal, Some Drinks"
     scene bg bar:
         zoom 0.5
+    with fadehold
     n "The Beard & Brew is mostly empty when you and Aria make your way inside."
     nvl clear
-    narrator "It sits on the forest-side edge of a small, but respectable village. Thatch, Wood, and plaster homes and businesses dot a mercantile square. Just beyond lies cleared land littered with ripe green and gold crops, swaying in the breeze."
+    narrator "It sits on the forest-side edge of a small, but respectable village. Thatch, Wood, and plaster homes and businesses dot a mercantile square. Just beyond lies cleared land littered with ripe green and gold crops, swaying in the breeze." with dissolve
     narrator "A simple, but wide and well-maintained dirt road snakes through the buildings. It comes from over distant hills and continues off into a different part of the forest. One you haven't spent the better part of your day traipsing through."
     narrator "You passed a broad sign calling the settlement Woldthwaite. It's a mouthful and you doubt you'll remember it."
     nvl clear

@@ -96,6 +96,7 @@ label scene4:
     n "She squeezes just a little tighter, for a moment."
     n "Then she sets the toad on the ground."
     b "*Ribbit*"
+    # TODO: Bog beast goes away
     n "The toad looks around himself, then hops into a nearby fern."
     show aria disappointed hold arm mslight lookdown
     n "Aria sighs, and sniffles."
@@ -107,13 +108,21 @@ label scene4:
     a "..."
     show aria reluctant hold arm mopen lookup
     a "But if you want to keep guarding your lair, I guess that's okay too."
-    show aria reluctant hold arm mclose lookat
+    show aria reluctant hold arm mclose lookup at grey_out
     j "He is the Weald Queen's stalwart guardian, after all."
-    show aria reluctant hold arm mopen lookat
+    show aria reluctant hold arm mopen lookat at restore_color
     a "Yeah. He probably has lots of responsibilities."
-    show aria reluctant hold arm mclose lookat at grey_out
+    show aria reluctant hold arm mclose lookdown at grey_out
     j "Definitely."
-    n "All at once, the young girl hugs you. The surprise of it nearly knocks you over."
+    show aria close hug anxious at reset with dissolve
+    show bg forest afternoon:
+        subpixel True blur 8.0 
+    with dissolve
+    show aria at restore_color
+    show aria:
+        subpixel True zoom 0.95 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-45.0, -288, 0.0) 
+    n "All at once, the young girl hugs you. The surprise of it nearly knocks you over." with vpunch
+    show aria at grey_out
     menu:
         "Return her hug.":
             jump choice_2_1
@@ -122,24 +131,40 @@ label scene4:
 
 label choice_2_1:
     $ bond2 = True
+    show aria at restore_color
     n "You're soft at first, worried a stray claw might dig into her if you aren't careful."
+    show aria close hug recovering
     n "But, after a moment, you hold her as tightly as she holds you."
     n "She's so small."
+    show aria close hug comforted
     n "Her heart beats so fast. Her arms feel so fragile around your neck."
     n "Eventually she releases you, and you let her go."
     jump resume_2
 label choice_2_2:
     $ bond2 = False
+    show aria at restore_color
     n "The hug shouldn't surprise you so much. You're her favorite doll, after all. Who else would she go to for comfort?"
-    n "Even so, you can't bring yourself to hug her back.You just let her hold you until she's ready to let go."
+    show aria close hug sad
+    n "Even so, you can't bring yourself to hug her back. You just let her hold you until she's ready to let go."
     n "Gradually, she does."
     jump resume_2
 
 label resume_2:
+    show bg forest afternoon:
+        subpixel True blur 0.0
+    with dissolve
+    hide aria with dissolve
+    show aria sad hold arm mopen eclose:
+        zoom 0.7
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(300, 300, 0.0) 
+    show aria at grey_out
     j "You did good. That's a tough thing to do, but it's important."
     n "She sniffles."
+    show aria sad hold arm mopen lookdown at restore_color
     a "I'm going to be alone again."
+    show aria at grey_out
     j "Only for a little while. Just until your mom comes back. Right?"
+    show aria disappointed hold arm mslight lookdown
     n "She's quiet for a long time."
     n "She's quiet for long enough that you start to wonder if that was the wrong thing to say, somehow."
     n "That's all this was, wasn't it?"
@@ -147,36 +172,59 @@ label resume_2:
     n "You didn't sign up for any of this. You only barely signed up to take her on this quest. And only because you had no other choice."
     n "She brought you into this world, and she's your only way back."
     n "You stand up, and dust a fallen leaf off your shoulder."
+    show aria reluctant hold arm mclose lookdown
     j "Well..."
     j "You're not alone right now. I'm here with you. And it isn't sundown yet."
+    show aria reluctant hold arm mclose lookup
     j "So, where to next?"
-    n "She watches you for a moment. Then she pulls her magic mirror out of her bag."
-    a "Our quest completed, we can now feast in the Halls of Gods and Kings!"
-    n "She shows you, in a misty image in the mirror, a small tavern."
+    n "She watches you for a moment. The color gradually returning to her cheeks, her breath evening."
+    show aria reluctant hold arm mopen lookup at restore_color
     a "There's a town not too far from here."
-    n "A tray passes by in the mirror.\nIt carries a large glass of amber liquid and a steaming plate of something like pot roast."
-    n "Your stomach rumbles."
-    j "Food is good. How far? Twenty minutes?"
-    a "Mmmm..."
+    show aria neutral wave mopen
+    a "Upon accomplishing our quest, we should eat together together to celebrate."
+    show aria neutral wave mclose at grey_out
+    j "Food is good. How far?"
+    j "Twenty minutes?"
+    show aria point self mopen at restore_color
+    a "Hmmm... I've still got..."
+    show aria point self mclose at grey_out
     j "Right. Got it. Little legs."
+    show aria excite hiding at restore_color
+    a "Yeah."
+    show aria smile showcase mopen:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(300, 336, 0.0) alpha 1.0
+        linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, -270.0, -2052.0) alpha 0.0
     a "This way!"
     n "She rushes off. You follow."
+    scene bg forest afternoon with fadehold
     # TODO: Fade to black like you're moving on, then don't
     n "You walk all of three minutes before stopping again."
     nvl clear
-    narrator "You notice the stillness first, your whiskers twitching in the suddenly silent forest. You reach out to stop Aria, but she sees it now too."
+    narrator "You notice the stillness first, your whiskers twitching in the suddenly silent forest. You reach out to stop Aria, but she sees it now too." with dissolve
     narrator "Like a gash ripped through skin, the trees and underbrush in front of you are slashed and torn apart. Tree trunks lay with clumps of dirt caught in their 
     newly unearthed roots, the leaves on the branches still green where they haven't been shaken off completely."
     narrator "One of the upturned trees has claw marks like the ones Toorg and Gerald pointed out. Others are hardly recognizable as trees at all."
     nvl clear
+    # TODO: show ci arboreal massacre
     n "Aria's voice is even softer than it was by the pond."
+    show aria tell secret mopen:
+        zoom 0.7
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(300, 300, 0.0) 
+    with dissolve
     a "What do you think did that?"
+    show aria tell secret mclose at grey_out
     j "No idea. Let's try not to find out."
+    show aria pout mclose lookat at restore_color
     a "But-"
+    show aria at grey_out
     n "You put a hand to her back and turn her away from the arboreal massacre."
     j "One adventure per meal. Feast first, then we'll see about this. Only fair, right?"
+    show aria poutless mclose lookat reclose at restore_color
     a "Okay..."
+    hide aria with dissolve
     n "She sighs, but her stomach rumbles pitifully."
+    # TODO: show ci gerald bag
     n "You glance back as you walk away. You hope you distracted her before she noticed the bag hanging in the branches of the clawed tree."
     n "The bag that you're certain Gerald was wearing earlier."
     jump scene5
