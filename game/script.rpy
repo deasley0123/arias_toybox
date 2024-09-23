@@ -4,8 +4,25 @@ default bond2 = False
 default bond3 = False
 default goHome = True
 default bogbeastname = "Bog Beast"
-
 image loading movie = Movie(play="images/anim_loading.webm")
+image spooktober = "spooktober_logo.png"
+
+label splashscreen:
+    scene black
+    with Pause(1)
+
+    show spooktober
+    # show text "Developed for Spooktober Game Jam 2024":
+    #     ypos 0.2
+    with dissolve
+    with Pause(2)
+
+    # hide text with dissolve
+    hide spooktober
+    with dissolve
+    with Pause(1)
+
+    return
 
 label start:
     camera:
