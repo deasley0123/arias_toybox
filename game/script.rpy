@@ -1,4 +1,6 @@
 ﻿# The game starts here.
+
+# Game Play Defaults
 default bond1 = False
 default bond2 = False
 default bond3 = False

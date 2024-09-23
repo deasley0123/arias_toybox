@@ -50,10 +50,18 @@ define fadehold = Fade(0.6, 0.75, 0.6)
 define spotlight_dissolve = ImageDissolve("spotlight_alpha.png", 1.0, 8 , reverse=False)
 
 label scene_transition(title=""):
+    $ quick_menu = False
     scene loading movie with fadehold
     show text "{size=150}[title]{/size}" with dissolve_slow
     pause 1.0
     hide text
     with dissolve_slow
+    $ quick_menu = True
 
     return
+
+label end_text(title=""):
+    show text "{size=150}[title]{/size}" with dissolve_slow
+    pause 1.0
+    hide text
+    with dissolve_slow

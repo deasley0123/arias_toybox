@@ -252,17 +252,18 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.0
+            xalign 0.5
             yalign 0.0
 
-            textbutton _("Back") action Rollback()
+            # textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Main Menu") action MainMenu()
+            # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Settings") action ShowMenu('settings')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -313,7 +314,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Settings") action ShowMenu("settings")
 
         if _in_replay:
 
@@ -731,11 +732,11 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
-screen preferences():
+screen settings():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
 

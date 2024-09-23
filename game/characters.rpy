@@ -89,9 +89,9 @@ style gerald_say_dialogue is say_dialogue:
 
 define b = Character("[bogbeastname]", who_style="bb_say_label", what_style="bb_say_dialogue")
 style bb_say_label is input:
+    color '#3d7a00'
     size 44
     ypos 0.0
-
 style bb_say_dialogue is say_dialogue:
     color "#FFF"
     ypos 0.3
