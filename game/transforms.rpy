@@ -37,6 +37,8 @@ image aria_jump_up_from_middle:
     pause 0.2
     offset (0.0, 200.0)
 
+define dissolve_slow = Dissolve(3.0)
+
 transform grey_out:
     subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(0.8)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
 
@@ -47,4 +49,11 @@ define fadehold = Fade(0.6, 0.75, 0.6)
 
 define spotlight_dissolve = ImageDissolve("spotlight_alpha.png", 1.0, 8 , reverse=False)
 
- 
+label scene_transition(title=""):
+    scene loading movie with fadehold
+    show text "{size=150}[title]{/size}" with dissolve_slow
+    pause 1.0
+    hide text
+    with dissolve_slow
+
+    return

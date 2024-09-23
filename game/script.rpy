@@ -5,6 +5,8 @@ default bond3 = False
 default goHome = True
 default bogbeastname = "Bog Beast"
 
+image loading movie = Movie(play="images/anim_loading.webm")
+
 label start:
     camera:
         perspective True

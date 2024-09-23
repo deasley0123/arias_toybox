@@ -1,5 +1,5 @@
 label scene6:
-    # TODO: Add scene transition "The Weald part III"
+    call scene_transition("The Weald part III")
     # TODO: Switch for painterly video
     scene bg aria cottage dusk
     with fadehold
@@ -81,7 +81,7 @@ label choice_5_2:
     n "There is also, of course, the whole matter of kidnapping your soul and stuffing you in this body."
     n "Aria has a great deal of power and very little in her life to make sure she uses it safely or responsibly."
     n "Her mother isn't even around most of the time, it seems, and what you've heard of her secondhand is not exactly comforting."
-    n "There's all the neglect of her daughter, her suspcicious \'research.\'"
+    n "There's the apparent neglect of her daughter, her suspcicious \'research.\'"
     if bond1 == True:
         n "Aria even said that her mom doesn't see a lot of difference between the living and the dead."
     n "There are a lot of red flags, and if she really is an incredible sorceress too... Well, the folks in town have a strong case to ask some more questions from the source."

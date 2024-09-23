@@ -1,5 +1,5 @@
 label scene4:
-    # TODO: Add scene transition "The Weald part II"
+    call scene_transition("The Weald part II")
     scene bg forest afternoon with fadehold
     # TODO: Bog beast cut-in front and center
     j "So, what are you going to name him?"

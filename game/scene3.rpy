@@ -1,11 +1,11 @@
-label scene3:
-    # TODO: Add scene transition "The Bog Beast"
+label scene3:    
+    call scene_transition("The Bog Beast")
     scene bg bog day with fadehold
     # TODO: Finish description at start
-    n "(description to be completed) Reeds, bullrush, sunlit murky pond. Lilly pads, crickets and frogsong. Canopy of trees closing over the ponds like a cathedral. Note: Been a lot of breeze, but the air is still now.. waiting"
+    n "The trees thin out and give way to reeds and bullrush. The ground under your feet grows muddy as you approach a murky pond, bright sunlight glinting off the water."
     scene bg bog plus cut in
     show ci cattails behind bg
-    n "something, something there are patches of reeds lining the sitting placid waters."
+    n "Cricket chirps and frog song mingle on the gentle breeze. Patches of reeds sway gently, lining placid waters."
     show aria lay crossed lookaway mclose:
         zoom 0.5
         subpixel True 
