@@ -1,4 +1,4 @@
-label scene5:
+label scene6:
     # TODO: Add scene transition "The Weald part III"
     # TODO: Switch for painterly video
     scene bg aria cottage dusk
