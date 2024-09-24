@@ -6,14 +6,19 @@ default bond2 = False
 default bond3 = False
 default goHome = True
 default bogbeastname = "Bog Beast"
-image loading movie = Movie(play="images/anim_loading.webm")
+image loading movie = Movie(play="images/anim_loading.webm", loop=True)
+image starting movie = Movie(play="images/openAnim.webm", loop=False, keep_last_frame=True)
+image menu loop = Movie(play="images/openAnim_Loop.webm", loop=True)
 image spooktober = "spooktober_logo.png"
 
 label splashscreen:
     scene black
     with Pause(1)
 
-    show spooktober
+    show spooktober:
+        zoom 0.7
+        yalign 0.5
+        xalign 0.5
     # show text "Developed for Spooktober Game Jam 2024":
     #     ypos 0.2
     with dissolve
@@ -24,6 +29,15 @@ label splashscreen:
     with dissolve
     with Pause(1)
 
+    # $ renpy.movie_cutscene("images/openAnim.webm")
+    show starting movie
+    with Pause(5)
+
+    return
+
+label before_main_menu:
+    show menu hold
+    
     return
 
 label start:
