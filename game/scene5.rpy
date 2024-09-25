@@ -216,7 +216,7 @@ label choice_3_1:
     jump resume_3
 
 label choice_3_2:
-    $ goHome = False
+    $ goHome = True
     show aria at grey_out
     nvl clear
     narrator "You had expected this, to a degree. The thought had even crossed your mind about staying." with dissolve
