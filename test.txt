@@ -1,87 +1,115 @@
-#Narration
-The front door to the small cottage has no lock. You suppose there's no need, or rather, the illusion you passed through {i}was{/i} the lock.
-#Narration
-You quietly clear your throat as you swing the door open, intending to call out.
-#Narration
-But the air within the cottage is silent, still, and any sound you were going to make dies in your throat. 
-#Narration
-It feels wrong to break this silence. Dangerous, somehow.
-#Narration
-To your right is a small room with a hearth, fire barely smoldering, herbs drying on the mantle. A table and one chair are the room's only occupants. A curtain keeps most of the room in shadow from the fading sunlight.
-#Narration
-In front of you is a staircase leading to Aria's room in the attic.
-#Narration
-To your left is a narrow door just barely cracked open, a soft glow bleeding along the door's edge. 
-%options_6
-Go upstairs
-Go through the narrow door
-%option_6_1
-#Narration
-You're fairly certain that you'll find Aria in the attic. 
-#If_Block
-goHome == True
-#Narration
-Not only is it her room, but it's where the summoning circle is, and she did promise to send you home.
-#If_Block
-Resume
-#Narration
-Your ears swivel and your whiskers twitch, on keen alert as you ascend the stairs.
-#Narration
-The floorboards above you creak lightly, and you freeze.
-#Narration
-You can almost peer over the lip of the floorboards, so you take one more step up. 
-#Narration
-The moment you do, two little hands wrench you up the rest of the stairs with surprising strength.
 #Aria
-Jophiel!
+I'm fine. But we have to hurry, we're running out of time to send you back!
 #Narration
-She hugs you quickly, then lets go of everything but your hand. 
+She's right. The sun is hastening it's descent. Darkness will be here soon.
 #Aria
-I'm so glad you made it back safe!
+I have everything set up, already.
+#Narration
+She settles you down in the now-familiar circle. You take what will probably be your last look around this attic.
+#Narration
+You're oddly nostalgic for the space.
 #Aria
-When Mom summons me like that, there's nothing I can do. I'm sorry.
+Ahem.
+#Aria
+Are you ready to go?
+#If_block
+fullBond
+#Narration
+Some part of you wants to pepper Aria with questions, follow up on the concerns the mob from town raised on the way here.
+#Narration
+But you see how Aria is just barely holding together, resolved to honor her promise.
+#Narration
+You won't sully her effort, and you trust her. Whatever the truth may be.
+#If_block
+notFullBond
+#Narration
+You think of the posse in the forest, the fears they shared, the trembling hands gripping their pitchforks.
 #Jo
-Hey, it's okay. Are you alright?
+I didn't see your mom when I came in. Is she gone so soon after getting back?
+#Aria
+No, she was... mad. I don't think she's gonna leave me alone again for a bit.
 #Narration
-She nods quickly. Too quickly, as if she's trying to dismiss the question.
-#If_Block
-goHome == True
-jump go_home_endings
-#If_Block
-goHome == False
-jump try_hiding
-%option_6_2
+You would expect her to be more excited about her mom being around more, but mostly Aria looks troubled.
+#Aria
+She only left just now to /'take care of some pests in the woods/.'
 #Narration
-Your heart only recently settled from fleeing the mob in the woods begins race again as you approach the door.
-#If_Block
-goHome == True
+Your mind spins rational explanations. Perhaps she's already aware of it and going to go and aid the town with the Green-Eyed Demon.
 #Narration
-Aria promised to take you home, and you know your ticket back is the ritual circle upstairs, but...
-#If_Block
-resume
+Or... perhaps... There is a next question to ask, but you can't quite bring it to your lips before you notice the sky growing truly dark.
 #Narration
-You need more answers than you have, and you know Aria can only tell you so much.
+You may not have every answer, in fact you're not sure you want them, but you do know for certain that you can't spend any more time searching.
 #Narration
-You gently pull open the door. A series of cold, stone stairs lead you down into the earth.
+You need to go home.
+#If_block
+Resume
+#Jo
+The sun is getting low, I'm as ready as I can be.
 #Narration
-Every tuft of fur on your body stands, a warning. You push your fear aside and continue.
+You were asleep for this the first time, so you're not quite sure what to expect. You feel something like a static charge in your fur as the ritual begins.
+#Jo
+Thank you, Aria.
+#Jo
+Not just for sending me back, but for bringing me here, too. I'm glad it was me you summoned.
 #Narration
-An acrid, foreign stench immediately assaults your nostrils. Followed by a smell you only know from visiting your grandmother in her final days.
+Her facade finally cracks a little.
+#Aria
+I'll miss you.
+#Aria
+I'm grateful it was you, too.
+#Aria
+I hope things get better for you in Cleveland.
+#Jo
+Me too. I think they will.
+I may not meet the requirements for your spell anymore, but you're welcome to peer in on me in your mirror anytime.
+#Jo
+And /'Jophiel/' will still be here for you when I'm gone.
+#If_block
+fullBond
+#Aria
+I think I like Serena even better than Jophiel.
 #Narration
-It's the smell of death.
+You feel the magic swell beneath you. Your body grows light as your soul and conscious mind begin to separate.
 #Narration
-To one side is an empty caldron, a ritual circle, and a table of magical implements, tinctures, and tools.
+The last you see of this world is the tear stained smile of the young sorceress.
 #Narration
-To the other, bits of body and flesh, jars of pieces and parts, and dolls. Shrunken forms.
+When you woke up in your world again, it would have been easy enough to dismiss everything you experienced as nothing but a vivid dream. 
 #Narration
-You step into the room, clutching at your mouth and nose. Your eyes are glued to the back. A shelf.
+Even if you did lose far more time than usual "sleeping." Even if your own body felt strangely foreign for a little while.
 #Narration
-Two figures you unfortunately recognize the likeness of. A tree-person and a gnomish sort.
+Even if, around Halloween, the sight of a child in a witch hat made you choke up.
 #Narration
-The bile you've been holding back stings your throat as tears of fear and frustration gather in the creases of your eyes.
-#If_Block
-goHome == True
-jump caught_snooping
-#If_Block
-goHome == False
-jump stay_endings
+You didn't dismiss it, though. It was real enough for you. And you were going to do what you told Aria you would: find ways to enjoy life again.
+#Narration
+After all, if she was going to look in on you from time to time, you wanted to make that an adventure.
+#If_block
+notFullBond
+#Aria
+Yeah.
+#Narration
+You feel the magic swell beneath you. Your body grows light as your soul and conscious mind begin to separate.
+#Narration
+While you were focused on Aria, even your sensitive ears missed the footsteps on the stairs.
+#Narration
+The last you see of this world is the tear stained face of the young sorceress, gazing up, anxious, at her returned mother.
+#Narration
+You don't know what happened to her next. 
+#Narration
+You returned to your world. If anyone noticed you were gone, they didn't show it.
+#Narration
+It would have been easy to dismiss everything that happened as a vivid dream. And you tried to. Even when you lost nearly a whole day "sleeping." Even when your own body felt strangely foreign to you afterward.  
+#Narration
+Even when, around Halloween, just the sight of a kid in a witch hat made your heart twist in your chest.
+#Narration
+You told yourself it was a dream. It had to be. Aria didn't exist except as some strange corner of your subconscious. 
+#Narration
+One that was urging you to live life a little more like it matters, maybe.
+#Narration
+Or maybe just to call your mom.
+#Narration
+What was the other option, after all? If it was all real, if she did exist in some other world... 
+#Narration
+Then that hand on her shoulder was also real. And so was the look of dread in her eyes when she looked up. 
+#Narration
+And also, just as real, was the fact that you left, and there's nothing you can do now.
+#Narration
+So you went back to your life. And you tried not to think about the strange dream, or the ways things might have changed if you had let them. 
