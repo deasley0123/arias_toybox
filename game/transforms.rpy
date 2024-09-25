@@ -17,6 +17,14 @@ transform shaking:
         linear 0.1 xoffset -3 yoffset 3
         linear 0.1 xoffset 0 yoffset 0
         repeat
+transform shaking_extreme(factor):
+    block:
+        linear 0.1 xoffset -2*factor yoffset 2*factor
+        linear 0.1 xoffset 3*factor yoffset -3*factor
+        linear 0.1 xoffset 2*factor yoffset -2*factor
+        linear 0.1 xoffset -3*factor yoffset 3*factor
+        linear 0.1 xoffset 0 yoffset 0
+        repeat
 transform blur_box:
     block:
         blur 3
