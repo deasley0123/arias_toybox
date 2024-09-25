@@ -1,219 +1,87 @@
 #Narration
-The posse from the town is larger than you expected, but less professional than the barkeep made it sound.
+The front door to the small cottage has no lock. You suppose there's no need, or rather, the illusion you passed through {i}was{/i} the lock.
 #Narration
-There are roughly two dozen able-bodied adults, mostly humans, which is somewhat surprising given Aria is the only human you'd interacted with today.
+You quietly clear your throat as you swing the door open, intending to call out.
 #Narration
-But there is only one spear and two real swords to go around, with a collection of sharp farm tools and heavy mallets otherwise.
+But the air within the cottage is silent, still, and any sound you were going to make dies in your throat. 
 #Narration
-Some also carry bows, but they look distinctly hand-made and somewhat crudely at that.
+It feels wrong to break this silence. Dangerous, somehow.
 #Narration
-This isn't a town of warriors. Apart from the barkeep, nobody else from the town even seems brave enough to talk to you, outsider and cat-person that you are.
+To your right is a small room with a hearth, fire barely smoldering, herbs drying on the mantle. A table and one chair are the room's only occupants. A curtain keeps most of the room in shadow from the fading sunlight.
 #Narration
-The barkeep does more than make up for what the posse lacks, though. Both in might for your expedition and in conversation. He makes idle chatter with you about the recent harvest (quite good) and the regional taxes (too high).
+In front of you is a staircase leading to Aria's room in the attic.
 #Narration
-When that topic is exhausted, he asks you about yourself, and your relationship to Aria. You lie hastily that you were hired to watch over her while her mom is away, although it was through an intermediary and you haven't actually met her mom, yet.
+To your left is a narrow door just barely cracked open, a soft glow bleeding along the door's edge. 
+%options_6
+Go upstairs
+Go through the narrow door
+%option_6_1
 #Narration
-To support your story, you describe what you can of your day. Adventuring in the woods, meeting Toorg and Gerald, catching a toad, and coming to town. You fill him in as well on the damage you saw in the woods, and Gerald's bag you saw there.
-#Narration
-He was quiet while you recounted your day, only nodding along and listening patiently to you prattle, but he speaks up now. He's abrupt with you for the first time today.
-#Barkeep
-Why didn't you mention that earlier, at my tavern?
-#Jo
-Sorry, I guess I should have. I just didn't want to scare the kid.
-#Narration
-At the mention of Aria and the tavern, you remember the gem she made.
-#Jo
-Oh, that's right! I also needed to give this to you. I forgot about it when she disappeared.
-#Jo
-We didn't have any money to pay you for the meal and milk, so she made you this gem.
-#Narration
-He accepts it from you with a deeply troubled look.
-#Jo
-Yeah, I'm not sure if that's enough or really counts as currency? I can ask her mom to reimburse you, maybe?
-#Barkeep
-This is... she made this? Out of what?
-#Jo
-Uh, like a rock. A normal rock as far as I could tell.
-#Narration
-He scrutinizes you like he's sizing you up. Your honesty, your capabilities, your intentions.
-#Jo
-I'm sorry I don't have better answers for you. I know basically nothing about magic.
-#Barkeep
-Well, I'm no mage myself, but I was a guard in the palace in Rimmond for many years before retiring here.
-#Barkeep
-No COURT mage could perform transmutation on this level so casually, never mind an apprentice of her age. That teleportation earlier too.
-#Barkeep
-This girl is... something else.
-#Barkeep
-I also kept something from you. There was more to the message I received from Gerald.
-#Barkeep
-He said the markings seemed strategic rather than instinctual. A warning for people, not beasts. There were faint traces of magic, too. 
-#Barkeep
-I've been retired to Woldthwaite damn near 10 years. No head, no tail, no hide nor hair of anyone living out here in the Weald like this.
-#Narration
-As he waits for your response, you realize this is where this conversation was always leading.
-#Narration
-Under the cover of polite concern, he had extracted exactly what he needed to determine you were not a threat, and that Aria and her mother might be.
-#Barkeep
-The child had green eyes, and I'd bet anything the mother does too.
-#Narration
-You start to immediately stammer out a defense for Aria but you stop yourself.
-#Narration
-You can't outright deny she's powerful, and you haven't even seen her mom. They may be right to be suspicious.
-#Narration
-But you note the way the others in the posse have been watching you and listening to this conversation unfold. You see how they grip their weapons.
-#Narration
-This posse is starting to feel more like a mob, and you're not sure which end of the pitchfork you'll end up on.
-%options_5
-Protect Aria.
-Lead them to her.
-%options_5_1
-#Narration
-Aria may be deeply magical, but she's just a lonely child.
-#Narration
-She only brought you here because you didn't want to be yourself. She took your lesson to heart and let [bogbeastname] go.
+You're fairly certain that you'll find Aria in the attic. 
 #If_Block
 goHome == True
 #Narration
-Even though it will mean her search for companionship continues, she's promised to honor your deal and send you home. 
+Not only is it her room, but it's where the summoning circle is, and she did promise to send you home.
 #If_Block
-GoHome == False
-#Narration
-Although it has only been a day, she's become dear to you. You decided to stay here to care for her and find purpose for yourself.
-#ResumeFromIf
 Resume
 #Narration
-She doesn't deserve a mob at her door.
+Your ears swivel and your whiskers twitch, on keen alert as you ascend the stairs.
+#Narration
+The floorboards above you creak lightly, and you freeze.
+#Narration
+You can almost peer over the lip of the floorboards, so you take one more step up. 
+#Narration
+The moment you do, two little hands wrench you up the rest of the stairs with surprising strength.
+#Aria
+Jophiel!
+#Narration
+She hugs you quickly, then lets go of everything but your hand. 
+#Aria
+I'm so glad you made it back safe!
+#Aria
+When Mom summons me like that, there's nothing I can do. I'm sorry.
 #Jo
-Hey. Aria is just an innocent little kid. I spent the whole day with her.
-#Jo
-Her magic may be the real deal, but she would never hurt anyone.
-#Jo
-I think her mom might be kind of shit at being a mom, but I'm not going to bring a bunch of armed and angry assholes to her door on a hunch!
-#Barkeep
-I'm sorry, Jophiel, but that {i}hunch{/i} is what we have, and we're going to pursue it to the end.
+Hey, it's okay. Are you alright?
 #Narration
-The air is still as the minotaur and the rest of the mob all watch you. A few of the members at the back start to shuffle around. Soon you'll be surrounded.
-#Narration
-You don't give them the chance. You turn and run without another thought.
-#Narration
-Despite their numbers advantage, you quickly lose them. It's simple, really.
-#Narration
-Your eyes are made for the fading light. Your feet are lighter than theirs, and your footfalls are near silent even in all the brush.
-#Narration
-Their rough voices calling for you to stop and wait have long faded away behind you when the trees grow too dense to traverse.
-#Narration
-You stop, but the tugging in your chest still directs you forwards.
-#Narration
-You scratch your head. You may not know this whole forest, but you {i}really{/i} don't remember this tight copse of trees here, so close to Aria's house.
-#Narration
-You are searching for a way around when you hear a familiar croak.
-#BogBeast
-*ribbit*
-#Narration
-[bogbeastname] sits nonplussed at the base of one of the larger trees.
-#Narration
-You take a step towards him, and when you do he jumps up and {i}through{/i} the solid tree as if it isn't there.
-#Jo
-Uh... [bogbeastname]?
-#Narration
-You reach out to the tree, and at first touch it feels real enough, but as you press on it the sensation of the bark surface starts to give way.
-#Narration
-Hesitantly, you push your way through the tree, or the illusion of one. Your fur stands on end as you do, and you feel a strange pressure in your head.
-#Narration
-It's similar to the pressure you'd feel right before your ears popped on a plane, only it's all through your skull, deep behind your eyes. It builds and builds.
-#Narration
-Until it too pops, and you're on the other side. You see Aria's cottage, a thin trail of smoke rising from the chimney, the illusion warding you away now behind you.
-#Jo
-Well, that explains why nobody has found the place.
-#Jo
-I guess I'll go in through the door this time.
-%options_5_2
-#Narration
-Unbidden, the image of Aria holding the toad too tightly comes to your mind.
+She nods quickly. Too quickly, as if she's trying to dismiss the question.
 #If_Block
-bond1 == True
-#Narration
-And you recall her story about reviving the dead tuna to play with.
-#Narration
-There is also, of course, the whole matter of kidnapping your soul and stuffing you in this body. 
-#Narration
-Aria has a great deal of power and very little in her life to make sure she uses it safely or responsibly.
-#Narration
-Her mother isn't even around most of the time, it seems, and what you've heard of her secondhand is not exactly comforting.
-#Narration
-There's all the neglect of her daughter, and Aria even said that her mom doesn't see a lot of difference between the living and the dead.
-#Narration
-There are a lot of red flags, and if she really is an incredible sorceress too... Well, the folks in town have a strong case to ask some more questions from the source.
-#Jo
-You're... you're right to be suspicious, I think.
-#Jo
-I have a lot of unanswered questions, too. I'll take us to her house.
-#Jo
-Hopefully we can get some answers.
-#Jo
-But I need you to promise me to do for them what you've done with me here. Ask questions first.
-#Barkeep
-Of course! This is a hunt for a demon, and we'll not take any hasty action until we know more.
+goHome == True
+jump go_home_endings
 #If_Block
-goHome==False
-bond1==True
-bond2==True
+goHome == False
+jump try_hiding
+%option_6_2
 #Narration
-You choose to trust his words for now, but if anything starts going badly, you'll do everything you can to get Aria away to safety.
-#Narration
-You decided to stay here for her, and you won't allow her to be hurt, not while she's in your care.
+Your heart only recently settled from fleeing the mob in the woods begins race again as you approach the door.
 #If_Block
-goHome==False
-#Narration
-You choose to trust his words for now, but you start to wonder if your decision to say was such a good one after all.
-#If_Block
-goHome==True
-#Narration
-You choose to trust his words for now. Maybe while they're busy talking with mom, you could have Aria send you home?
-#Narration
-Following the tugging in your chest and your memories from the day, you lead the town towards the clearing where Aria's house is.
-#Narration
-But in your path stands a dense copse of unfamiliar trees. Too dense to really fit through, and stretching on for some distance to either side.
-#Jo
-Huh. That's weird. It should be right through here, but... I don't think these trees were here this morning.
-#Barkeep
-Could be druid-craft at work. I think we've brought along an axe or two.
-#Narration
-A few men step forward to take swings. When the first's axe connects with a tree, all of the trees shudder and burst into mist, popping almost like balloons.
-#Narration
-Beyond, you see the familiar clearing, smoke rising from the home's chimney.
-#Barkeep
-Strong warding. We'd best be careful as we continue on.
-#Narration
-You follow after, a strong sinking pit in your stomach.
-#Narration
-The air is oppressively still in this clearing. The dense forest around it blocks much of the day's fading light.
-#Narration
-What light there is may just as well be coming from the moon, out full and early in the dimming sky.
-#Narration
-Your eyes still catch nearly every detail. A fallen branch here, a rustling bush there.
-#Narration
-The eyes of those with you are not so adept. Even by the torchlight that some carry, the uneven ground here is a tripping hazard.
-#Narration
-As a result, you've pulled ahead of the group and nearly reached the house yourself when you notice it.
-#Narration
-The stumbling feet and occasional curses from the group behind you have vanished completely.
-#Narration
-Your ears swivel, and then your head, but it's too late.
-#Narration
-The ground, uneven yet stable behind you moments ago has fissured. Jagged and bottomless grooves have swallowed the posse.
-#Narration
-Some you see hanging on to crumbling ledges and roots. They look to be calling out to you, to each other for help, but no sound reaches your ears.
-#Narration
-With the barest shudder for such violence, their last remaining handholds and footholds crumble away, as does the ground beneath you.
-#Narration
-You freeze up as your body pitches downwards. You've dreamt of falling before, but your unconscious mind could not emulate the numb terror filling you now.
-#if_Block
 goHome == True
 #Narration
-The moon recedes before your grasping hand as you wordlessly realize you won't be making it home after all.
-#if_Block
-goHome == False
+Aria promised to take you home, and you know your ticket back is the ritual circle upstairs, but...
+#If_Block
+resume
 #Narration
-The moon recedes before your grasping hand as you mutter out a silent apology to Aria. You won't be around to soothe her loneliness after all.
+You need more answers than you have, and you know Aria can only tell you so much.
+#Narration
+You gently pull open the door. A series of cold, stone stairs lead you down into the earth.
+#Narration
+Every tuft of fur on your body stands, a warning. You push your fear aside and continue.
+#Narration
+An acrid, foreign stench immediately assaults your nostrils. Followed by a smell you only know from visiting your grandmother in her final days.
+#Narration
+It's the smell of death.
+#Narration
+To one side is an empty caldron, a ritual circle, and a table of magical implements, tinctures, and tools.
+#Narration
+To the other, bits of body and flesh, jars of pieces and parts, and dolls. Shrunken forms.
+#Narration
+You step into the room, clutching at your mouth and nose. Your eyes are glued to the back. A shelf.
+#Narration
+Two figures you unfortunately recognize the likeness of. A tree-person and a gnomish sort.
+#Narration
+The bile you've been holding back stings your throat as tears of fear and frustration gather in the creases of your eyes.
+#If_Block
+goHome == True
+jump caught_snooping
+#If_Block
+goHome == False
+jump stay_endings

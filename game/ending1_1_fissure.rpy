@@ -16,7 +16,8 @@ label fissure:
     n "Some you see hanging on to crumbling ledges and roots. They look to be calling out to you, to each other for help, but no sound reaches your ears."
     n "With the barest shudder for such violence, their last remaining handholds and footholds crumble away, as does the ground beneath you."
     n "You freeze up as your body pitches downwards."
-    show black with PushMove(0.6, "pushup") # TODO: Replace black with ending CG
+    show black with PushMove(0.6, "pushup")
+    with vpunch # TODO: Replace black with ending CG
     n "You've dreamt of falling before, but your unconscious mind could not emulate the numb terror filling you now."
     if goHome == True:
         n "The moon recedes before your grasping hand."
