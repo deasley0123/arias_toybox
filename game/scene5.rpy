@@ -286,6 +286,8 @@ label resume_3:
     # TODO: Show CI of ruined forest and/or Gerald's bag
     n "In your mind's eye, you see the ruined bit of forest again. Gerald's bag hanging there."
     j "Yeah, I'd feel better with some company. And I think I could find my way back to her place."
+    hide bartender with Dissolve(1.0)
+    # TODO: Hide CI of ruined forest, or zoom camera in on it
     n "It's true. Perhaps because she summoned you here, you feel a gentle pull to the forest. Towards Aria."
     n "More than just the physical, there is an intangible void left by Aria's absence."
     n "When she's around, you're pulled along break-neck by her current. Her adventure games, her strange logic."
