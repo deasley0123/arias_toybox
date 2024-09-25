@@ -51,7 +51,7 @@ label start:
     # jump scene4
     # jump scene5
     # jump scene6
-    jump scene7
+    # jump scene7
 
     # Real start
     jump scene0
