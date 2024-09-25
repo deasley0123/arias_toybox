@@ -200,31 +200,45 @@ label resume_2:
     scene bg forest afternoon with fadehold
     # TODO: Fade to black like you're moving on, then don't
     n "You walk all of three minutes before stopping again."
+    show ci arboreal massacre:
+        ypos -0.3
+        xpos -0.0
     nvl clear
     narrator "You notice the stillness first, your whiskers twitching in the suddenly silent forest. You reach out to stop Aria, but she sees it now too." with dissolve
     narrator "Like a gash ripped through skin, the trees and underbrush in front of you are slashed and torn apart. Tree trunks lay with clumps of dirt caught in their 
     newly unearthed roots, the leaves on the branches still green where they haven't been shaken off completely."
     narrator "One of the upturned trees has claw marks like the ones Toorg and Gerald pointed out. Others are hardly recognizable as trees at all."
     nvl clear
-    # TODO: show ci arboreal massacre
-    n "Aria's voice is even softer than it was by the pond."
-    show aria tell secret mopen:
+    n "Aria's voice is even softer than it was by the pond." with dissolve
+    show aria disappointed hold arm mopen lookat:
+        subpixel True zrotate -36.0 
         zoom 0.7
-        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(300, 300, 0.0) 
-    with dissolve
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1857, 300, 0.0) 
+        linear 1.00 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1236, 300, 0.0) 
+    pause 1.1
     a "What do you think did that?"
-    show aria tell secret mclose at grey_out
+    show aria:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1236, 300, 0.0) 
+    show aria at grey_out
     j "No idea. Let's try not to find out."
     show aria pout mclose lookat at restore_color
     a "But-"
-    show aria at grey_out
+    show aria:
+        linear 1.00 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1857, 300, 0.0) 
     n "You put a hand to her back and turn her away from the arboreal massacre."
+    show aria:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1857, 300, 0.0) 
     j "One adventure per meal. Feast first, then we'll see about this. Only fair, right?"
-    show aria poutless mclose lookat reclose at restore_color
+    show aria poutless mclose lookat reclose:
+        linear 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1436, 300, 0.0) 
     a "Okay..."
     hide aria with dissolve
     n "She sighs, but her stomach rumbles pitifully."
-    # TODO: show ci gerald bag
-    n "You glance back as you walk away. You hope you distracted her before she noticed the bag hanging in the branches of the clawed tree."
+    n "You glance back as you walk away."
+    show ci2 gerald bag:
+        xpos 0.0
+        ypos -0.3
+    show ci2 with dissolve
+    n "You hope you distracted her before she noticed the bag hanging in the branches of the clawed tree."
     n "The bag that you're certain Gerald was wearing earlier."
     jump scene5

@@ -37,7 +37,7 @@ label splashscreen:
 
 label before_main_menu:
     show menu hold
-    
+
     return
 
 label start:
@@ -48,7 +48,7 @@ label start:
     # jump scene1
     # jump scene2
     # jump scene3
-    # jump scene4
+    jump scene4
     # jump scene5
     # jump scene6
 
