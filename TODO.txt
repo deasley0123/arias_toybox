@@ -10,3 +10,6 @@ aria suprised buckle glow mslight lookat
 
 bg aria cottage main
 bg aria cottage main door open
+bg basement
+
+ci toorg gerald dolls
