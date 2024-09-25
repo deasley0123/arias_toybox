@@ -43,9 +43,18 @@ transform grey_out:
     subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(0.8)*SaturationMatrix(0.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
 
 transform restore_color:
-        subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
+    subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
 
 define fadehold = Fade(0.6, 0.75, 0.6)
+define flash = Fade(0.1, 0.0, 0.5, color="#fff")
+transform false_hide:
+    subpixel True 
+    alpha 1.0 
+    linear 0.50 alpha 0.0 
+transform un_hide:
+    subpixel True 
+    alpha 0.0 
+    linear 0.50 alpha 1.0 
 
 define spotlight_dissolve = ImageDissolve("spotlight_alpha.png", 1.0, 8 , reverse=False)
 
