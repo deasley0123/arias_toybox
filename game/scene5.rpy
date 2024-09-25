@@ -217,20 +217,26 @@ label choice_3_1:
 
 label choice_3_2:
     $ goHome = False
-    n "You had expected this, to a degree. The thought had even crossed your mind about staying."
-    n "But this world, this body, it is all so unfamiliar to you. It isn't home."
-    n "While you may be in a bit of a rut back on Earth, visiting here and spending time with Aria has reminded you that truly anything is possible."
-    n "Running away here will not change your life for the better, you have to go back and make those changes for yourself."
-    n "And maybe you'll fail again, or it won't work out like you hoped. But it will be your life to live, not one that anyone else would make for you."
-    n "Resolved, you see the longing in her eyes, and you know what you say next will break her heart a little."
-    n "You also know that life comes with heartbreak as part of the package. You do your best to soften the blow."
-    j "Aria, I've really enjoyed today. Together we subdued the mighty Bog Beast!"
+    show aria at grey_out
+    nvl clear
+    narrator "You had expected this, to a degree. The thought had even crossed your mind about staying." with dissolve
+    narrator "But this world, this body, it is all so unfamiliar to you.\nIt isn't home."
+    narrator "While you may be in a bit of a rut back on Earth, visiting here and spending time with Aria has reminded you that truly anything is possible."
+    narrator "Running away to this magical land will not change your life for the better, you have to go back and make those changes for yourself."
+    nvl clear
+    narrator "And maybe you'll fail again, or it won't work out like you hoped. But it will be your life to live, not one that anyone else would make for you."
+    narrator "Resolved, you see the longing in her eyes, and you know what you say next will break her heart a little."
+    narrator "You also know that life comes with heartbreak as part of the package. You do your best to soften the blow."
+    nvl clear
+    j "Aria, I've really enjoyed today. Together we subdued the mighty Bog Beast!" with dissolve
     j "I was in a rough spot when you pulled me here, but just like [bogbeastname], I have a place I have to return to."
     j "Will you take me home?"
+    show aria disappointed hold arm mslight lookat at restore_color
     a "Yeah. I can do that."
     jump resume_3
 
 label resume_3:
+    show aria at grey_out
     n "Before you can stand up to pay or leave, the buckle on Aria's hat begins to glow."
     show aria suprised buckle glow mwideopen lookaway at restore_color
     a "Oh, oh, OH! Oh, no."
@@ -286,5 +292,5 @@ label resume_3:
     n "She has more zest for life in her little finger than you've felt in years."
     n "With her gone, everything slows, and the unanswered questions of the day resurface in your mind."
     n "Unease sets in as the sun drops lower on the horizon."
-    
+
     jump scene6
