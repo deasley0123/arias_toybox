@@ -1,11 +1,21 @@
 TODO: 
 bartender wink
 
-aria surprised buckle glow mwideopen lookaway
-aria surprised buckle glow mslight lookat
+
+#aria stop mclosed
+#aria stop mclosed lookup
+
+
+
 
 bg aria cottage main
 bg aria cottage main door open
 bg basement
 
 ci toorg gerald dolls
+
+
+
+
+
+CHeck all instances of false_hide to make sure they can be skipped through and properly hide the character
