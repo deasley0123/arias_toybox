@@ -3,7 +3,6 @@
 # Game Play Defaults
 default bond1 = False
 default bond2 = False
-default bond3 = False
 default goHome = True
 default bogbeastname = "Bog Beast"
 image loading movie = Movie(play="images/anim_loading.webm", loop=True)

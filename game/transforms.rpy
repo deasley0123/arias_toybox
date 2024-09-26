@@ -54,6 +54,7 @@ transform restore_color:
     subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) blend None 
 
 define fadehold = Fade(0.6, 0.75, 0.6)
+define faaadehold = Fade(1, 0.75, 0.6)
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 transform false_hide:
     subpixel True 
