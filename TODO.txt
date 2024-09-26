@@ -1,12 +1,8 @@
 TODO: 
 bartender wink
-aria satisfied pat stomach mopen
-aria satisfied pat stomach mclose
-aria satisfied pat stomach eclose mclose
-aria satisifed pat stoamch eclose mopen
 
-aria suprised buckle glow mwideopen lookaway
-aria suprised buckle glow mslight lookat
+aria surprised buckle glow mwideopen lookaway
+aria surprised buckle glow mslight lookat
 
 bg aria cottage main
 bg aria cottage main door open

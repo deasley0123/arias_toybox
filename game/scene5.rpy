@@ -101,8 +101,7 @@ label scene5:
     j "Uhh, wow. That looks great, Aria, but it might be a bit much."
     show aria grin teach mopen r_eclose at restore_color
     a "Oh, Jophiel, this is merely their cut of the spoils for sponsoring our expedition!"
-    show aria at grey_out
-    # TODO:build it off of the wave pose so it transtions nicely, show aria satisfied pat stomach
+    show aria satisfied pat stomach eopen mclose at grey_out
     n "She pats her stomach."
     show aria neutral wave mopen at restore_color
     a "You don't think they deserve any less, do you?"
@@ -127,8 +126,8 @@ label scene5:
     camera:
         subpixel True 
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-315.0, -18.0, 423.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)  
+    show aria satisfied pat stomach eclose mclose at grey_out
     with fadehold
-    show aria satisifed pat stomach eclose mclose at grey_out # TODO: aria satisifed pat stomach eclose mclose
     n "The soup was hearty and filling, and the milk was a bit lukewarm but satisfied a deep craving you were unsure you'd want to admit to."
     show aria satisfied pat stomach eclose mopen at restore_color
     a "Wow, I'm stuffed."
@@ -238,9 +237,9 @@ label choice_3_2:
 label resume_3:
     show aria at grey_out
     n "Before you can stand up to pay or leave, the buckle on Aria's hat begins to glow."
-    show aria suprised buckle glow mwideopen lookaway at restore_color
+    show aria surprised buckle glow mslight lookaway at restore_color
     a "Oh, oh, OH! Oh, no."
-    show aria suprised buckle glow mslight lookat
+    show aria surprised buckle glow mslight lookat
     a "Mom's home."
     hide aria with flash
     n "The buckle glows brighter, and with a flash Aria is gone."
@@ -282,12 +281,17 @@ label resume_3:
         n "Well, it would be good to cover everything with her anyways."
     show bartender at restore_color
     m "Sounds like you have an idea of where they're living. Care to join our posse tonight?"
+    show ci2 gerald bag:
+        zoom 0.7
+        xpos 0.4
+        ypos -0.1
+    with dissolve
     show bartender at grey_out
-    # TODO: Show CI of ruined forest and/or Gerald's bag
     n "In your mind's eye, you see the ruined bit of forest again. Gerald's bag hanging there."
     j "Yeah, I'd feel better with some company. And I think I could find my way back to her place."
-    hide bartender with Dissolve(1.0)
-    # TODO: Hide CI of ruined forest, or zoom camera in on it
+    hide ci2
+    hide bartender
+    with Dissolve(1.0)
     n "It's true. Perhaps because she summoned you here, you feel a gentle pull to the forest. Towards Aria."
     n "More than just the physical, there is an intangible void left by Aria's absence."
     n "When she's around, you're pulled along break-neck by her current. Her adventure games, her strange logic."
