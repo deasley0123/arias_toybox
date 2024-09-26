@@ -1,115 +1,157 @@
-#Aria
-I'm fine. But we have to hurry, we're running out of time to send you back!
 #Narration
-She's right. The sun is hastening it's descent. Darkness will be here soon.
-#Aria
-I have everything set up, already.
+You almost jump out of your skin when you feel something touch your arm.
 #Narration
-She settles you down in the now-familiar circle. You take what will probably be your last look around this attic.
+Aria hisses a whisper at you.
+#Aria
+SERENA!! Mom's gonna be really mad if she finds us down here!
 #Narration
-You're oddly nostalgic for the space.
+Whatever game you were playing before, even Aria has dropped it in this place.
 #Aria
-Ahem.
+I'm {i}suuuper{/i} not allowed in mom's workshop. I've never been down here before. She'll know we came in.
+#Narration
+Aria is preoccupied, glancing back at the stairs. Too worried about you and now her mom, she hasn't taken a good look around yet.
+#Serena
+Aria, this is very bad. Where is your mom?
+#Serena
+Where is your mom right now?
 #Aria
-Are you ready to go?
+She was already really, really, {i}really{/i} mad when I wasn't here. I didn't think she'd be leaving me alone again any time soon.
+#Aria
+But then she said something about /'pests in the forest/' and told me to stay here and wait until she came back.
+#Narration
+You know that your time is limited. This room, the stories you heard, the town's fears.
+#Narration
+You feel certain that if you're still here when Aria's mother returns, you will not survive.
+#Narration
+If the mob arrives instead, you're pretty sure the result will be the same.
+#Serena
+Aria, I don't want to scare you, and I don't say this as a game or to hurt you. 
+#Serena
+Your mom made that damage in the forest. The one who's been taking people? It's her.
+#Narration
+You take a deep, shuddering breath. And then you drop the pit from your stomach into hers.
+#Serena
+And I'm pretty sure that if I'm still here when she gets back... she'll kill me.
+#Narration
+Aria stares at you and stammers weakly in protest.
+#Aria
+No- no, you've... You've been so nice to me, and you even said you'd stay! She wouldn't! She wouldn't...
+#Serena
+Aria, do you remember the adventurers we met in the woods?
+#Narration
+She nods. You direct her eyes up to the shelf in front of you.
+#Serena
+She... she's done something to them. Something very, very bad.
+#Serena
+I think I, this body, your... toy. I think I was someone else before. Someone who met the same fate as them and I don't know how many others.
+#Serena
+And when she comes back...
+#Narration
+You swallow hard.
+#Serena
+That'll be me. Again.
+#Narration
+She stares at the doll-sized people for what feels like an eternity. Her own panicked tears begin to well in her green eyes.
+#Serena
+I know, I know it is a lot to process. But, Aria, I have to go-
+#Narration
+She looks at you now. Her lip trembles.
+#Narration
+You take a deep breath, trying desperately to steady yourself.
+#Serena
+And I think you should come with me. 
+#Narration
+You want to live, but you aren't prepared to sacrifice her to whatever life she might face here.
+#Narration
+This is also a lot of information all at once, most of it life-changing. You can see her mind spinning. 
 #If_block
 fullBond
 #Narration
-Some part of you wants to pepper Aria with questions, follow up on the concerns the mob from town raised on the way here.
+You crouch down to her level, and you take her hands in yours. 
+#Jophiel
+{i}You{/i} are my Weald Queen, Aria. And I, Jophiel, am your right hand.
+#Jophiel
+Enemies approach us now from several fronts. As your trusted guardian, your safety is paramount to me.
+#Jophiel
+But I am still new to this realm, and I require your might and cunning.
+#Serena
+Please, Aria.
+I can't get us to safety alone.
 #Narration
-But you see how Aria is just barely holding together, resolved to honor her promise.
+She considers you silently at first.
 #Narration
-You won't sully her effort, and you trust her. Whatever the truth may be.
+The immediate dangers aside, the revelations you've brought seem to have shaken her, but not to her foundations.
+#Narration
+You suspect some part of her knew already. Her imagined worlds and daring escapades a welcome distraction from her harsh reality.
+#Aria
+We...
+#Aria
+We probably can't just run away through the Weald.
+#Jophiel
+Right, you've got little legs.
+#Aria
+And Mom knows the forest reaaally well.
+#Narration
+Thinking about your options, she tugs on her hat nervously.
+#Narration
+But then she looks up, with a wide smile.
+#Aria
+Right! My hat! The buckle!
+#Aria
+I'm not as skilled as Mom, but I could probably reverse the enchantment on it.
+#Jophiel
+What would that do?
+#Aria
+Rather than bring me to her, it could send us away! Only...
+#Jophiel
+Only?
+#Aria
+I can't control where it goes. It might be really far from here.
+#Narration
+You're silent, thinking about her suggestion when you hear the door upstairs creak open.
+#Narration
+The way Aria freezes, you don't have to ask who it is.
+#Narration
+You take hold of her hands again.
 #If_block
-notFullBond
+Bond == full
+#Jophiel
+It's okay, Aria. I'm here with you, and wherever we end up, I won't leave you alone.
 #Narration
-You think of the posse in the forest, the fears they shared, the trembling hands gripping their pitchforks.
-#Jo
-I didn't see your mom when I came in. Is she gone so soon after getting back?
-#Aria
-No, she was... mad. I don't think she's gonna leave me alone again for a bit.
+She nods and grips your hands tighter.
 #Narration
-You would expect her to be more excited about her mom being around more, but mostly Aria looks troubled.
-#Aria
-She only left just now to /'take care of some pests in the woods/.'
+She closes her eyes and pulls you close. Her buckle begins to glow with a deep purple hue.
 #Narration
-Your mind spins rational explanations. Perhaps she's already aware of it and going to go and aid the town with the Green-Eyed Demon.
+In an instant, the two of you are somewhere else. It isn't easy to start over when you don't know where you are or where you're going. But the two of you are together.
 #Narration
-Or... perhaps... There is a next question to ask, but you can't quite bring it to your lips before you notice the sky growing truly dark.
+Whether it be school, work, your relationships or your goals, you half-assed everything in your life before. But you throw yourself into this with determination you didn't know you had in you.
 #Narration
-You may not have every answer, in fact you're not sure you want them, but you do know for certain that you can't spend any more time searching.
+You try to find opportunities to make Aria smile every day. It isn't easy taking care of someone else, but you can't imagine anything more worth doing.
 #Narration
-You need to go home.
+It's you and her in a new world. She summoned you because she needed you, and until she no longer needs you, you'll be by her side.
 #If_block
-Resume
-#Jo
-The sun is getting low, I'm as ready as I can be.
+Bond != full
+#Serena
+We need to go.
 #Narration
-You were asleep for this the first time, so you're not quite sure what to expect. You feel something like a static charge in your fur as the ritual begins.
-#Jo
-Thank you, Aria.
-#Jo
-Not just for sending me back, but for bringing me here, too. I'm glad it was me you summoned.
+Aria hesitates one last time.
 #Narration
-Her facade finally cracks a little.
+Then she throws her arms around you... and her hat on your head.
 #Aria
-I'll miss you.
-#Aria
-I'm grateful it was you, too.
-#Aria
-I hope things get better for you in Cleveland.
-#Jo
-Me too. I think they will.
-I may not meet the requirements for your spell anymore, but you're welcome to peer in on me in your mirror anytime.
-#Jo
-And /'Jophiel/' will still be here for you when I'm gone.
-#If_block
-fullBond
-#Aria
-I think I like Serena even better than Jophiel.
+Goodbye, Serena.
 #Narration
-You feel the magic swell beneath you. Your body grows light as your soul and conscious mind begin to separate.
+In an instant, you are somewhere else.
 #Narration
-The last you see of this world is the tear stained smile of the young sorceress.
+It isn't easy to start over when you don't know where you are, but you throw yourself into it. You have a destination, and you won't get there without all your effort.
 #Narration
-When you woke up in your world again, it would have been easy enough to dismiss everything you experienced as nothing but a vivid dream. 
+You know you came from the Kaistr Weald. There is a nearby capital city, Rimmond. You even remember the town's name, Woldthwaite. 
 #Narration
-Even if you did lose far more time than usual "sleeping." Even if your own body felt strangely foreign for a little while.
+You ask a lot of questions, more than most people can even answer, but slowly you understand the basics of this foreign world.
 #Narration
-Even if, around Halloween, the sight of a child in a witch hat made you choke up.
+Once you have your bearings and save enough to buy a map, you return there. To the Weald. To Aria's cottage.
 #Narration
-You didn't dismiss it, though. It was real enough for you. And you were going to do what you told Aria you would: find ways to enjoy life again.
+The cottage is empty. The basement cleared out, and the attic, too. You don't know where Aria and her mother went, and the trail here goes cold.
 #Narration
-After all, if she was going to look in on you from time to time, you wanted to make that an adventure.
-#If_block
-notFullBond
-#Aria
-Yeah.
+Without Aria, you are as unmoored in this world as you were in Cleveland. But you aren't stuck anymore, and you've proven resilient carving out a living here.
 #Narration
-You feel the magic swell beneath you. Your body grows light as your soul and conscious mind begin to separate.
-#Narration
-While you were focused on Aria, even your sensitive ears missed the footsteps on the stairs.
-#Narration
-The last you see of this world is the tear stained face of the young sorceress, gazing up, anxious, at her returned mother.
-#Narration
-You don't know what happened to her next. 
-#Narration
-You returned to your world. If anyone noticed you were gone, they didn't show it.
-#Narration
-It would have been easy to dismiss everything that happened as a vivid dream. And you tried to. Even when you lost nearly a whole day "sleeping." Even when your own body felt strangely foreign to you afterward.  
-#Narration
-Even when, around Halloween, just the sight of a kid in a witch hat made your heart twist in your chest.
-#Narration
-You told yourself it was a dream. It had to be. Aria didn't exist except as some strange corner of your subconscious. 
-#Narration
-One that was urging you to live life a little more like it matters, maybe.
-#Narration
-Or maybe just to call your mom.
-#Narration
-What was the other option, after all? If it was all real, if she did exist in some other world... 
-#Narration
-Then that hand on her shoulder was also real. And so was the look of dread in her eyes when she looked up. 
-#Narration
-And also, just as real, was the fact that you left, and there's nothing you can do now.
-#Narration
-So you went back to your life. And you tried not to think about the strange dream, or the ways things might have changed if you had let them. 
+You wanted to stay here as a second chance at living. You'll have to figure out what that means for yourself.
