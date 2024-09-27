@@ -1,5 +1,5 @@
 label scene2:
-    call scene_transition("The Weald part I") from _call_scene_transition_2
+    call scene_transition("The Weald part I")
     scene bg aria cottage day with fadehold
     n "The house you were summoned into is a small cottage in a clearing, surrounded on all sides by forest."
     n "You leave it behind, still and silent, after watching Aria magic the bundled sheets back up through her window."

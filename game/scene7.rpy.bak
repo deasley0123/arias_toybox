@@ -1,5 +1,5 @@
 label scene7:
-    call scene_transition("Homecoming") from _call_scene_transition_7
+    call scene_transition("Homecoming")
     scene bg aria cottage door
     with fadehold
     n "The front door to the small cottage has no lock. You suppose there's no need, or rather, the illusion you passed through {i}was{/i} the lock."

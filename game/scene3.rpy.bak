@@ -1,5 +1,5 @@
 label scene3:    
-    call scene_transition("The Bog Beast") from _call_scene_transition_3
+    call scene_transition("The Bog Beast")
     scene bg bog day with fadehold
     # TODO: Finish description at start
     n "The trees thin out and give way to reeds and bullrush. The ground under your feet grows muddy as you approach a murky pond, bright sunlight glinting off the water."

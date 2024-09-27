@@ -8,7 +8,6 @@ bartender wink
 #aria nervous tell secret mopen
 
 
-
 bg aria cottage main
 bg aria cottage main door open
 bg basement

@@ -1,5 +1,5 @@
 label scene5:
-    call scene_transition("A Meal, Some Drinks") from _call_scene_transition_5
+    call scene_transition("A Meal, Some Drinks")
     scene bg bar:
         zoom 0.5
     with fadehold

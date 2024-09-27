@@ -1,5 +1,5 @@
 label scene6:
-    call scene_transition("The Weald part III") from _call_scene_transition_6
+    call scene_transition("The Weald part III")
     # TODO: Switch for painterly video
     scene bg forest dusk
     with fadehold

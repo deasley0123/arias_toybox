@@ -1,5 +1,5 @@
 label fissure:
-    call scene_transition("Homecoming") from _call_scene_transition
+    call scene_transition("Homecoming")
     camera:
         zpos -20
     scene bg aria cottage dusk
