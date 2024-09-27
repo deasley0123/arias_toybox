@@ -9,7 +9,8 @@ bartender wink
 
 
 bg aria cottage main
-bg aria cottage main door open
+bg cottage stairs down
+bg cottage stairs up
 bg basement
 
 ci toorg gerald dolls

@@ -14,8 +14,7 @@ label scene7:
     n "But the air within the cottage is silent, still, and any sound you were going to make dies in your throat."
     n "It feels wrong to break this silence. Dangerous, somehow."
     nvl clear
-    narrator "To your right is a small room with a hearth, fire barely smoldering, herbs drying on the mantle. A table and one chair are the room's 
-    only occupants. A curtain keeps most of the room in shadow from the fading sunlight." with dissolve
+    narrator "There is a small hearth, fire burning gently, herbs drying on the mantle. The fading sunlight illuminates little. Most of the room remains in shadow." with dissolve
     narrator "In front of you is a staircase leading to Aria's room in the attic."
     narrator "To your left is a narrow door just barely cracked open, a soft glow bleeding along the door's edge."
     nvl clear
@@ -29,6 +28,7 @@ label choice_6_1:
     n "You're fairly certain that you'll find Aria in the attic." with dissolve
     if goHome == True:
         n "Not only is it her room, but it's where the summoning circle is, and she did promise to send you home."
+    show bg cottage stairs up
     n "Your ears swivel and your whiskers twitch, on keen alert as you ascend the stairs."
     n "The floorboards above you creak lightly, and you freeze."
     n "You can almost peer over the lip of the floorboards, so you take one more step up."
@@ -65,13 +65,13 @@ label choice_6_2:
     if goHome == True:
         n "Aria promised to take you home, and you know your ticket back is the ritual circle upstairs, but..."
     n "You need more answers than you have, and you know Aria can only tell you so much."
-    # TODO: show bg aria cottage main door open
+    show bg cottage stairs down
     n "You gently pull open the door. A series of cold, stone stairs lead you down into the earth."
     n "Every tuft of fur on your body stands, a warning. You push your fear aside and continue."
     show black with fade
     n "An acrid, foreign stench immediately assaults your nostrils. Followed by a smell you only know from visiting your grandmother in her final days."
     n "It's the smell of death."
-    # TODO: show bg basement
+    show bg basement
     n "To one side is an empty caldron, a ritual circle, and a table of magical implements, tinctures, and tools."
     n "To the other, bits of body and flesh, jars of pieces and parts, and dolls. Shrunken forms."
     n "You step into the room, clutching at your mouth and nose. Your eyes are glued to the back. A shelf."
