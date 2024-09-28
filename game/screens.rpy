@@ -325,7 +325,7 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("Credits") action ShowMenu("credits")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -540,41 +540,42 @@ style return_button:
     yoffset -45
 
 
-## About screen ################################################################
+## Credits screen ################################################################
 ##
 ## This screen gives credit and copyright information about the game and Ren'Py.
 ##
 ## There's nothing special about this screen, and hence it also serves as an
 ## example of how to make a custom screen.
 
-screen about():
+screen credits():
 
     tag menu
 
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("Credits"), scroll="viewport"):
 
-        style_prefix "about"
+        style_prefix "credits"
 
         vbox:
 
-            label "[config.name!t]"
+            label "{b}{size=45}[config.name!t]{/size}{/b}"
             text _("Version [config.version!t]\n")
 
             ## gui.about is usually set in options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
+            if gui.credits:
+                text "[gui.credits!t]\n\n"
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
-style about_label is gui_label
-style about_label_text is gui_label_text
-style about_text is gui_text
+style credits_label is gui_label
+style credits_label_text is gui_label_text
+style credits_text is gui_text:
+    line_spacing 0
 
-style about_label_text:
+style credits_label_text:
     size gui.label_text_size
 
 

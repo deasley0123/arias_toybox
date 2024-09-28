@@ -25,10 +25,55 @@ define gui.show_name = True
 define config.version = "1.0"
 
 
-## Text that is placed on the game's about screen. Place the text between the
+## Text that is placed on the game's credits screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.credits = _p("""
+{b}{size=45}Team{/size}{/b}
+
+{b}Project Lead, Chief of Story, Lead Programmer, Sprites/Backgrounds Artist{/b}
+
+> David Easley
+
+{b}Lead Writer{/b}
+
+> Emma Cook
+
+{b}Mini-Game Programmer{/b}
+
+> Joesby
+
+{b}Pixel Artist{/b}
+
+> Riley
+
+{b}Logo Design and Bog Beast Artist{/b}
+
+> Shanti
+
+{b}Ending CGs Artist{/b}
+
+> ari (05figure)
+
+______________________________________________________
+
+{b}Used Art Licences{/b}
+
+"Forest Path in the Ardennes" by *rboed* is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+"Forest Path in Krkonose" by *rboed* is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+"Tree Damage, Belleau Wood, circa 1918" by Archives Branch, USMC History Division is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+"Portal" by Rod Raglin is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse.
+
+"Pale Reeds" by Rod Raglin is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse.
+
+"Gnome, Deep (Snirfneblin) Updated" by mz4250 is licensed for Commerical Use through mz4250.
+
+"Minotaur Male Bard rigged" by mz4250 is licensed for Commerical Use through mz4250.
+
+______________________________________________________
 """)
 
 
