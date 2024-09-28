@@ -271,7 +271,10 @@ label resume_1:
         subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(867.0, 54.0, -630.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "{shader=jitter:3.0,3.0}WE SEEK TO CAPTURE THE TERRIBLE BOG BEAST! FATED COMPATRIOTS, WILL YOU JOIN US IN THIS QUEST, OR ARE YE COWARDS?!{/shader}"
     show aria at grey_out
-    show gerald squint mopen hdown at restore_color
+    show gerald squint mopen hdown:
+        subpixel True matrixtransform ScaleMatrix(-1.0, 1.0, 1.0)*OffsetMatrix(243.0, 108.0, 369.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    show gerald at restore_color
+    with dissolve
     g "Hey, whoa, chill kid. We've got some purpose of our own."
     show gerald squint mclosed hdown at grey_out
     show toorg cheeky armup lookup at restore_color
@@ -347,9 +350,12 @@ label resume_1:
     show toorg cheeky lookat at grey_out
     show gerald squint mopen hdown at restore_color
     g "Alright, if you've got time to pun you've got time to march."
+    # show gerald:
+    #     matrixtransform ScaleMatrix(-1.0, 1.0, 1.0)*OffsetMatrix( 450.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     show gerald squint mopen hpoint:
         matrixtransform ScaleMatrix(-1.0, 1.0, 1.0)*OffsetMatrix(400.0, 0.0, 0.0)
         linear 0.4 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-400.0, 0.0, 0.0)
+    with dissolve
     g "Let's widen our search for more signs of this demon."
     show gerald squint mopen hpoint:
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-400.0, 0.0, 0.0)

@@ -1,11 +1,18 @@
 label scene4:
     call scene_transition("The Weald part II") from _call_scene_transition_4
     scene bg forest afternoon with fadehold
-    # TODO: Bog beast cut-in front and center
+    show bog beast
+    show bog beast:
+        yalign 0.0
+        xalign 0.5
+        subpixel True zoom 0.25 
     j "So, what are you going to name him?"
     n "You and Aria left the secluded bog, returning to something like a path through the forest. Or the weald, as the young girl calls it."
     n "The sun is high above you now, sending bright yellow-orange tinted light down through the trees."
     n "Aria holds up the \"Bog Beast,\" examining him with a tilt of her head."
+    show bog beast:
+        xalign 0.2
+    with dissolve
     show aria think mclose:
         zoom 0.5
     show aria:
@@ -18,8 +25,9 @@ label scene4:
     show aria:
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(1017.0, 400, 0.0)
     show aria at grey_out
-    # TODO: toad croak
+    show bog beast croak
     n "The large angry-looking toad croaks at her, but makes no attempt to wriggle out of her grasp."
+    show bog beast
     show aria think shock mopen at restore_color
     a "I know!"
     show aria think mischief mcat at grey_out
@@ -54,7 +62,9 @@ label scene4:
         zoom 0.7
         subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(855.0, 336, 0.0) 
     show aria at grey_out
+    show bog beast croak
     b "*Ribbit*"
+    show bog beast
     show aria exhult jumping mopen at restore_color # TODO: Aria shaking then to the moon
     show aria at shaking
     a "He loves it too!"
@@ -65,27 +75,38 @@ label scene4:
     show aria smile wave mclose # TODO: Add a new generic smiling Aria neutral pose, maybe arms behind leaning forward big smile
     n "You resume walking together. Aria holds [bogbeastname] in her hands for a while before the toad begins to struggle."
     show aria neutral wave mopen at restore_color
+    show bog at shaking
     a "What's wrong, [bogbeastname]? Do you need to use the little bog beast's room?"
     show aria neutral slightwave mclose at grey_out
+    show bog beast croak
     n "She grips him a little tighter. The toad produces a slightly angrier croak."
-
+    show bog beast at grey_out
+    with dissolve
     if bond1 == False:
         n "You remember reading a book about parenting, back when you thought you might have kids one day."
         n "It said, {i}Children have to learn to be kind to others.{/i}"
     else:
         n "You remember her story about the tuna, the undead fish swimming around in a pit until it began to stink."
         n "\"{i}Mom didn't see much of a difference either way,\"{/i}\nAria had said."
-
+    show bog beast at restore_color
+    with dissolve
     j "Hey, if he wants you to let him go, you have to let him go."
     show aria unfortunate slightwave mopen at restore_color
     a "B... But I don't want him to run away!"
     show aria unfortunate slightwave mclose at grey_out
     n "You nod seriously, and bite your lip to keep from smiling. You feel for this kid. It took you until your last breakup to finally learn this lesson yourself."
+    camera:
+        subpixel True 
+        zpos 0.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        ease 3.0 zpos -200.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-144.0, -63.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     n "You kneel down next to her so that you can look her face to face. You gently place your hands over hers."
+    camera:
+        subpixel True 
+        zpos -200.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-144.0, -63.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     show aria reluctant hold arm mclose lookup
     j "You can't make anyone stay in your life unless they want to, Aria."
     j "If you give them the choice to stay, and they decide to leave, that's sad, but it's okay. It isn't your fault."
-    # TODO: Shake the toad ci
+    show bog at shaking
     n "You pause. The toad wriggles, but she isn't holding him so tightly that she'll hurt him."
     show aria reluctant hold arm mclose lookdown
     n "She seems to be considering your words."
@@ -94,10 +115,23 @@ label scene4:
     a "Yeah..."
     show aria reluctant hold arm mclose lookup at grey_out
     n "She squeezes just a little tighter, for a moment."
+    show bog at restore_color
+    show bog:
+        yalign 0.7
+    with dissolve
     n "Then she sets the toad on the ground."
+    show bog beast croak
     b "*Ribbit*"
-    # TODO: Bog beast goes away
+    show bog beast
+    pause 1.5
+    show bog beast jump:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.19 matrixtransform ScaleMatrix(1.0, 0.8, 1.0)*OffsetMatrix(0.0, 81.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.96 matrixtransform ScaleMatrix(1.0, 1.36, 1.0)*OffsetMatrix(-1089.0, -1179.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    with dissolve
     n "The toad looks around himself, then hops into a nearby fern."
+    hide bog
     show aria disappointed hold arm mslight lookdown
     n "Aria sighs, and sniffles."
     show aria disappointed hold arm mslight lookup
@@ -113,7 +147,13 @@ label scene4:
     show aria reluctant hold arm mopen lookat at restore_color
     a "Yeah. He probably has lots of responsibilities."
     show aria reluctant hold arm mclose lookdown at grey_out
+    camera:
+        subpixel True 
+        zpos -200.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-144.0, -63.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        ease 3.0 zpos 0.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     j "Definitely."
+    camera:
+        zpos 0.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     show aria close hug anxious at reset with dissolve
     show bg forest afternoon:
         subpixel True blur 8.0 

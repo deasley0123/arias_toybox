@@ -5,6 +5,7 @@ label scene3:
     n "The trees thin out and give way to reeds and bullrush. The ground under your feet grows muddy as you approach a murky pond, bright sunlight glinting off the water."
     scene bg bog plus cut in
     show ci cattails behind bg
+    with dissolve
     n "Cricket chirps and frog song mingle on the gentle breeze. Patches of reeds sway gently, lining placid waters."
     show aria lay crossed lookaway mclose:
         zoom 0.5

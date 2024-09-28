@@ -108,32 +108,44 @@ label choice_5_1:
     n "You stop, but the tugging in your chest still directs you forwards."
     n "You scratch your head. You may not know this whole forest, but you {i}really{/i} don't remember this tight copse of trees here, so close to Aria's house."
     n "You are searching for a way around when you hear a familiar croak."
-    # TODO: Show bog beast cut in
+    show bog beast croak
+    show bog:
+        zoom 0.2
+    with dissolve
     b "*ribbit*"
+    show bog beast
     n "[bogbeastname] sits nonplussed at the base of one of the larger trees."
-    # TODO: show bog beast jumping
+    show bog beast
+    pause 1.5
+    show bog beast jump:
+        subpixel True 
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.19 matrixtransform ScaleMatrix(1.0, 0.8, 1.0)*OffsetMatrix(0.0, 81.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.96 matrixtransform ScaleMatrix(1.0, 1.36, 1.0)*OffsetMatrix(-1089.0, -1179.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    with dissolve
     n "You take a step towards him, and when you do he jumps up and {i}through{/i} the solid tree as if it isn't there."
+    hide bog
     j "Uh... [bogbeastname]?"
     n "You reach out to the tree, and at first touch it feels real enough, but as you press on it the sensation of the bark surface starts to give way."
-    camera:
+    show ci:
         subpixel True 
-        ease 5 zpos -280.0 
+        ease 5 zpos 200.0 
     n "Hesitantly, you push your way through the tree, or the illusion of one. Your fur stands on end as you do, and you feel a strange pressure in your head."
-    camera:
-        zpos -280
-    camera:
+    show ci:
+        zpos 200
+    show ci:
         subpixel True 
-        ease 5 zpos -380.0 
+        ease 5 zpos 300.0 
     n "It's similar to the pressure you'd feel right before your ears popped on a plane, only it's all through your skull, deep behind your eyes. It builds and builds."
-    camera:
-        zpos -380
-    camera:
+    show ci:
+        zpos 300
+    show ci:
         subpixel True 
-        linear 0.5 zpos 0.0
-    hide ci with dissolve
+        alpha 1.0
+        linear 0.5 zpos 500 alpha 0.0
+    with dissolve
     n "Until it too pops, and you're on the other side. You see Aria's cottage, a thin trail of smoke rising from the chimney, the illusion warding you away now behind you."
-    camera:
-        zpos 0.0
+    hide ci
     j "Well, that explains why nobody has found the place."
     j "I guess I'll go in through the door this time."
     jump scene7
