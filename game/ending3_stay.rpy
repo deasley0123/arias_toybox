@@ -4,24 +4,30 @@ label stay_endings:
         zoom 0.7
         xpos 0.2
         ypos 0.32
-    a "SERENA!! Mom's gonna be really mad if she finds us down here!"
+    a "SERENA!! Mom's gonna be really mad if she finds us down here!" with vpunch
     show aria at grey_out
-    n "Aria hisses a whisper at you, Serena. Whatever game you were playing before, even Aria has dropped it in this place."
+    n "Aria hisses a whisper at you- {i}Serena{/i}.\nWhatever game you were playing before, even Aria has dropped it in this place."
     show aria nervous hold hat mopen lookaway at restore_color
-    a "I'm {i}suuuper{/i} not allowed in mom's workshop. I've never been down here before. She'll know we came in."
+    a "I'm {i}suuuper{/i} not allowed in mom's workshop.\nI've never been down here before. She'll know we came in."
     show aria nervous hold hat mclose lookaway at grey_out
+    show aria:
+        subpixel True matrixtransform ScaleMatrix(-1.0, 1.0, 1.0)
     n "Aria is preoccupied, glancing back at the stairs. Too worried about you and now her mom, she hasn't taken a good look around yet."
     show aria nervous hold hat mclose lookat
+    show aria:
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)
     s "Aria, this is very bad. Where is your mom?"
     s "Where is your mom right now?"
     show aria disappointed hold arm mopen lookdown at restore_color
-    a "She was already really, really, {i}really{/i} mad when I wasn't here. I didn't think she'd be leaving me alone again any time soon."
+    a "She was already really, really, {i}really{/i} mad when I wasn't home earlier."
+    show aria disappointed hold arm mslight lookdown
+    a "I didn't think she'd be leaving me alone again any time soon."
     show aria disappointed hold arm mopen lookup
     a "But then she said something about /'pests in the forest/' and told me to stay here and wait until she came back."
     show aria disappointed hold arm mslight lookat at grey_out
     n "You know that your time is limited. This room, the stories you heard, the town's fears."
     n "You feel certain that if you're still here when Aria's mother returns, you will not survive."
-    n "If the mob arrives instead, you're pretty sure the result will be the same."
+    n "...Even if the mob arrives instead, you're pretty sure the result will be the same."
     s "Aria, I don't want to scare you, and I don't say this as a game or to hurt you."
     s "Your mom made that damage in the forest. The one who's been taking people? It's her."
     n "You take a deep, shuddering breath. And then you drop the pit from your stomach into hers."
@@ -49,6 +55,7 @@ label stay_endings:
     n "You swallow hard."
     s "That'll be me. Again."
     show aria disappointed hold arm mslight lookup # TODO: Do a nervous variant with smaller irises, incline the head
+    # TODO: show ci toorg gerald 
     n "She stares at the doll-sized people for what feels like an eternity. Her own panicked tears begin to well in her green eyes."
     s "I know, I know it is a lot to process. But, Aria, I have to go-"
     show aria disappointed hold arm mslight lookat
@@ -57,15 +64,23 @@ label stay_endings:
     s "And I think you should come with me."
     n "You want to live, but you aren't prepared to sacrifice her to whatever life she might face here."
     n "This is also a lot of information all at once, most of it life-changing. You can see her mind spinning."
-    # TODO: Zoom camera in where Aria is
+    # TODO: hide ci
+    camera:
+        subpixel True 
+        ease 1.3 zpos -300.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-99.0, -63.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     n "You crouch down to her level, and you take her hands in yours."
+    show aria disappointed hold arm mslight lookdown
+    camera:
+        subpixel True zpos -300.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-99.0, -63.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     j "{i}You{/i} are my Weald Queen, Aria. And I, Jophiel, am your right hand."
     j "Enemies approach us now from several fronts. As your trusted guardian, your safety is paramount to me."
     j "But I am still new to this realm, and I require your might and cunning."
+    show aria disappointed hold arm mslight lookat
+    j "..."
     s "Please, Aria.{p}I can't get us to safety alone."
     show aria sad hold arm mopen lookdown
     n "She considers you silently at first."
-    n "The immediate dangers aside, the revelations you've brought seem to have shaken her, but not to her foundations."
+    n "The secrets you've revealed seem to have shaken her, but not to her foundations."
     n "You suspect some part of her knew already. Her imagined worlds and daring escapades a welcome distraction from her harsh reality."
     show aria sad hold arm mopen eclose at restore_color
     a "We..."
@@ -93,8 +108,8 @@ label stay_endings:
     a "I can't control where it goes. It might be really far from here."
     show aria serious slightwave mclose at grey_out
     n "You're silent, thinking about her suggestion when you hear the door upstairs creak open."
-    show aria with hpunch
-    n "The way Aria freezes, you don't have to ask who it is."
+    show aria serious slightwave mclose lookaway
+    n "The way Aria freezes, you don't have to ask who it is." with hpunch
     n "You take hold of her hands again."
     # TODO: Zoom camera in further
     if bond1+bond2 == 2:

@@ -126,10 +126,10 @@ style mom_say_label is say_label:
     kerning 4
 style mom_say_dailogue is say_dialogue:
     font "gui/AmaticSC-Regular.ttf"
-    size 42
+    size 50
     bold True
     color "#FFF"
     outlines [(absolute(3), "#000", absolute(0), absolute(0))]
-    kerning 2
+    kerning 3
     ypos 0.28
     line_spacing 1
