@@ -65,7 +65,7 @@ transform un_hide:
     alpha 0.0 
     linear 0.50 alpha 1.0 
 
-define encounter_dissolve = ImageDissolve("spotlight_alpha.png", 1.0, 8 , reverse=False)
+define encounter_dissolve = ImageDissolve("encounter_wipe.png", 1.0, 8 , reverse=True)
 
 label scene_transition(title=""):
     $ quick_menu = False
