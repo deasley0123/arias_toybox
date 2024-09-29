@@ -362,6 +362,7 @@ screen main_menu():
     tag menu
 
     add gui.main_menu_background
+    add "logo" zoom 0.4 xpos 0.66 ypos 0.59 alpha 0.8
 
     ## This empty frame darkens the main menu.
     frame:

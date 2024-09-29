@@ -22,7 +22,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.1"
+define config.version = "1.2"
 
 
 ## Text that is placed on the game's credits screen. Place the text between the
@@ -39,21 +39,21 @@ define gui.credits = _p("""
 
 > Emma Cook
 
-{b}Mini-Game Programmer{/b}
+{b}Minigame Programmer{/b}
 
 > Joesby
 
 {b}Pixel Artist{/b}
 
-> Riley
+> Riley S. (amaryllis_flower)
 
 {b}Logo Design and Bog Beast Artist{/b}
 
-> Shanti
+> hazelazazelzel
 
-{b}Ending CGs Artist{/b}
+{b}Ending CG Artist{/b}
 
-> ari (05figure)
+> 05figure
 
 ______________________________________________________
 

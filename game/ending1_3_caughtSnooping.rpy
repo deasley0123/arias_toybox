@@ -1,4 +1,5 @@
 label caught_snooping_ending:
+    hide ci with dissolve
     n "Your body freezes as you feel a hand on your shoulder." with hpunch
     camera:
         subpixel True 

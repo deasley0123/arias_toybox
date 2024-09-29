@@ -96,6 +96,7 @@ label choice_5_1:
     camera:
         xpos 0.0
         ypos 0.0
+        zpos 0.0
         xoffset 0.0
         yoffset 0.0
     show bg aria cottage dusk

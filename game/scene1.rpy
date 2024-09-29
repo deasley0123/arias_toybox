@@ -132,7 +132,7 @@ label scene1:
     show aria smirk chunibyo r_eclose
     s "It's Serena."
     show aria grin teach mopen r_eclose lookat at restore_color
-    a "Hmmmm... That doesn't sound like much of a {i}quest{/i} name. \'Serenas\" don't really go to do great deeds."
+    a "Hmmmm... That doesn't sound like much of a {i}quest{/i} name. \"Serenas\" don't really go to do great deeds."
     show aria at grey_out
     n "You almost interject about the accomplishments of the famous people on Earth who share your name."
     n "But it's not like you've ever really done anything, personally, so you bite your tongue."

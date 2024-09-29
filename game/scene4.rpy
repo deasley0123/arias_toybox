@@ -221,7 +221,7 @@ label resume_2:
     show aria reluctant hold arm mopen lookup at restore_color
     a "There's a town not too far from here."
     show aria neutral wave mopen
-    a "Upon accomplishing our quest, we should eat together together to celebrate."
+    a "Upon accomplishing our quest, we should eat together to celebrate."
     show aria neutral wave mclose at grey_out
     j "Food is good. How far?"
     j "Twenty minutes?"

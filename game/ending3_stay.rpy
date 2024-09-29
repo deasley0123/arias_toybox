@@ -1,4 +1,5 @@
 label stay_endings:
+    hide ci with dissolve
     n "You almost jump out of your skin when you feel something touch your arm."
     show aria stop mopen:
         zoom 0.7
@@ -23,7 +24,7 @@ label stay_endings:
     show aria disappointed hold arm mslight lookdown
     a "I didn't think she'd be leaving me alone again any time soon."
     show aria disappointed hold arm mopen lookup
-    a "But then she said something about /'pests in the forest/' and told me to stay here and wait until she came back."
+    a "But then she said something about \"pests in the forest\" and told me to stay here and wait until she came back."
     show aria disappointed hold arm mslight lookat at grey_out
     n "You know that your time is limited. This room, the stories you heard, the town's fears."
     n "You feel certain that if you're still here when Aria's mother returns, you will not survive."
@@ -46,6 +47,7 @@ label stay_endings:
         linear .2 yoffset 10
         linear .2 yoffset -10
         linear .1 yoffset 0
+    show ci shelf behind aria with dissolve
     n "She nods. You direct her eyes up to the shelf in front of you."
     show aria:
         yoffset 0
@@ -55,8 +57,8 @@ label stay_endings:
     n "You swallow hard."
     s "That'll be me. Again."
     show aria disappointed hold arm mslight lookup # TODO: Do a nervous variant with smaller irises, incline the head
-    # TODO: show ci toorg gerald 
     n "She stares at the doll-sized people for what feels like an eternity. Her own panicked tears begin to well in her green eyes."
+    hide ci shelf with dissolve
     s "I know, I know it is a lot to process. But, Aria, I have to go-"
     show aria disappointed hold arm mslight lookat
     n "She looks at you now. Her lip trembles."
@@ -111,7 +113,6 @@ label stay_endings:
     show aria serious slightwave mclose lookaway
     n "The way Aria freezes, you don't have to ask who it is." with hpunch
     n "You take hold of her hands again."
-    # TODO: Zoom camera in further
     if bond1+bond2 == 2:
         show aria disappointed hold arm mslight lookdown
         j "It's okay, Aria. I'm here with you, and wherever we end up, I won't leave you alone."
@@ -128,6 +129,8 @@ label stay_endings:
         with dissolve
         n "Then she closes her eyes and pulls you close. Her buckle begins to glow with a deep purple hue."
         scene black with flash
+        camera:
+            subpixel True zpos 0.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         nvl clear
         narrator "In an instant, the two of you are somewhere else. It isn't easy to start over when you don't know where you are or where you're going. But the two of you are together." with fade
         narrator "Whether it be school, work, your relationships or your goals, you half-assed everything in your life before. But you throw yourself into this with determination you didn't know you had in you."
@@ -147,12 +150,15 @@ label stay_endings:
         show aria close hug sad
         a "Goodbye, Serena."
         scene black with flash
-        n "In an instant, you are somewhere else."
+        camera:
+            subpixel True zpos 0.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        n "She let's go, and in an instant, you are somewhere else."
         nvl clear
         narrator "It isn't easy to start over when you don't know where you are, but you throw yourself into it. You have a destination, and you won't get there without all your effort."
         narrator "You know you came from the Kaistr Weald. There is a nearby capital city, Rimmond. You even remember the town's name, Woldthwaite."
         narrator "You ask a lot of questions, more than most people can even answer, but slowly you understand the basics of this foreign world."
         nvl clear
+        show 
         narrator "Once you have your bearings and save enough to buy a map, you return there. To the Weald. To Aria's cottage."
         narrator "The cottage is empty. The basement cleared out, and the attic, too. You don't know where Aria and her mother went, but the trail here goes cold."
         narrator "Without Aria, you are as unmoored in this world as you were in Cleveland. But you aren't stuck anymore, and you've proven resilient carving out a living here."

@@ -9,6 +9,8 @@ image loading movie = Movie(play="images/anim_loading.webm", loop=True)
 image starting movie = Movie(play="images/openAnim.webm", loop=False, keep_last_frame=True)
 image menu loop = Movie(play="images/openAnim_Loop.webm", loop=True)
 image spooktober = "spooktober_logo.png"
+image logo = "FullScreenLogo_1920x1080.png"
+image box = "anim_start.png"
 
 label splashscreen:
     scene black
@@ -18,17 +20,22 @@ label splashscreen:
         zoom 0.7
         yalign 0.5
         xalign 0.5
-    # show text "Developed for Spooktober Game Jam 2024":
-    #     ypos 0.2
     with dissolve
     with Pause(2)
 
-    # hide text with dissolve
     hide spooktober
     with dissolve
     with Pause(1)
 
-    # $ renpy.movie_cutscene("images/openAnim.webm")
+    show logo
+    with dissolve
+    with Pause(2)
+
+    show box behind logo
+    with dissolve
+
+    hide logo
+    with dissolve
     show starting movie
     with Pause(5)
 

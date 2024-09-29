@@ -39,7 +39,7 @@ label go_home_endings:
         show aria disappointed hold arm mslight lookdown at grey_out
         n "You would expect her to be more excited about her mom being around more, but mostly Aria looks troubled."
         show aria disappointed hold arm mopen lookat at restore_color
-        a "She only left just now to /'take care of some pests in the woods/.'"
+        a "She only left just now to \"take care of some pests in the woods.\""
         show aria disappointed hold arm mslight lookat at grey_out
         n "Your mind spins rational explanations.\nPerhaps she's already aware of the danger and off to go and aid the town?" 
         n "Or... perhaps...\nThere is a next question to ask, but you can't quite bring it to your lips before you notice the sky growing truly dark."
@@ -66,14 +66,14 @@ label go_home_endings:
     show aria reluctant hold arm mclose lookup at grey_out
     j "Me too. I think they will."
     j "I may not meet the requirements for your spell anymore, but you're welcome to peer in on me in your mirror anytime."
-    j "And 'Jophiel' will still be here for you even when I'm gone."
+    j "And \"Jophiel\" will still be here for you even when I'm gone."
     if bond1+bond2 == 2:
         show aria reluctant hold arm mopen lookat at restore_color
         a "I think I like Serena even better than Jophiel."
         show bg go home ritual brighter
         with dissolve
-        # TODO: Add in our the ending CG
         n "You feel the magic swell beneath you. Your body grows light as your soul and conscious mind begin to separate."
+        # TODO: Add in our the ending CG
         n "The last you see of this world is the tear stained smile of the young sorceress."
         scene black with faaadehold
         nvl clear
@@ -92,8 +92,12 @@ label go_home_endings:
         show bg go home ritual brighter with dissolve
         n "You feel the magic swell beneath you. Your body grows light as your soul and conscious mind begin to separate."
         n "While you were focused on Aria, even your sensitive ears missed the footsteps on the stairs."
-        # TODO: add in our ending CG
+        show cg go home complicated:
+            zoom 0.6
+            matrixtransform ScaleMatrix(-1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)
+        with dissolve
         n "The last you see of this world is the tear stained face of the young sorceress, gazing up, anxious, at her returned mother."
+        pause 2.0
         scene black with faaadehold
         nvl clear
         narrator "You don't know what happened to her next."

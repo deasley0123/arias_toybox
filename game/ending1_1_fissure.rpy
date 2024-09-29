@@ -16,7 +16,9 @@ label fissure:
     n "Some you see hanging on to crumbling ledges and roots. They look to be calling out to you, to each other for help, but no sound reaches your ears."
     n "With the barest shudder for such violence, their last remaining handholds and footholds crumble away, as does the ground beneath you."
     n "You freeze up as your body pitches downwards."
-    show black with PushMove(0.6, "pushup")
+    show cg fissure:
+        zoom 0.6
+    with PushMove(0.6, "pushup")
     with vpunch # TODO: Replace black with ending CG
     n "You've dreamt of falling before, but your unconscious mind could not emulate the numb terror filling you now."
     if goHome == True:
@@ -26,6 +28,6 @@ label fissure:
         n "The moon recedes before your grasping hand as you mutter out a silent apology to Aria."
         n "You won't be around to soothe her loneliness after all."
     
+    pause 2
     call ending_title("Fissure", "Ending 1 of 7") from _call_ending_title
     return
-    # TODO: Fissure End card

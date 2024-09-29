@@ -69,14 +69,16 @@ label choice_6_1:
     if goHome == True:
         jump go_home_endings
     else:
-        jump try_hiding_endingb
+        jump try_hiding_ending
 
 label choice_6_2:
     n "Your heart only recently settled from fleeing the mob in the woods begins race again as you approach the door."
     if goHome == True:
         n "Aria promised to take you home, and you know your ticket back is the ritual circle upstairs, but..."
     n "You need more answers than you have, and you know Aria can only tell you so much."
-    scene bg cottage stairs down with fade
+    scene bg cottage stairs down:
+        zoom 0.7
+    with fade
     n "You gently pull open the door. A series of cold, stone stairs lead you down into the earth."
     n "Every tuft of fur on your body stands, a warning. You push your fear aside and continue."
     n "An acrid, foreign stench immediately assaults your nostrils. Followed by a smell you only know from visiting your grandmother in her final days."
@@ -86,7 +88,7 @@ label choice_6_2:
     n "You find an arcane studio of sorts.\nThere's a cauldron, a table of magical implements, books, scrolls, tinctures, and tools."
     n "...but also bits of body and flesh, jars of pieces and parts, and dolls. Shrunken forms."
     n "You step into the room, clutching at your mouth and nose. Your eyes are glued to the back. A shelf."
-    # TODO: show ci toorg gerald toys
+    show ci shelf with Dissolve(0.8)
     n "Two figures you unfortunately recognize the likeness of. A tree-person and a gnomish sort."
     n "The bile you've been holding back stings your throat as tears of fear and frustration gather in the creases of your eyes."
     if goHome == True:
