@@ -20,7 +20,7 @@ label scene5:
     m "WELCOME IN! 'Tis a beautiful day out!" with vpunch
     m "Most of the folks in town are gathering in the square.\nTalkin' about what to do regardin' the business in the Weald."
     m "And there's hardly a visitor passin' through this year, exceptin' yourself I suppose!"
-    m "Truth be told, I didn't expect to see you back so soon, if at all."
+    m "Truth be told, I didn't expect to see YOU back so soon, if at all."
     show bartender at grey_out
     show aria stars intent mopenwide at reset
     show aria:

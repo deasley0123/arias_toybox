@@ -49,7 +49,7 @@ label scene2:
         linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, -270.0, -2052.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 0.0
     n "Aria sprints forward again, disappearing from view."
     hide aria with dissolve
-    n "You glance around again. The trees rustle with another breeze. Slowly, your tail smooths out again."
+    n "You glance around again. The trees rustle with another breeze. Slowly, your tail smooths out."
     n "Hardly expecting a response, you cup your paws together around your mouth and call out."
     j "Do you actually know where we're going?"
     show aria grin teach mopen r_eclose lookat at reset
@@ -89,7 +89,7 @@ label scene2:
     show aria grin teach mopen eclose at restore_color
     a "A {i}magic{/i} mirror. It shows anything I ask it to. That's how I've kept track of the bog beast, deep in his murky lair."
     show aria confuse shrug mclose
-    a "That's how I know about your world too. Your people have strange magic."
+    a "That's how I know about your world, too. Your people have strange magic."
     show aria confuse shrug mopen
     a "I like watching the big colorful monsters chase each other around. Why do you let them eat you?"
     show aria confuse shrug mclose at grey_out

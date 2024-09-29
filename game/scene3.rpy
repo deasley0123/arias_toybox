@@ -55,9 +55,9 @@ label scene3:
     show aria rawr mopen
     a "{i}It echoes in your mind, driving you to {shader=jitter:1.0,1.0}madness.{/shader}{/i}"
     show aria serious slightwave mclose
-    a "{i}All of that is but harbinger of what he is capable of.{/i}"
+    a "{i}All of that is but a harbinger of what he is capable of.{/i}"
     show aria excite hiding
-    a "{i}His true talent lies in his camouflage. His bark-like skin is perfectly suited to ambush.{/i}"
+    a "{i}His true talent lies in his camouflage.\nHis bark-like skin is perfectly suited to ambush.{/i}"
     show aria rawr mslight lookaway
     a "{i}He watches the world with patient, cunning eyes.{/i}"
     show aria rawr mslight lookat

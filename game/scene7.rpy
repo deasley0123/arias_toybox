@@ -72,7 +72,7 @@ label choice_6_1:
         jump try_hiding_ending
 
 label choice_6_2:
-    n "Your heart only recently settled from fleeing the mob in the woods begins race again as you approach the door."
+    n "Your heart only recently settled from fleeing the mob in the woods. It begins to race again as you approach the door."
     if goHome == True:
         n "Aria promised to take you home, and you know your ticket back is the ritual circle upstairs, but..."
     n "You need more answers than you have, and you know Aria can only tell you so much."
