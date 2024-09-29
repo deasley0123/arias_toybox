@@ -31,7 +31,7 @@ define config.version = "1.2"
 define gui.credits = _p("""
 {b}{size=45}Team{/size}{/b}
 
-{b}Project Lead, Chief of Story, Lead Programmer, Sprites/Backgrounds Artist{/b}
+{b}Project Lead, Head of Story, Lead Programmer, Sprites/Backgrounds Artist{/b}
 
 > David Easley
 
