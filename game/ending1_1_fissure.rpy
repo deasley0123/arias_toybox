@@ -26,6 +26,6 @@ label fissure:
         n "The moon recedes before your grasping hand as you mutter out a silent apology to Aria."
         n "You won't be around to soothe her loneliness after all."
     
-    call ending_title("Fissure", "Ending 1 of 7")
+    call ending_title("Fissure", "Ending 1 of 7") from _call_ending_title
     return
     # TODO: Fissure End card

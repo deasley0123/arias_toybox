@@ -84,7 +84,7 @@ label go_home_endings:
         narrator "After all, if she was going to look in on you from time to time, you wanted to make your life an adventure."
         nvl clear
         # TODO: Go Home End card
-        call ending_title("Go Home", "Ending 4 of 7") from _call_ending_title_3
+        call ending_title("Go Home", "Ending 4 of 7")
         return
     else:
         show aria sad hold arm mopen lookdown at restore_color
@@ -111,6 +111,6 @@ label go_home_endings:
         narrator "\n\n\n\n\n\n\n\nSo you went back to your life. And you tried not to think about the strange dream, or the ways things might have changed if you had let them."
         nvl clear
         # TODO: Go Home... End card
-        call ending_title("Go Home...", "Ending 5 of 7") from _call_ending_title_4
+        call ending_title("Go Home...", "Ending 5 of 7")
         return
     return

@@ -32,5 +32,5 @@ label try_hiding_ending:
     mom "When will you learn, Aria? You're not allowed to play with your food."
     # TODO: Insert ending CG
     n "The box cracks open. Aria sobs. You see a hand reaching in towards you. Then, in and instant, you see and feel nothing at all."
-    call ending_title("Try Hiding", "Ending 2 of 7") from _call_ending_title_1
+    call ending_title("Try Hiding", "Ending 2 of 7")
     return
