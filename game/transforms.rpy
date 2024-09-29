@@ -65,7 +65,7 @@ transform un_hide:
     alpha 0.0 
     linear 0.50 alpha 1.0 
 
-define spotlight_dissolve = ImageDissolve("spotlight_alpha.png", 1.0, 8 , reverse=False)
+define encounter_dissolve = ImageDissolve("spotlight_alpha.png", 1.0, 8 , reverse=False)
 
 label scene_transition(title=""):
     $ quick_menu = False
@@ -77,6 +77,21 @@ label scene_transition(title=""):
     $ quick_menu = True
 
     return
+
+label minigame_transition:
+    camera:
+        subpixel True 
+        matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+        linear 0.10 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(1.2)*HueMatrix(0.0) 
+        linear 0.10 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+        linear 0.10 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(1.2)*HueMatrix(0.0) 
+        linear 0.10 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0)
+    pause 0.4
+    camera:
+        linear 0.10 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0)
+
+    scene black with encounter_dissolve # TODO: Define a new image for this transition
+    jump minigame
 
 label end_text(title=""):
     show text "{size=150}[title]{/size}" with dissolve_slow

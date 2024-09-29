@@ -149,7 +149,7 @@ label minigame:
     python:
         if snail_select and turtle_select and damselfly_select and newt_select:
             toad_select = True
-    call screen mg
+    call screen mg with fade
 
     #screen used for main minigame in order to access image buttons
     screen mg:

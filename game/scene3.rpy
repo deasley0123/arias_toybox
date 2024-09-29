@@ -99,11 +99,10 @@ label scene3:
         matrixtransform ScaleMatrix(-1.0, 1.0, 0.0)*OffsetMatrix(287.0, 468.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     show aria at grey_out
     j "\'Now\' WHAT!? All I see is some toad!" with vpunch
-    # TODO: Add minigame
-    narrator "THERE IS A MINIGAME HERE NORMALLY WHERE YOU CATCH THE BOG BEAST. HE IS THE TOAD."
+    # TODO: Add minigame transition
     nvl clear
 
-    jump minigame
+    jump minigame_transition
 
 label scene3_last_line:
     show black with fade
