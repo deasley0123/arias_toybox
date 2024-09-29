@@ -1,4 +1,6 @@
 label scene0:
+    call scene_transition("The Summoning") from _call_scene_transition_1
+    scene black with fadehold
     narrator "It was a rainy Tuesday night."
     narrator """
     You came home from work to your small studio apartment, changed into sweatpants, 

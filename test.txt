@@ -1,241 +1,157 @@
 #Narration
-The house you were summoned into is a small cottage in a clearing, surrounded on all sides by forest. 
+You almost jump out of your skin when you feel something touch your arm.
 #Narration
-You leave it behind, still and silent, after watching Aria magic the bundled sheets back up through her window.
+Aria hisses a whisper at you.
+#Aria
+SERENA!! Mom's gonna be really mad if she finds us down here!
 #Narration
-You walk through the brush at first but quickly hit a narrow path.
+Whatever game you were playing before, even Aria has dropped it in this place.
+#Aria
+I'm {i}suuuper{/i} not allowed in mom's workshop. I've never been down here before. She'll know we came in.
 #Narration
-Aria runs ahead and back, to and fro, eyeing every tree, bush, and rock with profound interest.
+Aria is preoccupied, glancing back at the stairs. Too worried about you and now her mom, she hasn't taken a good look around yet.
+#Serena
+Aria, this is very bad. Where is your mom?
+#Serena
+Where is your mom right now?
+#Aria
+She was already really, really, {i}really{/i} mad when I wasn't here. I didn't think she'd be leaving me alone again any time soon.
+#Aria
+But then she said something about /'pests in the forest/' and told me to stay here and wait until she came back.
 #Narration
-Your mind wanders. (switch to NVL mode)
+You know that your time is limited. This room, the stories you heard, the town's fears.
 #Narration
-The more you walk, the more you're certain you don't {i}feel{/i} like a doll. Granted, you've never been a doll before, but you're pretty sure even the most carefully made dolls don't have vocal cords, or ears that twitch toward new sounds, or tails that swish to keep balance, or stomachs that flip every time the girl in the witch hat rounds a bend out of your sight.  
+You feel certain that if you're still here when Aria's mother returns, you will not survive.
 #Narration
-Even your paws... they {i}are{/i} paws, complete with retractable claws just like a cat would have. But your... fingers? They curl and flex with more dexterity than you'd expect. You have no problem picking up and holding a stick when you try. 
+If the mob arrives instead, you're pretty sure the result will be the same.
+#Serena
+Aria, I don't want to scare you, and I don't say this as a game or to hurt you. 
+#Serena
+Your mom made that damage in the forest. The one who's been taking people? It's her.
 #Narration
-Your eyesight is better, too. You could never afford one of those 4K TVs, but you imagine they'd be like this. Colors seem brighter, details clearer. You can see and hear every leaf rustling in the breeze. It's a little overwhelming, actually.  
+You take a deep, shuddering breath. And then you drop the pit from your stomach into hers.
+#Serena
+And I'm pretty sure that if I'm still here when she gets back... she'll kill me.
 #Narration
-Especially as you notice, these trees... they don't look like any trees you've ever seen. You're not a nature buff or anything, you doubt you could tell an oak from an aspen, but you've never seen leaves shaped like these, or bark that forms in quite this way. The forest is still a palette of greens and browns, sunlight filtering through the canopy and rippling across the forest floor, but even then... Is the sunlight a little more orange than you remember?
+Aria stares at you and stammers weakly in protest.
+#Aria
+No- no, you've... You've been so nice to me, and you even said you'd stay! She wouldn't! She wouldn't...
+#Serena
+Aria, do you remember the adventurers we met in the woods?
 #Narration
-It's the moss on a stone you pass that finally does it. The moss is light purple, studded with tiny blooms of the deepest blue you've ever seen in a plant. It's the sort of thing you'd expect to see at the bottom of the ocean, or maybe on an alien planet in a video game, but not here. You reach out to touch it, and it feels just like moss. You scratch some of it off the stone with your dexterous new claws. It falls to the ground in a small clump.    
+She nods. You direct her eyes up to the shelf in front of you.
+#Serena
+She... she's done something to them. Something very, very bad.
+#Serena
+I think I, this body, your... toy. I think I was someone else before. Someone who met the same fate as them and I don't know how many others.
+#Serena
+And when she comes back...
 #Narration
-You didn't realize it until now, but some part of you was treating all of this as an extremely vivid dream. Even as you settled into this new body. Even as a child explained the rules of soul-summoning. Even as you watched that same child do actual magic in front of you, effortlessly levitating those sheets.  
+You swallow hard.
+#Serena
+That'll be me. Again.
 #Narration
-(End NVL mode)
-#Jo
-Holy shit. This is real. This is actually happening.
-#Aria
-Yeah! Isn't it great?
+She stares at the doll-sized people for what feels like an eternity. Her own panicked tears begin to well in her green eyes.
+#Serena
+I know, I know it is a lot to process. But, Aria, I have to go-
 #Narration
-You'd whispered it to yourself, unaware that Aria had ambled her way back to you. 
+She looks at you now. Her lip trembles.
 #Narration
-At her voice, you jump slightly. Your tail puffs out as every hair stands on end. 
-#Aria
-This is the Great Weald where the Queen oversees her realm. Its beauty only tarnished by the darkness that lurks in its deepest depths.  
-#Jo
-... The Bog Beast?
-#Aria
-THE BOG BEAST! 
+You take a deep breath, trying desperately to steady yourself.
+#Serena
+And I think you should come with me. 
 #Narration
-Aria sprints forward again, holding her hat to her head. She stumbles slightly over a root but recovers quickly, readjusting the bag slung over her shoulder. 
+You want to live, but you aren't prepared to sacrifice her to whatever life she might face here.
 #Narration
-You glance around again. The trees rustle with another breeze. Slowly, your tail smooths out again.
-#Jo
-Do you actually know where we're going?
-#Aria
-Yep! 
-#Jo
-Do you walk out here with your mom sometimes?
-#Aria
-No, this is my first time.
-#Jo
-Okay. So, then... are you {i}sure{/i} you know where we're going? This is, um... the Great Weald, after all. Seems pretty big. Easy to get lost.
-#Aria
-It's gigantic! But don't worry, Jophiel. I have this! 
+This is also a lot of information all at once, most of it life-changing. You can see her mind spinning. 
+#If_block
+fullBond
 #Narration
-She holds up something flat, smooth and slightly teardrop-shaped. As she turns it, it catches a beam of sunlight for a brief moment and reflects it into your eyes. 
-#Jo
-A mirror? 
-#Aria
-A {i}magic{/i} mirror. It shows anything I ask it to. That's how I've kept track of the bog beast, deep in his murky lair. 
-#Aria
-That's how I know about your world too. Your people have strange magic.
-#Aria
-I like watching the big colorful monsters chase each other around. Why do you let them eat you? 
-#Jo
-I don't... what? What monsters?
-#Aria
-You know, the big shiny ones! They have black feet that roll, and sometimes they beep like weird birds!
-#Aria
-And people jump right into their mouths, but I've seen the monsters spit them out too. They're all over the place there. 
-#Aria
-They even sleep outside your houses at night. Are they your pets? 
-#Jo
-Are... are you talking about cars? 
-#Aria
-Are you a beast-master? Do you and these 'cars' share a special bond?
-%options_1
-Cars are just machines.
-Play along.
-%choice_1_1
-#Jo
-Uh... no.
-#Jo
-Cars aren't beasts, they're not alive.
-They're just machines. 
-#Aria
-What's a \'machine\'?
-#Jo
-It's a tool. A big, complicated tool.
-#Jo
-I do drive one for work, but I kind of hate it.
-#Aria
-Oh. They seem neat, but maybe that's just through the mirror.
-#Jo
-I mean, there are some nice cars. I originally started my job to save for a good one.
-#Jo
-But now I think I'd be happiest to never get in a car again.
-#Aria
-...Does it stink in their mouth?
-#Jo
-They're still not alive.
-...but yes.
-%choice_1_2
-#Jo
-Not every car-mancer does, but I'd like to think me and my car have a special bond, yeah.
-#Aria
-Really? What's their name?
-#Jo
-So, the breed is what's known locally as a \'Prius\', which is kind of a thoroughbred for my job.
-#Jo
-So, I named him Seabiscuit after this famous racehorse.
-#Jo
-Which is funny because he is {i}not{/i} fast.
-But he is efficient! Which counts for something.
-#Aria
-Wow. I've never met a horse, but I asked Mom for a tuna one time.
-#Aria
-I dug a pit back behind the house and filled it with water.
-#Aria
-I thought she'd bring it home alive, but it was already dead. She didn't see much of a difference either way.
-#Aria
-I really wanted to see it swim around in the pool I dug, though, so I re-animated it!
-#Aria
-I got up early every day to re-apply the spell, but Mom only let me keep it until it started to stink.
-#Aria
-I'd love to have my own familiar someday.
-#Aria
-A living one, I mean. I'd feed it and take it for walks. Like the tuna!
-#Aria
-If it was pretty small, I could probably even keep it in my room with me. Then we could play all day!
-#Jo
-Does it get pretty lonely with your mom being gone like she is?
-#Aria
-Yeah sometimes she's gone for a really long time.
-#Aria
-I used to get pretty bored and hungry, but then I learned how to create food with magic, and eventually Mom gave me my mirror to see the world.
-#Aria
-She always says it's too dangerous for me to go out on my own.
-#Aria
-So, I'm really glad you're here with me now!
-It's nice to have someone to talk to.
-%resume_1
+You crouch down to her level, and you take her hands in yours. 
+#Jophiel
+{i}You{/i} are my Weald Queen, Aria. And I, Jophiel, am your right hand.
+#Jophiel
+Enemies approach us now from several fronts. As your trusted guardian, your safety is paramount to me.
+#Jophiel
+But I am still new to this realm, and I require your might and cunning.
+#Serena
+Please, Aria.
+I can't get us to safety alone.
 #Narration
-Your chat is cut short by crunching brush. Your ears swivel automatically to the sound.
+She considers you silently at first.
 #Narration
-You hear two sets of feet approaching, one larger, one small.
+The immediate dangers aside, the revelations you've brought seem to have shaken her, but not to her foundations.
 #Narration
-You have only a moment to stop and marvel at just how much your new ears can tell you before you get their voices too.
-#?1?
-No, I'm telling you it's not possible! The gouges are too deep for a bear!
-#?2?
-And I'm saying you don't even hang out with bears! I've met some pretty big bears. 
-#?2?
-I had a nursery mate, a fir, who was the local rub tree for some real grizzly types. 
-#?2?
-They'd take whole chunks out of him sometimes, but, like, he never gave his safe word or anything, so I think it was all above board.
-#?1?
-...was that a pun, Toorg? You know how I feel about puns.
-#Toorg
-Aw, come on Gerald, I know you've got a sense of humor in there somewhere.
-#Gerald
-No room. Too much anger, too little body.
+You suspect some part of her knew already. Her imagined worlds and daring escapades a welcome distraction from her harsh reality.
+#Aria
+We...
+#Aria
+We probably can't just run away through the Weald.
+#Jophiel
+Right, you've got little legs.
+#Aria
+And Mom knows the forest reaaally well.
 #Narration
-The two emerge from the brush, an imposing tree-man and a gnomish sort. Their conversation trails off as they meet your gaze.
-#Aria
-Oh!! Greetings fellow travelers! 'Tis fate that must have brought us together.
-#Aria
-I am Aria of the Weald Queen's court! And this is {i}Jophiel the Duskborn, catfolk master thi-{/i}
-#Jo
-It's just Jo. I'm chaperoning this precocious child.
-#Aria
-We are bound by venerable purpose.
-We have set upon a {shader=jitter:3.0,3.0}MIGHTY QUEST!{/shader}
-#Jo
-Yeah, so-
-#Aria
-{shader=jitter:3.0,3.0}WE SEEK TO CAPTURE THE TERRIBLE BOG BEAST! FATED COMPATRIOTS, WILL YOU JOIN US IN THIS QUEST, OR ARE YOU COWARDS?!{/shader}
-#Gerald
-Hey, whoa, chill kid. We've got some purpose of our own.
-#Toorg
-I'd even say it's at least a little venerable too.
-#Gerald
-Yeah, Toorg and I, we're mercen- {i}Adventurers{/i} passing through the Kaistr Weald. We slept at the Beard & Brew in town last night.
-#Gerald
-Barkeep there said this neck of the woods is pretty dangerous. Some kind of \"green-eyed demon\" been spotted, folks disappeared.
-#Toorg
-The town is offering a bounty for the creature, so we're hunting it.
-#Aria
-A green-eyed demon?
-#Aria
-Wait...
-I have green eyes!
-#Aria
-I'm fearsome!
-#Aria
-You must be looking for me!
-Beware! I will not go quietly.
-#Jo
-Aria, have you been disappearing people from the woods?
-#Aria
-No...
+Thinking about your options, she tugs on her hat nervously.
 #Narration
-She says it sadly, like you've knocked the wind from her sails.
-#Toorg
-While your partner there looks like they're packing some potent scratchers, I don't think you're capable of that kind of damage.
-#Narration
-The tree-man gestures to a thick trunk nearby. It's bark has been raked through, leaving deep gouges in the hard wood underneath.
+But then she looks up, with a wide smile.
 #Aria
-(pouting) I could do it with magic.
-#Narration
-It would take you most of a day with an axe to {i}start{/i} to do that kind of damage to a tree of that size. 
-#Narration
-You weren't sure how much to believe about the young girl's childish tale, 
-#Narration
-but you're starting to worry this Bog Beast business may be more than you bargained for.
-#Jo
-Hey, maybe your Bog Beast and this Green-Eyed Demon are the same? 
-#Jo
-We could use some more hands against such a dangerous foe.
+Right! My hat! The buckle!
 #Aria
-Hmm... more company on our Quest would be grand, but I can't hold my fellow adventurers back from their own.
+I'm not as skilled as Mom, but I could probably reverse the enchantment on it.
+#Jophiel
+What would that do?
 #Aria
-The Bog Beast doesn't have green eyes, and it has no teeth or claws among its horrors that could do this.
-#Jo
-Ah. Great. Of course it doesn't.
-#Gerald
-Well, the Barkeep didn't mention a bounty for a Bog Beast, anywho.
-#Toorg
-Best of luck on your Quest, child! We must branch out from here on our own.
-#Gerald
-Alright, if you've got time to pun you've got time to march.
-#Gerald
-Let's widen our search for more signs of this demon.
+Rather than bring me to her, it could send us away! Only...
+#Jophiel
+Only?
+#Aria
+I can't control where it goes. It might be really far from here.
 #Narration
-The two of them crunch off through the brush, deeper into the woods.
-#Aria
-That was a fun break! But I hope you're ready, Jo!
-#Aria
-Soon we shall greet our {shader=jitter:3.0,3.0}destined foe!{/shader}
+You're silent, thinking about her suggestion when you hear the door upstairs creak open.
 #Narration
-You swallow hard and step nervously after her.
+The way Aria freezes, you don't have to ask who it is.
+#Narration
+You take hold of her hands again.
+#If_block
+Bond == full
+#Jophiel
+It's okay, Aria. I'm here with you, and wherever we end up, I won't leave you alone.
+#Narration
+She nods and grips your hands tighter.
+#Narration
+She closes her eyes and pulls you close. Her buckle begins to glow with a deep purple hue.
+#Narration
+In an instant, the two of you are somewhere else. It isn't easy to start over when you don't know where you are or where you're going. But the two of you are together.
+#Narration
+Whether it be school, work, your relationships or your goals, you half-assed everything in your life before. But you throw yourself into this with determination you didn't know you had in you.
+#Narration
+You try to find opportunities to make Aria smile every day. It isn't easy taking care of someone else, but you can't imagine anything more worth doing.
+#Narration
+It's you and her in a new world. She summoned you because she needed you, and until she no longer needs you, you'll be by her side.
+#If_block
+Bond != full
+#Serena
+We need to go.
+#Narration
+Aria hesitates one last time.
+#Narration
+Then she throws her arms around you... and her hat on your head.
+#Aria
+Goodbye, Serena.
+#Narration
+In an instant, you are somewhere else.
+#Narration
+It isn't easy to start over when you don't know where you are, but you throw yourself into it. You have a destination, and you won't get there without all your effort.
+#Narration
+You know you came from the Kaistr Weald. There is a nearby capital city, Rimmond. You even remember the town's name, Woldthwaite. 
+#Narration
+You ask a lot of questions, more than most people can even answer, but slowly you understand the basics of this foreign world.
+#Narration
+Once you have your bearings and save enough to buy a map, you return there. To the Weald. To Aria's cottage.
+#Narration
+The cottage is empty. The basement cleared out, and the attic, too. You don't know where Aria and her mother went, and the trail here goes cold.
+#Narration
+Without Aria, you are as unmoored in this world as you were in Cleveland. But you aren't stuck anymore, and you've proven resilient carving out a living here.
+#Narration
+You wanted to stay here as a second chance at living. You'll have to figure out what that means for yourself.

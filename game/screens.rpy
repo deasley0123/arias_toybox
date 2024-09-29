@@ -150,14 +150,15 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name")
-    outlines [(absolute(2), "#000", absolute(0), absolute(0))]
+    outlines [(absolute(3), "#000", absolute(0), absolute(0))]
 
     xalign gui.name_xalign
     yalign 0.5
 
 style say_dialogue:
+    # textshader "typewriter|slowalpha:0.2"
     properties gui.text_properties("dialogue")
-    outlines [(absolute(2), "#000", absolute(0), absolute(0))]
+    outlines [(absolute(3), "#000", absolute(0), absolute(0))]
     line_spacing -5
     kerning 1
 
@@ -184,11 +185,11 @@ screen input(prompt):
 
         vbox:
             xanchor gui.dialogue_text_xalign
-            xpos gui.dialogue_xpos
+            xpos 960
             xsize gui.dialogue_width
-            ypos gui.dialogue_ypos
+            ypos 0.2
 
-            text prompt style "input_prompt"
+            text prompt style "say_dialogue"
             input id "input"
 
 style input_prompt is default
@@ -197,7 +198,7 @@ style input_prompt:
     xalign gui.dialogue_text_xalign
     properties gui.text_properties("input_prompt")
 
-style input:
+style input is say_dialogue:
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
 
@@ -224,7 +225,7 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 405
+    ypos 900
     yanchor 0.5
 
     spacing gui.choice_spacing
@@ -251,17 +252,19 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.0
+            xalign 0.5
             yalign 0.0
 
-            textbutton _("Back") action Rollback()
+            # textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Main Menu") action MainMenu()
+            # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Load") action ShowMenu('load')
+            # textbutton _("Q.Save") action QuickSave()
+            # textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Settings") action ShowMenu('settings')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -312,7 +315,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Settings") action ShowMenu("settings")
 
         if _in_replay:
 
@@ -322,7 +325,7 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("Credits") action ShowMenu("credits")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -373,10 +376,10 @@ screen main_menu():
         vbox:
             style "main_menu_vbox"
 
-            text "[config.name!t]":
-                style "main_menu_title"
+            # text "[config.name!t]":
+            #     style "main_menu_title"
 
-            text "[config.version]":
+            text "[config.name!t] [config.version]":
                 style "main_menu_version"
 
 
@@ -394,19 +397,15 @@ style main_menu_frame:
 
 style main_menu_vbox:
     xalign 1.0
-    xoffset -30
+    xoffset -5
     xmaximum 1200
     yalign 1.0
-    yoffset -30
+    yoffset -5
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
-
-style main_menu_title:
-    properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
+    color '#FFFFFF'
+    size 18
 
 
 ## Game Menu screen ############################################################
@@ -541,41 +540,42 @@ style return_button:
     yoffset -45
 
 
-## About screen ################################################################
+## Credits screen ################################################################
 ##
 ## This screen gives credit and copyright information about the game and Ren'Py.
 ##
 ## There's nothing special about this screen, and hence it also serves as an
 ## example of how to make a custom screen.
 
-screen about():
+screen credits():
 
     tag menu
 
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("Credits"), scroll="viewport"):
 
-        style_prefix "about"
+        style_prefix "credits"
 
         vbox:
 
-            label "[config.name!t]"
+            label "{b}{size=45}[config.name!t]{/size}{/b}"
             text _("Version [config.version!t]\n")
 
             ## gui.about is usually set in options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
+            if gui.credits:
+                text "[gui.credits!t]\n\n"
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
-style about_label is gui_label
-style about_label_text is gui_label_text
-style about_text is gui_text
+style credits_label is gui_label
+style credits_label_text is gui_label_text
+style credits_text is gui_text:
+    line_spacing 0
 
-style about_label_text:
+style credits_label_text:
     size gui.label_text_size
 
 
@@ -730,11 +730,11 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
-screen preferences():
+screen settings():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
 
