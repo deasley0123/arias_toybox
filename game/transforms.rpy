@@ -78,6 +78,17 @@ label scene_transition(title=""):
 
     return
 
+label ending_title(title="", epithet=""):
+    $ quick_menu = False
+    scene loading movie with fadehold
+    show text "{size=150}[title]{/size}\n[epithet]" with dissolve_slow
+    pause 1.0
+    hide text
+    with dissolve_slow
+    $ quick_menu = True
+
+    return
+
 label minigame_transition:
     camera:
         subpixel True 
