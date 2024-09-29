@@ -103,4 +103,9 @@ label scene3:
     narrator "THERE IS A MINIGAME HERE NORMALLY WHERE YOU CATCH THE BOG BEAST. HE IS THE TOAD."
     nvl clear
 
+    jump minigame
+
+label scene3_last_line:
+    show black with fade
+    j "...Are you serious?"
     jump scene4
