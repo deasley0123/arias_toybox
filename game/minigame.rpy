@@ -95,6 +95,22 @@ image toad_ani_hover:
     pause 3.0
     repeat
 
+image toad_final_croak:
+    pause 1.0
+    "mg-assets/animations/toad-croak-1.png"
+    pause 0.2
+    "mg-assets/animations/toad-croak-2.png"
+    pause 0.2
+    "mg-assets/animations/toad-croak-3.png"
+    pause 0.2
+    "mg-assets/animations/toad-croak-4.png"
+    pause 0.2
+    "mg-assets/animations/toad-croak-5.png"
+    pause 0.2
+    "mg-assets/animations/toad-croak-6.png"
+    pause 0.2
+    "mg-assets/animations/toad-blink-1.png"
+
 image cattail_ani_idle:
     "mg-assets/animations/cattail-sway-2.png"
     pause 1.0
@@ -116,6 +132,17 @@ image cattail_ani_hover:
     "mg-assets/animations/cattail-sway-hl-1.png"
     pause 1.0
     repeat
+
+image text8:
+    "mg-assets/animations/textbox8-ani-1.png"
+    pause 1.0
+    "mg-assets/animations/textbox8-ani-2.png"
+    pause 1.0
+    "mg-assets/animations/textbox8-ani-3.png"
+    pause 1.0
+    "mg-assets/animations/textbox8-ani-4.png"
+    pause 1.0
+    "mg-assets/animations/textbox8-ani-5.png"
 
 transform cattail_center:
     xpos 0.37 ypos 0.245
@@ -290,7 +317,10 @@ label toad_reveal:
         zoom 0.8
     show toad_silhouette zorder 2 at toad_reveal
     show toad zorder 1 at toad_position
-    pause 7.0
+    pause 5.0
+    show toad_final_croak zorder 2 at toad_position
+    show text8 zorder 2
+    pause 6.0
     scene black
     show toad at toad_position
     with dissolve
