@@ -291,4 +291,8 @@ label toad_reveal:
     show toad_silhouette zorder 2 at toad_reveal
     show toad zorder 1 at toad_position
     pause 7.0
+    scene black
+    show toad at toad_position
+    with dissolve
+    pause 0.5
     jump scene3_last_line

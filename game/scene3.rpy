@@ -105,6 +105,5 @@ label scene3:
     jump minigame_transition
 
 label scene3_last_line:
-    show black with fade
     j "...Are you serious?"
     jump scene4
