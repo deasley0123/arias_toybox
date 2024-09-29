@@ -1,8 +1,5 @@
 ﻿# The game starts here.
 
-<<<<<<< HEAD
-
-=======
 # Game Play Defaults
 default bond1 = False
 default bond2 = False
@@ -41,16 +38,11 @@ label before_main_menu:
     show menu hold
 
     return
->>>>>>> dab981c944e5d6e74047911a6a81f3304137872d
 
 label start:
     camera:
         perspective True
 
-<<<<<<< HEAD
-    jump minigame
-    #jump scene0
-=======
     # For Debugging
     # jump scene1
     # jump scene2
@@ -64,7 +56,5 @@ label start:
     jump scene0
 
     # TODO: Do some kind of soft fade out to end?
-
->>>>>>> dab981c944e5d6e74047911a6a81f3304137872d
     # This ends the game.
-    #return
+    return
