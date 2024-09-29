@@ -89,7 +89,7 @@ label minigame_transition:
     pause 0.4
     camera:
         linear 0.10 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0)
-
+ 
     scene black with encounter_dissolve # TODO: Define a new image for this transition
     jump minigame
 

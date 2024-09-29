@@ -95,9 +95,9 @@ label scene3:
         matrixtransform ScaleMatrix(-1.0, 1.0, 0.0)*OffsetMatrix(287.0, 783.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         linear 0.50 matrixtransform ScaleMatrix(-1.0, 1.0, 0.0)*OffsetMatrix(287.0, 468.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     a "{shader=jitter:3.0,3.0}HE'S SEEN US! Now, Jophiel!!{/shader}"
-    show aria excite hiding:
-        matrixtransform ScaleMatrix(-1.0, 1.0, 0.0)*OffsetMatrix(287.0, 468.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-    show aria at grey_out
+    hide aria
+    show bg bog close day
+    with dissolve
     j "\'Now\' WHAT!? All I see is some toad!" with vpunch
     # TODO: Add minigame transition
     nvl clear
@@ -105,6 +105,5 @@ label scene3:
     jump minigame_transition
 
 label scene3_last_line:
-    show black with fade
     j "...Are you serious?"
     jump scene4
