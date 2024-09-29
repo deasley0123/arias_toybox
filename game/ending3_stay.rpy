@@ -158,7 +158,6 @@ label stay_endings:
         narrator "You know you came from the Kaistr Weald. There is a nearby capital city, Rimmond. You even remember the town's name, Woldthwaite."
         narrator "You ask a lot of questions, more than most people can even answer, but slowly you understand the basics of this foreign world."
         nvl clear
-        show 
         narrator "Once you have your bearings and save enough to buy a map, you return there. To the Weald. To Aria's cottage."
         narrator "The cottage is empty. The basement cleared out, and the attic, too. You don't know where Aria and her mother went, but the trail here goes cold."
         narrator "Without Aria, you are as unmoored in this world as you were in Cleveland. But you aren't stuck anymore, and you've proven resilient carving out a living here."
