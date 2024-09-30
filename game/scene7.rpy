@@ -1,5 +1,5 @@
 image cottage main: 
-    "bg aria cottage main.png"
+    "bg aria cottage main.jpg"
 label scene7:
     call scene_transition("Homecoming") from _call_scene_transition_7
     scene bg aria cottage door
