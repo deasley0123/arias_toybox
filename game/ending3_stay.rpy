@@ -137,6 +137,9 @@ label stay_endings:
         narrator "You try to find opportunities to make Aria smile every day. It isn't easy taking care of someone else, but you can't imagine anything more worth doing."
         narrator "It's you and her in a new world. She summoned you because she needed you, and until she no longer needs you, you'll be by her side."
         nvl clear
+        show cg stay:
+            zoom 0.6
+        n "{w=3.0}" with Dissolve(0.8)
         call ending_title("Stay", "Ending 6 of 7") from _call_ending_title_5
         return
     else:
@@ -163,5 +166,8 @@ label stay_endings:
         narrator "Without Aria, you are as unmoored in this world as you were in Cleveland. But you aren't stuck anymore, and you've proven resilient carving out a living here."
         narrator "You wanted to stay here as a second chance at living. You'll have to figure out what that means for yourself."
         nvl clear
+        show cg stay complicated:
+            zoom 0.6
+        n "{w=2.0}" with Dissolve(0.8)
         call ending_title("Stay...", "Ending 7 of 7") from _call_ending_title_6
         return

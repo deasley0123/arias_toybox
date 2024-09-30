@@ -1,23 +1,4 @@
 TODO: 
-bartender wink
-
-
-#aria stop mclosed
-#aria stop mclosed lookup
-#aria nervous mclose lookaway
-#aria nervous tell secret mopen
-
-
-bg aria cottage main
-bg cottage stairs down
-bg cottage stairs up
-bg basement
-
-ci toorg gerald dolls
-
-
-
-
 
 CHeck all instances of false_hide to make sure they can be skipped through and properly hide the character
 Add hat on ground in background while Aria hugs you in act 5

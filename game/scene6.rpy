@@ -1,7 +1,8 @@
 label scene6:
     call scene_transition("The Weald part III") from _call_scene_transition_6
     # TODO: Switch for painterly video
-    scene bg forest dusk
+    scene bg forest dusk:
+        zoom 1.1
     with fadehold
     nvl clear
     narrator "The posse from the town is larger than you expected, but less professional than the barkeep made it sound."
@@ -14,11 +15,11 @@ label scene6:
     narrator "When that topic is exhausted, he asks you about yourself, and your relationship to Aria. You lie hastily that you were hired to watch over her while her mom is away, although it was through an intermediary and you haven't actually met her mom, yet."
     narrator "To support your story, you describe what you can of your day. Adventuring in the woods, meeting Toorg and Gerald, catching a toad, and coming to town. You fill him in as well on the damage you saw in the woods, and Gerald's bag you saw there."
     nvl clear
-    show bartender at reset, grey_out
+    show bartender grin eclose mopen sword at reset, grey_out
     show bartender:
         subpixel True zoom 0.9 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(405.0, 72.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     n "He was quiet while you recounted your day, only nodding along and listening patiently to you prattle, but he speaks up now. He's abrupt with you for the first time today." with dissolve
-    show bartender at restore_color
+    show bartender resolute eopen mopen sword at restore_color
     m "Why didn't you mention that earlier, at my tavern?"
     show bartender at grey_out
     j "Sorry, I guess I should have. I just didn't want to scare the kid."
@@ -30,25 +31,29 @@ label scene6:
     j "Oh, that's right! I also needed to give this to you. I forgot about it when she disappeared."
     j "We didn't have any money to pay you for the meal and milk, so she made you this gem."
     hide ci gem with dissolve
+    show bartender concern eopen mclose sword
     n "He accepts it from you with a deeply troubled look."
     j "Yeah, I'm not sure if that's enough or really counts as currency? I can ask her mom to reimburse you, maybe?"
-    show bartender at restore_color
+    show bartender concern eopen mclose sword at restore_color
     m "This is... she made this? Out of what?"
     show bartender at grey_out
     j "Uh, like a rock. A normal rock as far as I could tell."
     n "He scrutinizes you like he's sizing you up. Your honesty, your capabilities, your intentions."
     j "I'm sorry I don't have better answers for you. I know basically nothing about magic."
-    show bartender at restore_color
+    show bartender grin eclose mopen holdout sword at restore_color
     m "Well, I'm no mage myself, but I guarded the inner palace in Rimmond for many years before retiring."
+    show bartender grin eopen mopen sword
     m "No COURT mage could perform transmutation on this level so casually, never mind an apprentice of her age. That teleportation earlier too."
+    show bartender concern eopen mclose sword
     m "This girl is... something else."
+    show bartender regret eopen mopen sword
     m "I also kept something from you. There was more to the message I received from Gerald."
     m "He said the markings seemed strategic rather than instinctual. A warning for people, not beasts. There were faint traces of magic, too."
     m "I've been retired to Woldthwaite damn near 10 years. No head, no tail, no hide nor hair of anyone living out here in the Weald like this."
     show bartender at grey_out
     n "As he waits for your response, you realize this is where this conversation was always leading."
     n "Under the cover of polite concern, he had extracted exactly what he needed to determine you were not a threat, and that Aria and her mother might be."
-    show bartender at restore_color
+    show bartender resolute eopen mopen sword at restore_color
     m "The child had green eyes, and I'd bet anything the mother does too."
     show bartender at grey_out
     n "You start to immediately stammer out a defense for Aria but you stop yourself."
@@ -169,7 +174,7 @@ label choice_5_2:
     j "I have a lot of unanswered questions, too. I'll take us to her house."
     j "Hopefully we can get some answers."
     j "But I need you to promise me to do for them what you've done with me here. Ask questions first."
-    show bartender at restore_color
+    show bartender grin eclose mopen holdout sword at restore_color
     m "Of course! This is a hunt for a demon, and we'll not take any hasty action until we know more."
     show bartender at grey_out
     if goHome == False:
@@ -191,7 +196,7 @@ label choice_5_2:
     n "Following the tugging in your chest and your memories from the day, you lead the town towards the clearing where Aria's house is."
     n "But in your path stands a dense copse of unfamiliar trees. Too dense to really fit through, and stretching on for some distance to either side."
     j "Huh. That's weird. It should be right through here, but... I don't think these trees were here this morning."
-    show bartender:
+    show bartender grin eopen mopen sword:
         subpixel True zoom 0.9 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(405.0, 72.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)
     with dissolve
     m "Could be druid-craft at work. I think we've brought along an axe or two."
@@ -199,10 +204,10 @@ label choice_5_2:
     hide ci with dissolve
     n "A few men step forward to take swings. When the first's axe connects with a tree, all of the trees shudder and burst into mist, popping almost like balloons." with hpunch
     n "Beyond, you see the familiar clearing, smoke rising from the home's chimney."
-    show bartender at restore_color
+    show bartender resolute eopen mopen sword at restore_color
     show bartender at un_hide
     m "Strong warding. We'd best be careful as we continue on."
-    show bartender:
+    show bartender resolute eopen mopen sword:
         subpixel True 
         linear 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, -270.0, -2052.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) alpha 0.0
     n "You follow after, a strong sinking pit in your stomach."

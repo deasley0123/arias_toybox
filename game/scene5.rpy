@@ -12,14 +12,17 @@ label scene5:
 
     j "It's a nice day around supper time.\nWhy it is so empty in here...?"
     n "You don't quite realize you've said your thought aloud until the bartender responds."
-    show bartender at reset
+    show bartender grin eclose mopen holdout at reset
     show bartender:
         zoom 0.8
-        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-387.0, 0.0, 0.0)
+        subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-300.0, 0.0, 0.0)
     with dissolve # TODO: GEt fancy
     m "WELCOME IN! 'Tis a beautiful day out!" with vpunch
+    show bartender grin eopen mopen
     m "Most of the folks in town are gathering in the square.\nTalkin' about what to do regardin' the business in the Weald."
+    show bartender grin eopen mopen holdout
     m "And there's hardly a visitor passin' through this year, exceptin' yourself I suppose!"
+    show bartender concern eopen mclose
     m "Truth be told, I didn't expect to see YOU back so soon, if at all."
     show bartender at grey_out
     show aria stars intent mopenwide at reset
@@ -35,11 +38,15 @@ label scene5:
     a "This is my first time this far from home since I moved here with mom."
     show aria stars intent mcat at grey_out
     j "Uhh... sorry, sir. This is our first time in. It's a lovely place you have here, though."
-    show bartender at restore_color
+    show bartender grin eclose mopen holdout at restore_color
     m "Thank ye~"
+    show bartender regret eopen mopen
     m "And my gravest apologies, 'tis rare to see a cat-folk in these parts."
+    show bartender resolute eopen mopen
     m "And you're the spittin' image of one who passed through less than a dozen moons ago."
+    show bartender grin eopen mopen
     m "The Marquis had hired them to map the Kaistr Weald. Something about a land survey and resource bookkeeping."
+    show bartender grin eclose mopen holdout
     m "Not the domain of an old keg-head like me!"
     show bartender at grey_out
     n "You don't quite know what to make of any of that, but before you can form a question Aria steps forward."
@@ -65,7 +72,15 @@ label scene5:
     j "I just saw some cows in those fields, and she's a growing girl."
     j "And I think she mostly just drinks water made from magic which can't be great for you."
     show bartender at restore_color # TODO: bartender wink
+    show bartender:
+        linear .2 yoffset 10
+        linear .2 yoffset -10
+        linear .2 yoffset 10
+        linear .2 yoffset -10
+        linear .1 yoffset 0
     n "The Minotaur nods and gives you a wink with a wry chuckle."
+    show bartender grin eopen mopen:
+        yoffset 0
     m "Not a problem, I keep some in the storehouse out back. Give me just a moment."
     show bartender at false_hide # TODO: Get fancy
     n "He disappears from view and your stomach grumbles."
@@ -121,7 +136,7 @@ label scene5:
     camera:
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     show aria stars intent intensifies at restore_color
-    m "Here you are, DIG IN!" with vpunch
+    m "Here ye are, DIG IN!" with vpunch
     show bartender at false_hide
     camera:
         subpixel True 
@@ -250,7 +265,7 @@ label resume_3:
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(-315.0, -18.0, 423.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         linear 0.48 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     with Pause(0.58)
-    show bartender at un_hide
+    show bartender resolute eopen mopen at un_hide
     m "What in the gods was that? Teleportation?"
     show bartender:
         alpha 1.0
@@ -259,16 +274,18 @@ label resume_3:
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     j "Uhhh, I'm really not sure. Maybe?"
     j "She is a sorceress. Said her mom was too. Mom lives out in the forest doing some kind of research in the area?"
-    show bartender at restore_color
+    show bartender regret eopen mopen at restore_color
     m "Out in the Weald? Didn't figure anyone lived out there. There's nothing but trees between here and Rimmond."
+    show bartender concern eopen mclose
     m "The woods have always been dangerous, but the last few years have been fraught with disappearances and strange sightings."
     show bartender at grey_out
     j "Yeah, some Green-Eyed Demon, right?"
     j "We met a short guy and a... tree-person? They mentioned something like that."
-    show bartender at restore_color
+    show bartender regret eopen mopen at restore_color
     m "Aye. They sent me a message by bluebird earlier."
     m "Said they had found a clear set of signs, a trail deeper into the Weald."
     m "Never did hear more."
+    show bartender resolute eopen mopen
     m "That's the business the town is discussing in the square."
     m "Talk is, a posse of seasoned hunters and retired knights from the farmholds around here were going to head out before dark."
     m "I intend to close up here and go with them. If that girl and her mother are out there, they may know a thing or two... or be in danger themselves."
@@ -279,7 +296,7 @@ label resume_3:
         n "Aria disappearing wasn't a wrinkle you expected when you said you'd stay."
         n "But if Aria's mom is back and you're going to stick around..."
         n "Well, it would be good to cover everything with her anyways."
-    show bartender at restore_color
+    show bartender grin eopen mopen holdout at restore_color
     m "Sounds like you have an idea of where they're living. Care to join our posse tonight?"
     show ci2 gerald bag:
         zoom 0.7
