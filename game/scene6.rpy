@@ -104,7 +104,8 @@ label choice_5_1:
         zpos 0.0
         xoffset 0.0
         yoffset 0.0
-    show bg aria cottage dusk
+    show bg aria cottage dusk:
+        zoom 1.0
     show ci impassable trees at center
     show ci:
         zoom 1.0
