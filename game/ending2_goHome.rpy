@@ -73,8 +73,11 @@ label go_home_endings:
         show bg go home ritual brighter
         with dissolve
         n "You feel the magic swell beneath you. Your body grows light as your soul and conscious mind begin to separate."
-        # TODO: Add in our the ending CG
-        n "The last you see of this world is the tear stained smile of the young sorceress."
+        show cg go home:
+            zoom 0.6
+        with dissolve
+        n "The last you see of this world is the tear stained face of the young sorceress."
+        pause 2.0
         scene black with faaadehold
         nvl clear
         narrator "When you woke up in your world again, it would have been easy enough to dismiss everything you experienced as nothing but a vivid dream."
@@ -83,7 +86,6 @@ label go_home_endings:
         narrator "You didn't dismiss it, though. It was real enough for you. And you were going make good on what you told Aria. You would find ways to enjoy life again."
         narrator "After all, if she was going to look in on you from time to time, you wanted to make your life an adventure."
         nvl clear
-        # TODO: Go Home End card
         call ending_title("Go Home", "Ending 4 of 7") from _call_ending_title_3
         return
     else:
@@ -114,7 +116,6 @@ label go_home_endings:
         nvl clear
         narrator "\n\n\n\n\n\n\n\nSo you went back to your life. And you tried not to think about the strange dream, or the ways things might have changed if you had let them."
         nvl clear
-        # TODO: Go Home... End card
         call ending_title("Go Home...", "Ending 5 of 7") from _call_ending_title_4
         return
     return
