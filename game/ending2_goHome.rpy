@@ -76,7 +76,7 @@ label go_home_endings:
         show cg go home:
             zoom 0.6
         with dissolve
-        n "The last you see of this world is the tear stained face of the young sorceress."
+        n "The last you see of this world is the tear stained smile of the young sorceress."
         pause 2.0
         scene black with faaadehold
         nvl clear
