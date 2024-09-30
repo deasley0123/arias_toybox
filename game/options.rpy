@@ -73,6 +73,8 @@ ______________________________________________________
 
 "Minotaur Male Bard rigged" by mz4250 is licensed for Commerical Use through mz4250.
 
+"Minotaur Updated rigged" by mz4250 is licensed for Commerical Use through mz4250.
+
 ______________________________________________________
 """)
 
