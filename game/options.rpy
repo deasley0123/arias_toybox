@@ -22,7 +22,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.3"
+define config.version = "1.4"
 
 
 ## Text that is placed on the game's credits screen. Place the text between the
