@@ -1,5 +1,7 @@
 label scene1:
     # TODO: Bring in summoning CG, animate from dark and blurry to clear.
+    # play music summoning noloop fadein 0.25
+    # queue music summoning_ctd loop
     show cg summoning:
         subpixel True 
         blur 20.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.14)*SaturationMatrix(1.0)*BrightnessMatrix(-1.0)*HueMatrix(0.0) 

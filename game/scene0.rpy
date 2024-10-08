@@ -1,7 +1,11 @@
 label scene0:
     call scene_transition("The Summoning") from _call_scene_transition_1
+    play music_2 rain loop fadein 0.5
     scene black with fadehold
     narrator "It was a rainy Tuesday night."
+    play music "<silence 1.5>"
+    queue music tv noloop
+    queue music tv_ctd loop
     narrator """
     You came home from work to your small studio apartment, changed into sweatpants, 
     grabbed a drink from the fridge and sat on the floor in front of your TV because
@@ -28,13 +32,19 @@ label scene0:
     So instead you drank and kept scrolling, eyes half glazed over. 
     """
 
+    stop music fadeout 10
+    stop music_2 fadeout 10
+    play music_3 summoning_buildup fadein 4.0 noloop
     narrator """
     Eventually you can't keep your eyes open at all anymore. You lean your head back against your couch
     and fall asleep, wishing you could be anyone and anywhere else.
     """
-    
+
     nvl clear
 
+    stop music
+    play music_2 summoning_big_buildup noloop
+    stop music_3 fadeout 4.0
     show text "When you open your eyes again, you are no longer in your apartment." at shaking_center
     n "{alpha=0.0}When you open your eyes again, you are no longer in your apartment" # This exists to set the autoplay speed right
     hide text

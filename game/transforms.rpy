@@ -69,6 +69,7 @@ define encounter_dissolve = ImageDissolve("encounter_wipe.webp", 1.0, 8 , revers
 
 label scene_transition(title=""):
     $ quick_menu = False
+    play audio ["<silence 1.0>", haunting_refrain]
     scene loading movie with fadehold
     show text "{size=150}[title]{/size}" with dissolve_slow
     pause 1.0

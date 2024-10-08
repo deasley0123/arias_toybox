@@ -11,6 +11,9 @@ image menu loop = Movie(play="images/openAnim_Loop.webm", loop=True)
 image spooktober = "spooktober_logo.webp"
 image logo = "FullScreenLogo_1920x1080.webp"
 image box = "anim_start.webp"
+init python:
+    renpy.music.register_channel("music_2", "music")
+    renpy.music.register_channel("music_3", "music")
 
 label splashscreen:
     scene black
