@@ -30,7 +30,7 @@ transform blur_box:
         blur 3
 
 image aria_up_from_bottom_right:
-    "aria excite hiding.png"   
+    "aria excite hiding.webp"   
     subpixel True xoffset -315.0 zoom 1.6
     yoffset 837.0 
     linear 0.75 yoffset -36.0 
@@ -38,7 +38,7 @@ image aria_up_from_bottom_right:
     offset (-315.0, -36.0) 
 
 image aria_jump_up_from_middle:
-    "aria exhult jumping mopen.png"   
+    "aria exhult jumping mopen.webp"   
     subpixel True zoom .5
     yoffset 1500.0 
     linear 0.1 yoffset 200.0 
@@ -65,7 +65,7 @@ transform un_hide:
     alpha 0.0 
     linear 0.50 alpha 1.0 
 
-define encounter_dissolve = ImageDissolve("encounter_wipe.png", 1.0, 8 , reverse=True)
+define encounter_dissolve = ImageDissolve("encounter_wipe.webp", 1.0, 8 , reverse=True)
 
 label scene_transition(title=""):
     $ quick_menu = False

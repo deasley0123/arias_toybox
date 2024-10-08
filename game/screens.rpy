@@ -27,6 +27,8 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
+    hover_sound "audio/hover.mp3"
+    activate_sound "audio/click.mp3"
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -786,7 +788,7 @@ screen settings():
 
                     if config.has_sound:
 
-                        label _("Sound Volume")
+                        label _("SFX Volume")
 
                         hbox:
                             bar value Preference("sound volume")

@@ -8,9 +8,9 @@ default bogbeastname = "Bog Beast"
 image loading movie = Movie(play="images/anim_loading.webm", loop=True)
 image starting movie = Movie(play="images/openAnim.webm", loop=False, keep_last_frame=True)
 image menu loop = Movie(play="images/openAnim_Loop.webm", loop=True)
-image spooktober = "spooktober_logo.png"
-image logo = "FullScreenLogo_1920x1080.png"
-image box = "anim_start.png"
+image spooktober = "spooktober_logo.webp"
+image logo = "FullScreenLogo_1920x1080.webp"
+image box = "anim_start.webp"
 
 label splashscreen:
     scene black
